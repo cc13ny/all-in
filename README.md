@@ -22,6 +22,7 @@ Detailed Description
   There're several files for various sets of programming practises: including "Beauty of Programming"(Microsoft)
   For each file, there're several problems.
   For each problems, there're two parts
+  
   -- "cc file" contains "error file" and "cc solution file"
   
     -- "error file": the mistakes I made from writing these code
