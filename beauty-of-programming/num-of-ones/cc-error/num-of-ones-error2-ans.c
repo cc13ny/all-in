@@ -47,13 +47,14 @@ int main(int argc, char *argv[]){
                  
           }
           
-          if( quan - 1 < mod < 2 * quan ){//Problem Here: 
+          if( 2 * quan > mod > quan - 1 ){//Problem Here: 
                                           //  Since the order for the condition judgement is from left to right,
-                                          //  quan - 1 < mod will be judged firstly.
-                                          //  Since the first half part is true, the judgement will stop.
-                                          //  However, it is wrong since mod is not within the range (quan - 1, 2*quan)
-                                          //  for mod > 2 * quan -1
-                                          // 
+                                          //  Then (2 * quan < mode) can be 0 or 1
+                                          //  0 for false, 1 for true
+                                          //  Since quan = 1, 10, 100, .., 10^n, {n= 0,1,2...}
+                                          //  Thus this conditional statement can be true at first loop
+                                          //  However, it must be false at later loop when q => 10
+                                          
                                           //Answer:
                                           //  if( quan - 1 < mod < 2 * quan ){
                                           //  should be replaced with
