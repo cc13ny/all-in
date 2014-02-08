@@ -1,5 +1,7 @@
-COMP, "Improved by Error and Optimization"
-==========================================
+COMP
+====
+"Improved by Error and Optimization"
+
 Description:
   Optimization of Various kind of Algorithms
   
