@@ -53,6 +53,7 @@ int main(int argc, char *argv[]){
                
           }
           printf("The n1 is: %d\n\n",n1);
+          
     }
     
     printf("The number of ones is: %d\n", n1);
@@ -60,8 +61,5 @@ int main(int argc, char *argv[]){
     getchar();
     getchar();
     return 0;
-    
-    
-    
-    
+
 } 
