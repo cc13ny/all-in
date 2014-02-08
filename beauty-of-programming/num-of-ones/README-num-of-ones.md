@@ -9,11 +9,11 @@ Errors
 Idea
    1. num-of-ones-sol1.c:
       
-      -- How many of the 1st rightest digit?
+      -- How many 1's of the 1st rightest digit?
 
-      -- How many of the 2nd rightest digit?
+      -- How many 1's of the 2nd rightest digit?
       
-      -- How many of the 3rd rightest digit?
+      -- How many 1's of the 3rd rightest digit?
       
       -- ....
 
