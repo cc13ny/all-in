@@ -3,7 +3,7 @@ comp
 "Improved by Error and Optimization"
 
 Description:
-  Optimization of Various kind of Algorithms
+  Optimization of Various Kinds of Algorithms
   
 Sources:
   1. ACM
@@ -47,3 +47,6 @@ Detailed Description
     -- The solutions come from internet or the related book
     -- Present the process of Optimization by others
     
+  -- "problem descripition file"
+  
+    -- Description of problems
