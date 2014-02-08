@@ -1,4 +1,4 @@
-COMP
+comp
 ====
 "Improved by Error and Optimization"
 
