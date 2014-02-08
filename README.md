@@ -40,6 +40,7 @@ Detailed Description
   
     -- Summarize what mistakes are made in each error file
     -- Summarize what improvements I achieve in the codes
+    -- Describe my idea about solutions
     
   -- "solution folder"
     
