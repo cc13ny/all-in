@@ -1,7 +1,5 @@
-comp
-====
-"Improved by Error and Optimization"
-------------------------------------
+COMP, "Improved by Error and Optimization"
+==========================================
 Description:
   Optimization of Various kind of Algorithms
   
@@ -15,6 +13,7 @@ Language:
   3. R
   4. C
   5. C++
+  6. Matlab
 
 Detailed Description
   This repository is for personal improvement through programming and algorithm.
