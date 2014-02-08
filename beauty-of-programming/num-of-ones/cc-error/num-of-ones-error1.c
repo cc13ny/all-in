@@ -47,7 +47,7 @@ int main(int argc, char *argv[]){
                  
           }
           
-          if( 2 * quan > mod > quan - 1 ){
+          if( quan - 1 < mod < 2 * quan){
                n1 += mod - quan + 1; 
                printf("B\n"); 
                
