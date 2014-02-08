@@ -6,14 +6,10 @@ int power(int b, int p){
     int result = 1;
     
     for(k = 0; k < p; k++){
-          
           result *= b;
-          
     }
     
-    
     return result;
-    
 }
 
 int main(int argc, char *argv[]){
@@ -32,8 +28,6 @@ int main(int argc, char *argv[]){
             
     }
     printf("the digit is: %d\n\n", digit);
-    
-    
     
     int j;
     int n1 = 0;
@@ -62,8 +56,6 @@ int main(int argc, char *argv[]){
     }
     
     printf("The number of ones is: %d\n", n1);
-    
-    
     
     getchar();
     getchar();
