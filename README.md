@@ -28,7 +28,7 @@ Detailed Description
     -- "error file": the mistakes I made from writing these code
        -- They're very helpful for improvement
        -- Each error file is followed by a "answer file" which indicates 
-       ---where the problem happens, what happens and how to fix
+       -- Where the problem happens, what happens and how to fix
        
     -- "cc solution file": my solution files and cc is short for my name, Chi Chen
        -- Present the process of Optimization by myself
