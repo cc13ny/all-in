@@ -25,14 +25,17 @@ Detailed Description
   
   
   -- "cc error folder": the mistakes I made from writing these code
+  
     -- They're very helpful for improvement
     -- Each error file is followed by a "answer file" which indicates 
     -- Where the problem happens, what happens and how to fix
        
   -- "cc solution folder": my solution files and cc is short for my name, Chi Chen
+  
     -- Present the process of Optimization by myself
     
-  -- "read me file": 
+  -- "read me file"
+  
     -- Summarize what mistakes are made in each error file
     -- Summarize what improvements I achieve in the codes
     
