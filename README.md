@@ -39,6 +39,7 @@ Detailed Description
     -- Summarize what mistakes are made in each error file
     -- Summarize what improvements I achieve in the codes
     -- Describe my idea about solutions
+    -- Describe others' ideas about solutions
     
   -- "solution folder"
     
@@ -48,3 +49,7 @@ Detailed Description
   -- "problem descripition file"
   
     -- Description of problems
+    
+  -- "list file"
+    
+    -- List what are ready to do
