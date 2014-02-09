@@ -7,15 +7,13 @@ Description:
   
 Sources:
   1. ACM
-  2. Thesis
+  2. Beautry of Programming
 
 Language:
-  1. Java
-  2. Python
-  3. R
-  4. C
-  5. C++
-  6. Matlab
+  1. C
+  2. C++
+  3. Java
+  4. Python
 
 Detailed Description
   This repository is for personal improvement through programming and algorithm.
