@@ -7,6 +7,13 @@
  *     Point(int a, int b) { x = a; y = b; }
  * }
  */
+ 
+ /**
+  * @author = Chi Chen
+  * @email = chenchiapply@gmail.com
+  * @version = 1.0
+  * @runtime = 488ms
+  */
 
 public class Solution {
     public int maxPoints(Point[] points) {
