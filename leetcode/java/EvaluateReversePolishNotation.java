@@ -1,4 +1,5 @@
-/*
+/* Problem:
+ *
  * Evaluate the value of an arithmetic expression in Reverse Polish Notation.
  * Valid operators are +, -, *, /. Each operand may be an integer or another expression.
  * Some examples:
@@ -6,6 +7,11 @@
  *  ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
  */
  
+ 
+/* @author = Chi Chen
+ * @email = chenchiapply@gmail.com
+ * @version = 1.0
+ */
 public class Solution {
     public int evalRPN(String[] tokens) {
         ArrayList<String> wordlist = new ArrayList<String>(Arrays.asList(tokens));
