@@ -1,13 +1,15 @@
-comp
-====
-"Improved by Error and Optimization"
+Chrysanths
+==========
+Motto: "Improved by Error and Optimization"
 
-Description:
-  Optimization of Various Kinds of Algorithms
+Description: 
+  [Programming Practises and Optimization] of [Interview or Competition Questions]
   
 Sources:
   1. ACM
   2. Beautry of Programming
+  3. Leetcode
+  
 
 Language:
   1. C
