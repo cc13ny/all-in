@@ -11,6 +11,7 @@
 /* @author = Chi Chen
  * @email = chenchiapply@gmail.com
  * @version = 1.0
+ * @runtime = 512ms
  */
 public class Solution {
     public int evalRPN(String[] tokens) {
