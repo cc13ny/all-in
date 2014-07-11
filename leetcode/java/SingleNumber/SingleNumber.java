@@ -17,6 +17,7 @@
  * @auther = Chi Chen
  * @email = chenchiapply@gmail.com
  * @note = modified from X Wang
+ * @runtime = 488 ms
  */
  
 public class SingleNumber {
