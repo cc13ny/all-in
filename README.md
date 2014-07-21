@@ -1,6 +1,6 @@
 Chrysanths
 ==========
-Motto: "Improved by Error and Optimization"
+Motto: "Learned through Errors"
 
 Description: 
   [Programming Practises and Optimization] of [Interview or Competition Questions]
