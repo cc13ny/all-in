@@ -1,28 +1,27 @@
-comp
+cod
 ==========
-Motto: "Learned through Errors"
+##Motto
+"Learned through Errors"
 
-Description: 
+##Description
   [Programming Practises and Optimization] of [Interview or Competition Questions]
   
-Sources:
+##Sources
   1. ACM
   2. Beautry of Programming
   3. Leetcode
   
-
-Language:
+##Language
   1. C
   2. C++
   3. Java
   4. Python
 
-Detailed Description
+##Description
   This repository is for personal improvement through programming and algorithm.
   There're several files for various sets of programming practises: including "Beauty of Programming"(Microsoft)
   For each file, there're several problems.
   For each problems, there're two parts
-  
   
   -- "cc error folder": 
   
