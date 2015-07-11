@@ -23,6 +23,7 @@ public class Solution {
                 anArray[1] = i + 1;
             }
         }
+        
         if(!flag){
             for(int j = 0; j < len; j++){
               next = nums.get(target - numbers[j]);
