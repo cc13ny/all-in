@@ -1,7 +1,3 @@
-'''
-  Just code simplication from TwoSum_001.py
-'''
-
 class Solution:
     # @param {integer[]} nums
     # @param {integer} target
