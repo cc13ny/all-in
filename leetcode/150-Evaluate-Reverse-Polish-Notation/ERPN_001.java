@@ -1,5 +1,5 @@
 /*
- * @author = Chi Chen
+ * @author = cchen
  */
 public class Solution {
     public int evalRPN(String[] tokens) {
