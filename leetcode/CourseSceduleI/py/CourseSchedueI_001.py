@@ -8,7 +8,7 @@ class Solution:
     # @return {boolean}
     def canFinish(self, numCourses, prerequisites):
         indegrees = [0] * numCourses
-        graphs = [ set() for _ in range(numCourses)]
+        graphs = [set() for _ in range(numCourses)] # can't use [set()] * (numCourses). Otherwise, they influence each other
         for p in prerequisites:
             if p[0] not in graphs[p[1]]: # handling corner case
                 graphs[p[1]].add(p[0])
