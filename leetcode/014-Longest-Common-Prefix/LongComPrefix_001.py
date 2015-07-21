@@ -1,3 +1,5 @@
+#@author: cchen
+
 class Solution:
     # @param {string[]} strs
     # @return {string}
