@@ -13,13 +13,6 @@
  *          http://www.programcreek.com/2012/12/leetcode-solution-of-single-number-in-java
  */
  
-/* *
- * @auther = Chi Chen
- * @email = chenchiapply@gmail.com
- * @note = modified from X Wang
- * @runtime = 488 ms
- */
- 
 public class SingleNumber {
   public static void main(String[] args) {
   
