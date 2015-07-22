@@ -7,3 +7,5 @@
 + Try to make follow-ups by yourself
 
 + Try to figure out KEY testcases
+
++ Evaluation based on personal performances
