@@ -1,3 +1,5 @@
-1. You will be admitted to this group if you promise that you will help others in similar situations on coding problems.
+1. 加入组内的条件是你承认组内价值交换规则，如果有一次不做到，立即退组
 
-2. 核心的关键是人的力量，而不是资料本身。通告互相讨论来加快了解。
+2. 核心的关键是人的力量，而不是资料本身。通告互相讨论来加快了解
+
+3. 交换的不是钱，而是时间和价值，譬如当别人给你传授内容，你有义务把传授的内容形成文档
