@@ -14,5 +14,11 @@
 
 7. **Design data with class and inheritance**
 
+8. **Please design the user system**
+
+9. **Please design a payment system**
+
+10. **What happens when you visit www.google.com in your browser**
+
 
 
