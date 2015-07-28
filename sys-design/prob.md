@@ -10,7 +10,7 @@
 
 5. **Please scale your system**
 
-6. **Please design Netflix/YouTube/Spotify**
+6. **Please design Netflix /YouTube /Spotify /Linkedin**
 
 7. **Design data with class and inheritance**
 
