@@ -18,3 +18,5 @@ Here is a ToDo List
    
    2.4 System Design
    
+   2.5 Binary Search /BFS /DFS
+   
