@@ -1,7 +1,5 @@
 cod
 ===
-Here is a ToDo List
-
 1. Basic
    
    1.1 Dijkstra/ Prim/ A* Search
