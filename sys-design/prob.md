@@ -1,24 +1,25 @@
-
-
 1. [**Real-time**] How would you monitor metrics for a distributed real-time data pipeline?
 
 2. [**Scalability**] Given one billion URLs with a score, describe a distributed application that can return the top ten URLs by score.
 
-3. **Please design a system**
+3. [**BigData**] Write a function that can receive million of data packages per second
 
-4. **Please evaluate query per second**
 
-5. **Please scale your system**
+1. **Please design a system**
 
-6. **Please design Netflix /YouTube /Spotify /Linkedin**
+2. **Please evaluate query per second**
 
-7. **Design data with class and inheritance**
+3. **Please scale your system**
 
-8. **Please design the user system**
+3. **Please design Netflix /YouTube /Spotify /Linkedin**
 
-9. **Please design a payment system**
+4. **Design data with class and inheritance**
 
-10. **What happens when you visit www.google.com in your browser**
+5. **Please design the user system**
+
+6. **Please design a payment system**
+
+7. **What happens when you visit www.google.com in your browser**
 
 
 
