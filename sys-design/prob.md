@@ -57,8 +57,11 @@
 
 17. **Log Analysis**
     + Real-time Streaming Analysis
+    + Automatic
 
 18. **Design Load Balancer**
+    + Automatic
+19. 
 
 
 
