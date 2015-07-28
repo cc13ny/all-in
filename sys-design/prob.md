@@ -55,6 +55,10 @@
 
 16. **Design Instagram /Facebook /Twitter**
 
+17. **Log Analysis**
+    + Real-time Streaming Analysis
+
+18. **Design Load Balancer**
 
 
 
