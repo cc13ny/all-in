@@ -17,4 +17,14 @@ cod
    2.4 System Design
    
    2.5 Binary Search /BFS /DFS
+
+3. Data Structure
+
+   3.1 Hash Heap
+   
+   3.2 Bloom Filter
+   
+   3.3 Segment Tree
+   
+   3.4 Red-Black Tree
    
