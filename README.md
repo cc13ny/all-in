@@ -10,7 +10,7 @@ cod
 
    2.1 CareerCup/ Glassdoor/ GeeksforGeek/ 1POINT3: 
        
-       Bloomberg, Amazon, Epic, Facebook, Google, Zenefit
+       + Bloomberg, Amazon, Epic, Facebook, Google, Zenefit
    
    2.2 Hackerrank: All
    
