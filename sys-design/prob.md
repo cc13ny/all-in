@@ -2,11 +2,20 @@
 
 3. [**BigData**] Write a function that can receive million of data packages per second
 
+# Artificial Intelligence
+
+1. **Implement Google Instant Search or Twitter typeahead**
+
 # Scalability
 
 1. Given one billion URLs with a score, describe a distributed application that can return the top ten URLs by score.
 
 2. **What happens when you visit www.google.com in your browser**
+
+# Security
+
+1. **Thread-safe Consumer and Producer**
+
 
 # Summary
 
@@ -33,6 +42,20 @@
 9. **How to design "秒杀“ system**
 
 10. **Write a crawler**
+
+11. **What is GFS, BigTable, MapReduce**
+
+12. **Find the top-10 frequent keywords/mean number with MapReduce**
+
+13. **Thread-safe Consumer and Producer**
+
+14. **Implement Google Instant Search or Twitter typeahead**
+
+15. **Design WhatsApp**
+
+16. **Design Instagram /Facebook /Twitter**
+
+
 
 
 
