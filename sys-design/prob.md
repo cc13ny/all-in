@@ -64,6 +64,14 @@
     
 19. **TinyURL**
 
+20. **Object Oriented Design:**
+    + singleton
+    + elevator
+    + parking lot
+    + card game
+    + file system
+    + hotel reservation
+
 
 
 
