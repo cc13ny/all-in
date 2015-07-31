@@ -20,7 +20,7 @@ def maxdiff(nums):
     
     mxdiff = max(zeronum)
     j = zeronum.index(mxdiff)
-    i = minnum.index(minnum[j])
+    i = -1 if minnum[j] == 0 else minnum.index(minnum[j]) #very small bug
     print 
     print 'Maximal diff at diff locations: ' + str(zeronum)
     print 'max difference: ' + str(mxdiff)
