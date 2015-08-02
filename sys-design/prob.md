@@ -1,6 +1,8 @@
 1. [**Real-time**] How would you monitor metrics for a distributed real-time data pipeline?
 
-3. [**BigData**] Write a function that can receive million of data packages per second
+2. [**BigData**] Write a function that can receive million of data packages per second
+
+3. [**Network**] What is the difference btw _http_ and _https_? What is the mechanism of implementig _https_ ?
 
 # Artificial Intelligence
 
