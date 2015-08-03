@@ -22,6 +22,10 @@ cod
 
 3. Data Structure
 
+4. Leetcode
+  
+   4.1 [Count Primes](https://leetcode.com/submissions/detail/35164468/): More Optimizations!!!
+
    3.1 Hash Heap
    
    3.2 Bloom Filter
