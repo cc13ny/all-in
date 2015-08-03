@@ -10,7 +10,15 @@ cod
  
    1.4 [Introduction to Algorithm] Graph
 
-   1.5 [Introduction to Algorithm] __String Matching__: Rabin-Karp algorithm, KMP algorithm, Automata and the Boyer- Moore algorithm
+   1.5 [Introduction to Algorithm] __String Matching__: 
+       
+       1.5.1 Rabin-Karp algorithm
+ 
+       1.5.2 KMP algorithm
+
+       1.5.3 Automata
+
+       1.5.4 the Boyer-Moore algorithm
 
    1.6 DFS/BFS [Various Version]
 
