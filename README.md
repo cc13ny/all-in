@@ -6,6 +6,14 @@ cod
 
    1.2 QuickSort
 
+   1.3 [Introduction to Algorithm] DP
+ 
+   1.4 [Introduction to Algorithm] Graph
+
+   1.5 [Introduction to Algorithm] __String Matching__: Rabin-Karp algorithm, KMP algorithm, Automata and the Boyer- Moore algorithm
+
+   1.6 DFS/BFS [Various Version]
+
 2. **Must-Do**
 
    2.1 CareerCup/ Glassdoor/ GeeksforGeek/ 1POINT3: 
@@ -22,10 +30,6 @@ cod
 
 3. Data Structure
 
-4. Leetcode
-  
-   4.1 [Count Primes](https://leetcode.com/submissions/detail/35164468/): More Optimizations!!!
-
    3.1 Hash Heap
    
    3.2 Bloom Filter
@@ -33,4 +37,10 @@ cod
    3.3 Segment Tree
    
    3.4 Red-Black Tree
+
+4. Leetcode
+  
+   4.1 [Count Primes](https://leetcode.com/submissions/detail/35164468/): More Optimizations!!!
+
+   
    
