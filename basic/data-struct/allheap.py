@@ -37,7 +37,7 @@ class Heap(object):
     #Creation
     def heapify(self):
         size = len(self.hp)
-        for i in range((size - 2) / 2, -1, -1):
+        for i in range((size - 2) / 2, -1, -1):
             self.siftdown(i)
             
     def merge(self):
