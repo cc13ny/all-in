@@ -60,18 +60,18 @@ class Heap(object):
     def siftdown(self, i):
         size = len(self.hp)
         hp = self.hp
-        smallest = i
+        ext = i
         while -1 < i < size:
             l = 2 * i + 1
             r = 2 * i + 2
-            if -1 < l < size and hp[l] < hp[smallest]:
-                smallest = l
-            if -1 < r < size and hp[r] < hp[smallest]:
-                smallest = r
-            if i == smallest:
+            if -1 < l < size and self.compare(l, ext):
+                ext = l
+            if -1 < r < size and self.compare(r, ext):
+                ext = r
+            if i == ext:
                 break
-            h[i], h[smallest] = h[smallest], h[i]
-            i = smallest
+            h[i], h[ext] = h[ext], h[i]
+            i = ext
         self.hp = hp
         
     def siftup(self, i):
@@ -79,6 +79,14 @@ class Heap(object):
 
     def delete(self):
         pass
+
+    #Util
+    def compare(i, j):
+        hp = self.hp
+        if isMin:
+            return hp[i] < hp[j]
+        else:
+            return hp[i] > hp[i]
     
         
     
