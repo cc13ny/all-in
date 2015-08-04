@@ -16,6 +16,8 @@ cod
 
    1.6 DFS/BFS [Various Version]
 
+   1.7 __Tree Traversal__
+
 2. **Must-Do**
 
    2.1 CareerCup/ Glassdoor/ GeeksforGeek/ 1POINT3: 
