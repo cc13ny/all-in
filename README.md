@@ -22,7 +22,7 @@ cod
 
    2.1 CareerCup/ Glassdoor/ GeeksforGeek/ 1POINT3: 
        
-       + Bloomberg, Amazon, Epic, Facebook, Google, Zenefit, TwoSigma
+       + Bloomberg, Amazon, Epic, __Facebook__, __Google__, Zenefit, TwoSigma
    
    2.2 Hackerrank: All
    
