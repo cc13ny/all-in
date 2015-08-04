@@ -45,6 +45,5 @@ cod
 4. Leetcode
   
    4.1 [Count Primes](https://leetcode.com/submissions/detail/35164468/): More Optimizations!!!
-
    
-   
+   4.2 [Kth Largest Element] (http://www.lintcode.com/en/problem/kth-largest-element/)
