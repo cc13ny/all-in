@@ -1,0 +1,1 @@
+1. What are the differences between Multithreading, Multi-core, GPU, etc
