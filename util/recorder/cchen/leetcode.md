@@ -14,5 +14,8 @@
    
    3.2 Figure out your own solution
    
-4. 
+4. [__044__] [Wild Card Matching] (https://leetcode.com/problems/wildcard-matching/)
 
+   4.1 Understand this solution: http://www.cnblogs.com/grandyang/p/4401196.html
+   
+5. [__010__] [Regular Expression Matching] (https://leetcode.com/problems/regular-expression-matching/)
