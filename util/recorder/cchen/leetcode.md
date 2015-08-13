@@ -25,5 +25,11 @@
    6.1 Implement [another method](http://www.cnblogs.com/grandyang/p/4606710.html)
    
    6.2 Calculate the __Time__ and __Space__ complexity
-7. 
+   
+7. [__029__] [Divide Two Integers] (https://leetcode.com/problems/divide-two-integers/)
+
+   7.1 No idea about why the anwser is always wrong in Python for the case (-IntMin, - 1)
+   
+   7.2 Understand this [link] (http://www.cnblogs.com/grandyang/p/4431949.html)
+8. 
 
