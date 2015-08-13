@@ -19,3 +19,11 @@
    4.1 Understand this solution: http://www.cnblogs.com/grandyang/p/4401196.html
    
 5. [__010__] [Regular Expression Matching] (https://leetcode.com/problems/regular-expression-matching/)
+
+6. [__023__] [Merge k Sorted Lists] (https://leetcode.com/problems/merge-k-sorted-lists/)
+
+   6.1 Implement [another method](http://www.cnblogs.com/grandyang/p/4606710.html)
+   
+   6.2 Calculate the __Time__ and __Space__ complexity
+7. 
+
