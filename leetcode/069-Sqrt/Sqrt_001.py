@@ -1,4 +1,4 @@
-# What's the problem of Newton's method
+# What's the problem of Newton's method ?
 
 class Solution:
     # @param {integer} x
