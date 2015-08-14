@@ -37,5 +37,11 @@
    8.1 Implement the _Divide and Conquer_ approach
    
    8.2 Improve the original approach with less space complexity
-9. 
+   
+9. [__078__] [Subsets] (https://leetcode.com/problems/subsets/)
+
+   9.1 Need __MORE__ optimization (by yourself)
+   
+   9.2 Take a look at some answers
+10. 
 
