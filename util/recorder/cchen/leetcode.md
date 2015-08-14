@@ -31,5 +31,11 @@
    7.1 No idea about why the anwser is always wrong in Python for the case (-IntMin, - 1)
    
    7.2 Understand this [link] (http://www.cnblogs.com/grandyang/p/4431949.html)
-8. 
+   
+8. [__053__] [Maximum Subarray] (https://leetcode.com/problems/maximum-subarray/)
+
+   8.1 Implement the _Divide and Conquer_ approach
+   
+   8.2 Improve the original approach with less space complexity
+9. 
 
