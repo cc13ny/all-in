@@ -43,5 +43,9 @@
    9.1 Need __MORE__ optimization (by yourself)
    
    9.2 Take a look at some answers
-10. 
+   
+10. [__075__] [Sort Colors] (https://leetcode.com/problems/sort-colors/)
+
+    10.1 More efficient algorithm, especially based on __Partition__ approach
+11. 
 
