@@ -47,5 +47,11 @@
 10. [__075__] [Sort Colors] (https://leetcode.com/problems/sort-colors/)
 
     10.1 More efficient algorithm, especially based on __Partition__ approach
-11. 
+    
+11. [__206__] [Reverse Linked List] (https://leetcode.com/problems/reverse-linked-list/)
+
+    11.1 Do it again
+    
+    11.2 Implement both versions, recursive and iterative.
+12. 
 
