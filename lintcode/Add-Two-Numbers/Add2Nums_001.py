@@ -18,15 +18,14 @@ class Solution:
             p.next = ListNode((l1.val+l2.val+flag) % 10)
             flag = (l1.val+l2.val+flag) / 10
             l1 = l1.next; l2 = l2.next; p = p.next
-        if l2:
-            while l2:
-                p.next = ListNode((l2.val+flag) % 10)
-                flag = (l2.val+flag) / 10
-                l2 = l2.next; p = p.next
-        if l1:
-            while l1:
-                p.next = ListNode((l1.val+flag) % 10)
-                flag = (l1.val+flag) / 10
-                l1 = l1.next; p = p.next
+        while l2:
+            p.next = ListNode((l2.val+flag) % 10)
+            flag = (l2.val+flag) / 10
+            l2 = l2.next; p = p.next
+        while l1:
+            p.next = ListNode((l1.val+flag) % 10)
+            flag = (l1.val+flag) / 10
+            l1 = l1.next; p = p.next
+            
         if flag == 1: p.next = ListNode(1)
         return dummy.next
