@@ -59,5 +59,8 @@
 13. [__84__] [Largest Rectangle in Histogram] (https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
     13.1 Take a look at __Discussion__ and __Answer__
-14. 
+    
+14. [__215__] [Kth Largest Element in an Array] (https://leetcode.com/problems/kth-largest-element-in-an-array/)
+
+    14.1 Do it again by using the __NON-TRIVIAL__ method
 
