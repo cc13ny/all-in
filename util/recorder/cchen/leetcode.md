@@ -56,5 +56,8 @@
 12. [__233__] [Number of Digit One] (https://leetcode.com/problems/number-of-digit-one/)
 
     12.1 Be aware of __OVERFLOW__??
-13. 
+13. [__84__] [Largest Rectangle in Histogram] (https://leetcode.com/problems/largest-rectangle-in-histogram/)
+
+    13.1 Take a look at __Discussion__ and __Answer__
+14. 
 
