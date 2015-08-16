@@ -53,5 +53,8 @@
     11.1 Do it again
     
     11.2 Implement both versions, recursive and iterative.
-12. 
+12. [__233__] [Number of Digit One] (https://leetcode.com/problems/number-of-digit-one/)
+
+    12.1 Be aware of __OVERFLOW__??
+13. 
 
