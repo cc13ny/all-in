@@ -3,8 +3,7 @@ def maxprofit(stockvalues):
     for i in range(len(stockvalues) - 1, -1, -1):
         if maxval < stockvalues[i]:
             maxval = stockvalues[i]
-        else:
-            res += maxval - stockvalues[i]
+        res += maxval - stockvalues[i]
     return res
 
 stockvalues = [1, 3, 1, 2, 4]
