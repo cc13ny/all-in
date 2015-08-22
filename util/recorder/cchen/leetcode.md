@@ -64,3 +64,13 @@
 
     14.1 Do it again by using the __NON-TRIVIAL__ method
 
+15. [__209__] [Minimum Size Subarray Sum] (https://leetcode.com/problems/minimum-size-subarray-sum/)
+
+    15.1 Implement the __O(n log n)__ method
+    
+    15.2 Take a look at the [link] (http://www.cnblogs.com/grandyang/p/4501934.html)
+    
+16. [__221__] [Maximal Square] (https://leetcode.com/problems/maximal-square/)
+
+    16.1 Optmize the __brute force__ method
+17. 
