@@ -1,6 +1,6 @@
 1. [__235__] [Lowest Common Ancestor of a Binary Search Tree] (https://leetcode.com/submissions/detail/34950147/)
 
-   1.1 No complete consideration of details
+   1.1 No complete consideration for details
    
 2. [__003__] [Longest Substring Without Repeating Characters] (https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
