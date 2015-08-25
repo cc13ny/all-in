@@ -73,4 +73,8 @@
 16. [__221__] [Maximal Square] (https://leetcode.com/problems/maximal-square/)
 
     16.1 Optmize the __brute force__ method
-17. 
+    
+17. [__128__] [Longest Consecutive Sequence] (https://leetcode.com/problems/longest-consecutive-sequence/)
+
+    17.1 Is it possible in O(n) time complexity with O(1) extra space or even in-place?
+18. 
