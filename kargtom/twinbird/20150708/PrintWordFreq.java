@@ -49,9 +49,8 @@ public class PrintWordFreq {
 	        int ndots = linelen - wordlen - freqlen;
 	        
 	        String dots = "";
-	        for(int i = 0; i < ndots; i++) {
+	        for(int i = 0; i < ndots; i++)
 	        	dots += ".";
-	        }
 	        System.out.println(word + dots + freq);
 	    }
 	}
