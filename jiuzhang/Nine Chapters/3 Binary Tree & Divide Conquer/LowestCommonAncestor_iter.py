@@ -5,7 +5,6 @@ class TreeNode:
         self.val = val
         self.left, self.right = None, None
 """
-import copy
 class Solution:
     """
     @param root: The root of the binary search tree.
