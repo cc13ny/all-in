@@ -13,9 +13,7 @@ class Solution:
     """ 
     def lowestCommonAncestor(self, root, A, B):
         # write your code here
-        dumpy = TreeNode(0)
-        dumpy.left = root
-        stack = [dumpy]
+        stack = [root]
 
         candicate, ancestor, ancestor_id = None, None, 0
 
