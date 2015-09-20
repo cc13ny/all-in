@@ -1,39 +1,21 @@
-class Solution:
-    # @param obstacleGrid, a list of lists of integers
-    # @return an integer
+class Solution(object):
     def uniquePathsWithObstacles(self, obstacleGrid):
-        if obstacleGrid[0][0] == 1:
-            return 0
-        m = len(obstacleGrid)
-        n = len(obstacleGrid[0])
+        """
+        :type obstacleGrid: List[List[int]]
+        :rtype: int
+        """
+        m, n = len(obstacleGrid), len(obstacleGrid[0])
+        grid = [[1 for j in range(n)] for i in range(m)]
+        grid[0][0] = 0 if obstacleGrid[0][0] == 1 else 1
         
-        if m == 1 and n == 1:
-            return 1
-        M = [[0 for x in range(n)] for x in range(m)] 
-        
-        flag1 = False
         for i in range(1, m):
-            if flag1:
-                M[i][0] = 0
-            else:
-                M[i][0] = 1
-                if obstacleGrid[i][0] == 1:
-                    M[i][0] = 0
-                    flag1 = True
+            grid[i][0] = 0 if obstacleGrid[i][0] == 1 else grid[i - 1][0]
         
-        flag2 = False
-        for i in range(1, n):
-            if flag2:
-                M[0][i] = 0
-            else:
-                M[0][i] = 1
-                if obstacleGrid[0][i] == 1:
-                    M[0][i] = 0
-                    flag2 = True
-        
+        for j in range(1, n):
+            grid[0][j] = 0 if obstacleGrid[0][j] == 1 else grid[0][j - 1]
+
         for i in range(1, m):
             for j in range(1, n):
-                if obstacleGrid[i][j] != 1:
-                    M[i][j] = M[i - 1][j] + M[i][j-1]
-                
-        return M[m-1][n-1]
+                grid[i][j] = 0 if obstacleGrid[i][j] == 1 else grid[i][j - 1] + grid[i - 1][j]
+            
+        return grid[m - 1][n - 1]
