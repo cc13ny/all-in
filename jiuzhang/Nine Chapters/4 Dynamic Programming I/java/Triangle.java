@@ -21,6 +21,7 @@ public class Solution {
             }
             prelvl = lvl;
         }
+        
         int endlen = triangle.size();
         ArrayList<Integer> lastlvl = triangle.get(endlen - 1);
         int res = lastlvl.get(0);
@@ -29,6 +30,7 @@ public class Solution {
                 res = lastlvl.get(k);
             }
         }
+        
         return res;
     }
 }
