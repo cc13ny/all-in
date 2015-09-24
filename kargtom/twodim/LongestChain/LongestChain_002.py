@@ -1,7 +1,5 @@
 def longestChain(words):
-    lendict = {}
-    lenlist = []
-
+    lendict, lenlist = {}, []
     # build the dictory where
     # the key is the length of a word,
     # and the value is the set of words with the length
@@ -13,8 +11,8 @@ def longestChain(words):
             lendict[l] = {word : -1}
             lenlist.append(l)
     lenlist.sort()
-    if len(lenlist) == 1:
-        return 1
+    if len(lenlist) < 2:
+        return 1en(lenlist)
     
     maxsize = 1
     maxpossible = len(lenlist)
@@ -35,11 +33,7 @@ def longestChain(words):
     return maxsize
 
 def lc(l, word, lendict):
-    if l not in lendict:
-        return lendict
-    if word not in lendict[l]:
-        return lendict
-    if lendict[l][word] != -1:
+    if (l not in lendict) and (word not in lendict[l]) and (lendict[l][word] != -1):
         return lendict
     
     if l - 1 not in lendict:
