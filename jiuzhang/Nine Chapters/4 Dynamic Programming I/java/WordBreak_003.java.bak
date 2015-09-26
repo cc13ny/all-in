@@ -41,7 +41,7 @@ public class Solution {
             }
         }
         
-        boolean[] isVisited = new boolean[s.length()];
+        int[] ladder = new int[s.length()];
     
         while (! cand.isEmpty()) {
             HashSet<Integer> newcand = new HashSet<Integer>();
@@ -52,15 +52,18 @@ public class Solution {
                     if (idx > s.length() - 1) {
                         break;
                     } else {
-                        String word = s.substring(c + 1, idx + 1);
-                        if ((! isVisited[idx]) && (lendict.get(l).contains(word))) {
-                            newcand.add(idx);
-                            isVisited[idx] = true;
-                            if (idx == s.length() - 1) {
-                                return true;
+                        if ((!cand.contains(idx)) && (!newcand.contains(idx))) {
+                            String word = s.substring(c + 1, idx + 1);
+                            if ((lendict.get(l).contains(word)) && (ladder[idx] != 1)) {
+                                newcand.add(idx);
+                                ladder[idx] = 1;
+                                if (idx == s.length() - 1) {
+                                    return true;
+                                }
+                                    
+                                
                             }
                         }
-                        
                     }
                 }
             }

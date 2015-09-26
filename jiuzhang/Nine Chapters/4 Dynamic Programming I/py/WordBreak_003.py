@@ -11,7 +11,6 @@ class Solution:
         # write your code here
         if s == '' and dict == {}:
             return True
-        
         lendict, lenlist = {}, []
         for word in dict:
             l = len(word)
@@ -31,8 +30,8 @@ class Solution:
             else:
                 break
 
-        ladder = [0] * len(s)
-    
+        notVisited = [True] * len(s)
+
         while len(cand) != 0:
             newcand = set()
             for c in cand:
@@ -41,13 +40,12 @@ class Solution:
                     if idx > len(s) - 1:
                         break
                     else:
-                        if idx not in cand and idx not in newcand:
-                            word = s[c + 1: idx + 1]
-                            if word in lendict[l] and ladder[idx] != 1:
-                                newcand.add(idx)
-                                ladder[idx] = 1
-                                if idx == len(s) - 1:
-                                    return True
+                        word = s[c + 1: idx + 1]
+                        if notVisited[idx] and word in lendict[l]:
+                            newcand.add(idx)
+                            notVisited[idx] = False
+                            if idx == len(s) - 1:
+                                return True
             cand = newcand
-            
+
         return False
