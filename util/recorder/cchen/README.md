@@ -12,7 +12,7 @@
    
 3. [__004__] [Median of Two Sorted Array] (https://leetcode.com/problems/median-of-two-sorted-arrays/)
 
-   3.1 Do it again
+   ~~3.1 Do it again~~
    
    3.2 Figure out your own solution
    
