@@ -96,7 +96,7 @@
 
 2. Make sure the correctness of [WordBreak](https://github.com/Chasego/codway/blob/master/jiuzhang/Nine%20Chapters/4%20Dynamic%20Programming%20I/py/WordBreak_003.py)
 
-# Generalization
+# GENERALIZATION
 
 1. DP I (NineChap Ladder 4)
 
