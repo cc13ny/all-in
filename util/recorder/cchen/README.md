@@ -102,7 +102,7 @@
 
    [PalindromePartitioningII] (https://github.com/Chasego/codway/blob/master/jiuzhang/Nine%20Chapters/4%20Dynamic%20Programming%20I/py/PalindromePartitioningII.py)
    
-   Py: When cand/ newcand is changed from __SET to LIST__, it's TLE in 25th case. I need to __OPTIMIZE__ the code!!!
+   __Py__: When cand/ newcand is changed from __SET to LIST__, it's TLE in 25th case. I need to __OPTIMIZE__ the code!!!
 
 
 # GENERALIZATION
