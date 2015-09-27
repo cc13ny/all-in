@@ -1,6 +1,5 @@
 # Think about how to improved based on this basis
 
-
 def mincoin(coins, target):
     coins.sort()
     cnt = target
