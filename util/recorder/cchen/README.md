@@ -94,7 +94,7 @@
 
 1. it's time-consuming to calculate the hash of a long string 
 
-2. Make sure the correctness of [WordBreak](https://github.com/Chasego/codway/blob/master/jiuzhang/Nine%20Chapters/4%20Dynamic%20Programming%20I/py/WordBreak_003.py)
+2. Make sure the correctness of [MinCoinNum](https://github.com/Chasego/codway/blob/master/kargtom/yesplease/onsite2/MinCoinNum_swirl_streaming.py)
 
 # GENERALIZATION
 
