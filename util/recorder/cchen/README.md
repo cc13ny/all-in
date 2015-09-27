@@ -96,6 +96,8 @@
 
 2. Make sure the correctness of [MinCoinNum](https://github.com/Chasego/codway/blob/master/kargtom/yesplease/onsite2/MinCoinNum_swirl_streaming.py)
 
+3. Set in Python is not sorted
+
 # GENERALIZATION
 
 1. DP I (NineChap Ladder 4)
