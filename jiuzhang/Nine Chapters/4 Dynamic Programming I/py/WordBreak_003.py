@@ -3,7 +3,6 @@
 # O(n^2), same speed on leetcode tests as 002
 # {Leetcode: AC, Lintcode : AC}
 
-
 class Solution:
     # @param s: A string s
     # @param dict: A dictionary of words dict
@@ -20,20 +19,20 @@ class Solution:
                 lendict[l] = set([word])
                 lenlist.append(l)
         lenlist.sort()
-        cand = set()
+        cand = []
         for l in lenlist:
             if l <= len(s):
                 if s[:l] in lendict[l]:
                     if l == len(s):
                         return True
-                    cand.add(l - 1)
+                    cand.append(l - 1)
             else:
                 break
 
         notVisited = [True] * len(s)
 
         while len(cand) != 0:
-            newcand = set()
+            newcand = []
             for c in cand:
                 for l in lenlist:
                     idx = c + l
@@ -42,7 +41,7 @@ class Solution:
                     else:
                         word = s[c + 1: idx + 1]
                         if notVisited[idx] and word in lendict[l]:
-                            newcand.add(idx)
+                            newcand.append(idx)
                             notVisited[idx] = False
                             if idx == len(s) - 1:
                                 return True

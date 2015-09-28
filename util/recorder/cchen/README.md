@@ -12,7 +12,7 @@
    
 3. [__004__] [Median of Two Sorted Array] (https://leetcode.com/problems/median-of-two-sorted-arrays/)
 
-   3.1 Do it again
+   ~~3.1 Do it again~~
    
    3.2 Figure out your own solution
    
@@ -94,9 +94,18 @@
 
 1. it's time-consuming to calculate the hash of a long string 
 
-2. Make sure the correctness of [WordBreak](https://github.com/Chasego/codway/blob/master/jiuzhang/Nine%20Chapters/4%20Dynamic%20Programming%20I/py/WordBreak_003.py)
+2. Make sure the correctness of [MinCoinNum](https://github.com/Chasego/codway/blob/master/kargtom/yesplease/onsite2/MinCoinNum_swirl_streaming.py)
 
-# Generalization
+3. Set in Python is not sorted
+
+4. __INTERESTING__
+
+   [PalindromePartitioningII] (https://github.com/Chasego/codway/blob/master/jiuzhang/Nine%20Chapters/4%20Dynamic%20Programming%20I/py/PalindromePartitioningII.py)
+   
+   __Py__: When cand/ newcand is changed from __SET to LIST__, it's TLE in 25th case. I need to __OPTIMIZE__ the code!!!
+
+
+# GENERALIZATION
 
 1. DP I (NineChap Ladder 4)
 

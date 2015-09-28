@@ -1,3 +1,5 @@
+// To fix: cand & newcand [from Set -> ArrayList]
+
 public class Solution {
     /**
      * @param s: A string s
