@@ -90,6 +90,14 @@
 
     17.1 Is it possible in O(n) time complexity with O(1) extra space or even in-place?
 
+18. [__51__] [N Queens] (https://leetcode.com/problems/n-queens/)
+
+    18.1 More Optimization
+    
+19. [__52__] [N Queens II] (https://leetcode.com/problems/n-queens-ii/)
+  
+    19.1 Simpler and Not-based on N Queens
+
 # LINTCODE
 
 1. Finish Search a 2D Matrix II
