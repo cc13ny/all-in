@@ -1,3 +1,13 @@
+# TTRAINING
+
+1. Whiteboard
+
+2. Speeking / Phone
+
+3. Time-Limited
+
+4. Leetcode 100% Challenge
+
 # LEETCODE
 
 1. [__235__] [Lowest Common Ancestor of a Binary Search Tree] (https://leetcode.com/submissions/detail/34950147/)
@@ -79,6 +89,14 @@
 17. [__128__] [Longest Consecutive Sequence] (https://leetcode.com/problems/longest-consecutive-sequence/)
 
     17.1 Is it possible in O(n) time complexity with O(1) extra space or even in-place?
+
+18. [__51__] [N Queens] (https://leetcode.com/problems/n-queens/)
+
+    18.1 More Optimization
+    
+19. [__52__] [N Queens II] (https://leetcode.com/problems/n-queens-ii/)
+  
+    19.1 Simpler and __Not-based on N Queens__
 
 # LINTCODE
 
