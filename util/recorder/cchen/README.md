@@ -96,7 +96,7 @@
     
 19. [__52__] [N Queens II] (https://leetcode.com/problems/n-queens-ii/)
   
-    19.1 Simpler and Not-based on N Queens
+    19.1 Simpler and __Not-based on N Queens__
 
 # LINTCODE
 
