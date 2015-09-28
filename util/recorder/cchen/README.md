@@ -1,4 +1,43 @@
-# TTRAINING
+# RECENT PLANS {ddl : 2015/09/30}
+
+1. __DROPBOX__: http://www.jiuzhang.com/interview/52/
+
+2. __FACEBOOK__: 
+
+   2.1 http://www.jiuzhang.com/interview/48/4
+   
+   2.2 http://www.jiuzhang.com/interview/45/
+   
+   2.3 http://www.jiuzhang.com/interview/24/
+
+3. __GOOGLE__:
+
+   3.1 http://www.jiuzhang.com/interview/40/
+   
+   3.2 http://www.jiuzhang.com/interview/25/
+
+4. __BLOOMBERG__:
+
+   4.1 http://www.jiuzhang.com/interview/36/
+
+5. __TWITTER__:
+   
+   5.1 http://www.jiuzhang.com/interview/38/
+
+6. __LINKEDIN__:
+
+   6.1 http://www.jiuzhang.com/interview/35/
+
+7. __AIRBNB__:
+  
+   7.1 http://www.jiuzhang.com/interview/33/
+
+8. __FLAG EVERYTHING__: http://www.jiuzhang.com/interview/42/
+
+9. __Prefix Tree / Red Black Tree__
+
+
+# TRAINING
 
 1. Whiteboard
 
