@@ -15,6 +15,8 @@
    3.1 http://www.jiuzhang.com/interview/40/
    
    3.2 http://www.jiuzhang.com/interview/25/
+   
+   3.3 http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=142465&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26sortid%3D311
 
 4. __BLOOMBERG__:
 
