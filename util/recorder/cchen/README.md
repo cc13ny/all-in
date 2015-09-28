@@ -1,3 +1,13 @@
+# Training
+
+1. Whiteboard
+
+2. Speeking / Phone
+
+3. Time-Limited
+
+4. Leetcode 100% Challenge
+
 # LEETCODE
 
 1. [__235__] [Lowest Common Ancestor of a Binary Search Tree] (https://leetcode.com/submissions/detail/34950147/)
