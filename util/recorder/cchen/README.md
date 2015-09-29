@@ -46,6 +46,10 @@
 
     10.1 [Question1] (http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=138430&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26sortid%3D311)
 
+11. __FACTSET__
+
+    11.1 [Question1] (http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=140141&extra=page%3D3%26filter%3Dsortid%26sortid%3D311%26sortid%3D311)
+
 # TRAINING
 
 1. Whiteboard
