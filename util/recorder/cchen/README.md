@@ -185,7 +185,10 @@
    __Py__: When cand/ newcand is changed from __SET to LIST__, it's TLE in 25th case. I need to __OPTIMIZE__ the code!!!
 
 5. Finish __LongestChain_003__ by removing the visited words
+   
+   5.1 Make it __PERFECT__ !!!
 
+6. Redo __WordLadder__
 
 # GENERALIZATION
 
