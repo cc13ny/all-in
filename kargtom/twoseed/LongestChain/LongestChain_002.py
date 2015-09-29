@@ -1,3 +1,5 @@
+# Bugs to be fixed. See the 2nd testcase
+
 def longestChain(words):
     lendict, lenlist = {}, []
     # build the dictory where
@@ -12,7 +14,7 @@ def longestChain(words):
             lenlist.append(l)
     lenlist.sort()
     if len(lenlist) < 2:
-        return 1en(lenlist)
+        return len(lenlist)
     
     maxsize = 1
     maxpossible = len(lenlist)
@@ -29,7 +31,7 @@ def longestChain(words):
         #maxpossible -= 1
         #if maxsize >= maxpossible:
         #    break
-    print lendict
+    #print lendict
     return maxsize
 
 def lc(l, word, lendict):
@@ -49,7 +51,7 @@ def lc(l, word, lendict):
             if tmpsize > maxsize:
                 maxsize = tmpsize
     lendict[l][word] = maxsize
-    print lendict
+    #print lendict
     return lendict
     
 words = ['a', 'abcd', 'bcd', 'abd', 'cd', 'c']
