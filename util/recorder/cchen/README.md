@@ -5,6 +5,10 @@
    0.1 http://www.1point3acres.com/bbs/forum.php?mod=collection&action=view&ctid=209
    
    0.2 [Question 1] (http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=140695&extra=page%3D3%26filter%3Dsortid%26sortid%3D311%26sortid%3D311)
+   
+   0.3 [Question 2] (http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=126817&ctid=209)
+   
+   0.4 [Question 3] (http://www.mitbbs.com/article_t/JobHunting/32931597.html)
 
 1. __DROPBOX__: http://www.jiuzhang.com/interview/52/
 
@@ -180,6 +184,11 @@
    
    __Py__: When cand/ newcand is changed from __SET to LIST__, it's TLE in 25th case. I need to __OPTIMIZE__ the code!!!
 
+5. Finish __LongestChain_003__ by removing the visited words
+   
+   5.1 Make it __PERFECT__ !!!
+
+6. Redo __WordLadder__
 
 # GENERALIZATION
 
