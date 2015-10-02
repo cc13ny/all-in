@@ -1,2 +1,2 @@
 # codirit
-![logo](http://www.weimeixi.com/uploads/allimg/140729/150P613c-0.jpg)
+![logo](https://github.com/Chasego/nil/blob/master/res/img/serenity.jpg  =516x140)
