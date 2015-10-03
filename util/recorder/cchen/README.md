@@ -1,3 +1,5 @@
+# [God is our shepherd]
+
 # RECENT PLANS
 
 0. __ZENEFITS__: 
@@ -63,6 +65,8 @@
 12. __LRU__
 
 13. Nine Chapter Ladder
+
+14. Classify and Generalize
 
 # Must Do
 
