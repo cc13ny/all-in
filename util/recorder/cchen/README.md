@@ -60,6 +60,12 @@
 
     11.1 [Question1] (http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=140141&extra=page%3D3%26filter%3Dsortid%26sortid%3D311%26sortid%3D311)
 
+# Must Do
+
+1. Add Comments for All Codes
+
+2. Write Coding Reports on Blog
+
 # TRAINING
 
 1. Whiteboard
