@@ -64,7 +64,7 @@
     
 12. Kattis, Hackrrank
 
-13. __LRU__
+13. __LRU__, __Trie Tree__
 
 14. Nine Chapter Ladder
 
