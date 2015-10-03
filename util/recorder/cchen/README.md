@@ -1,4 +1,4 @@
-# RECENT PLANS {exteneded ddl : 2015/10/02}
+# RECENT PLANS
 
 0. __ZENEFITS__: 
 
@@ -59,6 +59,10 @@
 11. __FACTSET__
 
     11.1 [Question1] (http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=140141&extra=page%3D3%26filter%3Dsortid%26sortid%3D311%26sortid%3D311)
+
+12. __LRU__
+
+13. Nine Chapter Ladder
 
 # Must Do
 
