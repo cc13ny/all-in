@@ -61,12 +61,14 @@
 11. __FACTSET__
 
     11.1 [Question1] (http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=140141&extra=page%3D3%26filter%3Dsortid%26sortid%3D311%26sortid%3D311)
+    
+12. Kattis, Hackrrank
 
-12. __LRU__
+13. __LRU__, __Trie Tree__
 
-13. Nine Chapter Ladder
+14. Nine Chapter Ladder
 
-14. Classify and Generalize
+15. Classify and Generalize
 
 # Must Do
 
