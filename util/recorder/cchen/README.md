@@ -72,9 +72,9 @@
 
 # Must Do
 
-1. Add Comments for All Codes
+1. Add __Comments__ for All Codes
 
-2. Write Coding Reports on Blog
+2. Write __Coding Reports__ on Blog
 
 # TRAINING
 
