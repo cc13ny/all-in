@@ -1,5 +1,9 @@
 # [God is our shepherd]
 
+# 20151008
+
+1. [Do it again] Search for a Range
+
 # RECENT PLANS
 
 0. __ZENEFITS__: 
