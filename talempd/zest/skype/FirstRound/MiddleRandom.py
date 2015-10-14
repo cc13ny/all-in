@@ -14,11 +14,17 @@ def randomized(word):
         return word
 
     mid = range(1, len(word) - 1)
-    pre = mid[:]
-    while pre == mid:
+    while True:
         pre = mid[:]
         shuffle(mid)
-        
+        isdiff = False
+        for j in range(len(mid)):
+            if word[pre[j]] != word[mid[j]]:
+                isdiff = True
+                break
+        if isdiff:
+            break
+  
     newword = word[0]
     for i in mid:
         newword += word[i]
@@ -26,10 +32,15 @@ def randomized(word):
     
     return newword
 
-tests = []
-tests.append("I love you so much")
-tests.append("A fox runs so fast so it has to die in a extremely way")
-tests.append("A")
-for test in tests:
-    print midrand(test)
- 
+def main():
+    tests = []
+    tests.append("A")
+    tests.append("I eat apple")
+    tests.append("A fox runs so fast that it suddenly die")
+    for test in tests:
+        print test
+        print midrand(test)
+        print
+
+if __name__ == "__main__":
+    main()
