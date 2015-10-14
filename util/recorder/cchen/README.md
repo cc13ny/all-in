@@ -6,7 +6,7 @@
 
 # RECENT PLANS
 
-1. Challenge problems with lots of __CORNER CASES__
+1. Challenge problems with lots of __CORNER CASES / EDGE CASES__
 
 0. __ZENEFITS__: 
 
