@@ -6,6 +6,8 @@
 
 # RECENT PLANS
 
+1. Challenge problems with lots of __CORNER CASES / EDGE CASES__
+
 0. __ZENEFITS__: 
 
    0.1 http://www.1point3acres.com/bbs/forum.php?mod=collection&action=view&ctid=209
