@@ -86,6 +86,14 @@
 
 20. Prepare details for Project Description
 
+21. Refresh Leetcode & Lintcode __One More Time__
+
+22. Think about non-recursive solution & take a look at my previous non-rec [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
+
+23. List & Array Problems (Leetcode/ Lintcode)
+
+24. Subarray/ Stockprice
+
 # Must Do
 
 1. Add __Comments__ for All Codes
