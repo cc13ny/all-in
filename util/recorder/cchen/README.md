@@ -76,6 +76,16 @@
 
 15. Classify and Generalize
 
+16. Lintcode: [Building Outline] (http://www.lintcode.com/en/problem/building-outline/)
+
+17. __Dynamic Programming___
+
+18. Lintcode: [Inorder Successor in Binary Search Tree](http://www.lintcode.com/en/problem/inorder-successor-in-binary-search-tree/
+
+19. [KO Big Data Questions] (http://blog.csdn.net/v_july_v/article/details/7382693#t4)
+
+20. Prepare details for Project Description
+
 # Must Do
 
 1. Add __Comments__ for All Codes
