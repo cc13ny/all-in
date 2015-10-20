@@ -33,13 +33,11 @@ public class Solution {
         ls.add("Y");
         
         while(n > 0){
-            int reminder = n%26;
- 
+            int reminder = n % 26;
             s = ls.get(reminder) + s;
             if(reminder == 0){
                 reminder = 26;
             }
-        
             n = (n - reminder)/26;
         }
         
