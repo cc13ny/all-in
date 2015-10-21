@@ -19,6 +19,10 @@
    0.4 [Question 3] (http://www.mitbbs.com/article_t/JobHunting/32931597.html)
    
    0.5 [Question 4] (http://www.1point3acres.com/bbs/thread-144995-1-1.html)
+   
+   0.6 Design Youtube (Adaptive Streaming System like youtube)
+   
+   0.7 Design Cache
 
 1. __DROPBOX__: http://www.jiuzhang.com/interview/52/
 
