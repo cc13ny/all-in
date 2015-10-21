@@ -94,6 +94,20 @@
 
 24. Subarray/ Stockprice
 
+25. [The Art of Programming] (http://blog.csdn.net/v_july_v/article/details/6879101)
+
+26. [Red & Black Tree] (http://blog.csdn.net/v_july_v/article/category/774945)
+
+27. [Details of Algorithms of Hashtable] (http://blog.csdn.net/v_JULY_v/article/details/6256463)
+
+28. [Usage of STL Hashmap] (http://blog.csdn.net/sdhongjun/article/details/4517325)
+
+29. [Usage of Hashset] (http://blog.csdn.net/morewindows/article/details/7330323)
+
+30. [Kth Largest Element] (http://www.lintcode.com/en/problem/kth-largest-element/)
+
+31. Backpack Problem
+
 # Must Do
 
 1. Add __Comments__ for All Codes
