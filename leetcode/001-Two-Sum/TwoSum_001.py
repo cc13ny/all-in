@@ -7,5 +7,5 @@ class Solution:
         dict = {}
         for i in range(len(nums)):
             if target - nums[i] in dict:
-                return [dict[target - nums[i]] + 1, i+1]
+                return [dict[target - nums[i]] + 1, i + 1]
             dict[nums[i]] = i
