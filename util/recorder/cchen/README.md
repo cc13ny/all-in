@@ -112,6 +112,18 @@
 
 33. http://www.cnblogs.com/grandyang/
 
+34. [Bloomfilter](https://en.wikipedia.org/wiki/Bloom_filter)
+
+35. [Bitmap](https://en.wikipedia.org/wiki/Bitmap)
+
+36. [Trie](https://en.wikipedia.org/wiki/Trie)
+
+37. [Inverted Index](https://en.wikipedia.org/wiki/Inverted_index)
+
+38. [Read-Black Tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
+
+39. [Linear Heap Building Time](http://stackoverflow.com/questions/9755721/how-can-building-a-heap-be-on-time-complexity)
+
 # Must Do
 
 1. Add __Comments__ for All Codes
