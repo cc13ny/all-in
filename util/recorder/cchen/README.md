@@ -108,6 +108,10 @@
 
 31. Backpack Problem
 
+32. https://github.com/algorhythms/LeetCode
+
+33. http://www.cnblogs.com/grandyang/
+
 # Must Do
 
 1. Add __Comments__ for All Codes
