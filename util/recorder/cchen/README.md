@@ -108,9 +108,13 @@
 
 31. Backpack Problem
 
-32. https://github.com/algorhythms/LeetCode
+32. __Review 1: Leetcode__
 
-33. http://www.cnblogs.com/grandyang/
+    32.1 https://github.com/algorhythms/LeetCode
+
+    32.2 http://www.cnblogs.com/grandyang/
+    
+    32.3 https://github.com/Chasego/codirit/tree/master/leetcode
 
 34. [Bloomfilter](https://en.wikipedia.org/wiki/Bloom_filter)
 
