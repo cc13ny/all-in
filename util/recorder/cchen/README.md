@@ -134,6 +134,10 @@
 
 39. [Linear Heap Building Time](http://stackoverflow.com/questions/9755721/how-can-building-a-heap-be-on-time-complexity)
 
+40. Jiuzhang Advanced
+
+41. Jiuzhang System Design
+
 # Must Do
 
 1. Add __Comments__ for All Codes
