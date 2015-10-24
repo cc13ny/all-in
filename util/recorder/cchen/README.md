@@ -23,7 +23,9 @@
    0.6 Design Youtube (Adaptive Streaming System like youtube)
    
    0.7 Design Cache
-
+   
+   0.8 http://www.jiuzhang.com/qa/221/
+   
 1. __DROPBOX__: http://www.jiuzhang.com/interview/52/
 
 2. __FACEBOOK__: 
