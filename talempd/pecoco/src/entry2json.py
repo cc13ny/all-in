@@ -315,6 +315,3 @@ if __name__ == "__main__":
     print 'Please input the absoulte path of the input file'
     fname = raw_input()
     cvt.ent2json(fname)
-    
-    
-

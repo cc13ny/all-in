@@ -21,12 +21,15 @@ The structure of the file & folder organization is as follows.
 # Run
 Firstly, you need to enter the directory of the src code. Otherwise, you should run 'python <absoult_path_src>' where <absoult_path_src> is the absoulte path of the src code.
 + Test Code
-  >python test_ent2json.py
+  > python test_ent2json.py
+
   Then the test results will be showned on the console.
 
 + Parse input files into JSON output files (on command line)
   > python entry2json.py
+
   > Please input the absoulte path of the input file
+  
   > ../data/data.in
 
   Then you can find the output file 'data.out' in the same directory of 'data.in'.
