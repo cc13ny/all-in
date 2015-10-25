@@ -114,7 +114,7 @@
 
 30. [Kth Largest Element] (http://www.lintcode.com/en/problem/kth-largest-element/)
 
-31. Backpack Problem
+31. [Backpack Problem](http://love-oriented.com/pack/)
 
 32. __Review 1: Leetcode__
 
