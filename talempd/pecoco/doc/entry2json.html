@@ -1,0 +1,194 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module entry2json</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>entry2json</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///C:/users/cchen/documents/github/chasego/cod/talempd/pecoco/src/entry2json.py">c:\users\cchen\documents\github\chasego\cod\talempd\pecoco\src\entry2json.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;module&nbsp;is&nbsp;used&nbsp;to&nbsp;parse&nbsp;entries&nbsp;of&nbsp;personal&nbsp;information&nbsp;and&nbsp;write&nbsp;them&nbsp;as&nbsp;the&nbsp;formatted&nbsp;&amp;&nbsp;valid&nbsp;JSON&nbsp;into&nbsp;an&nbsp;output&nbsp;file.&nbsp;Please&nbsp;check&nbsp;details&nbsp;of&nbsp;requirments&nbsp;from&nbsp;'rolodex_instructions.pdf'&nbsp;in&nbsp;the&nbsp;root&nbsp;directory&nbsp;of&nbsp;this&nbsp;project.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="entry2json.html#Converter">Converter</a>
+</font></dt><dt><font face="helvetica, arial"><a href="entry2json.html#Factory">Factory</a>
+</font></dt><dt><font face="helvetica, arial"><a href="entry2json.html#Normalizer">Normalizer</a>
+</font></dt><dt><font face="helvetica, arial"><a href="entry2json.html#Validation">Validation</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Converter">class <strong>Converter</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Converter-__init__"><strong>__init__</strong></a>(self, validation, normalizer)</dt><dd><tt>Construct&nbsp;a&nbsp;new&nbsp;'<a href="#Converter">Converter</a>'&nbsp;object<br>
+&nbsp;<br>
+:param&nbsp;validation:&nbsp;Instance&nbsp;of&nbsp;<a href="#Validation">Validation</a>&nbsp;Object<br>
+:param&nbsp;normalizer:&nbsp;Instance&nbsp;of&nbsp;<a href="#Normalizer">Normalizer</a>&nbsp;Object<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+:attr&nbsp;vld:&nbsp;Instance&nbsp;of&nbsp;<a href="#Validation">Validation</a>&nbsp;Object<br>
+:attr&nbsp;nlz:&nbsp;Instance&nbsp;of&nbsp;<a href="#Normalizer">Normalizer</a>&nbsp;Object<br>
+&nbsp;<br>
+:return:&nbsp;nothing</tt></dd></dl>
+
+<dl><dt><a name="Converter-ent2json"><strong>ent2json</strong></a>(self, fname)</dt><dd><tt>Parse&nbsp;each&nbsp;line&nbsp;/&nbsp;entry&nbsp;of&nbsp;personal&nbsp;information&nbsp;from&nbsp;an&nbsp;input&nbsp;file,&nbsp;and&nbsp;write&nbsp;them&nbsp;as&nbsp;the&nbsp;formatted&nbsp;&amp;&nbsp;valid&nbsp;JSON&nbsp;into&nbsp;an&nbsp;output&nbsp;file.<br>
+&nbsp;<br>
+:param&nbsp;fname:&nbsp;the&nbsp;absolute&nbsp;or&nbsp;relative&nbsp;path&nbsp;of&nbsp;input&nbsp;file<br>
+&nbsp;<br>
+:return:&nbsp;nothing</tt></dd></dl>
+
+<dl><dt><a name="Converter-process"><strong>process</strong></a>(self, line)</dt><dd><tt>Process&nbsp;each&nbsp;row/&nbsp;line/&nbsp;entry&nbsp;of&nbsp;the&nbsp;input&nbsp;file.&nbsp;There're&nbsp;6&nbsp;steps&nbsp;for&nbsp;processing&nbsp;where&nbsp;some&nbsp;are&nbsp;missed&nbsp;if&nbsp;the&nbsp;line&nbsp;is&nbsp;invalid.<br>
+&nbsp;<br>
+1.&nbsp;Check&nbsp;the&nbsp;number&nbsp;of&nbsp;elements&nbsp;is&nbsp;valid.&nbsp;It's&nbsp;valid&nbsp;if&nbsp;the&nbsp;number&nbsp;is&nbsp;4&nbsp;or&nbsp;5.&nbsp;Otherwise,&nbsp;return&nbsp;None.<br>
+&nbsp;<br>
+2.&nbsp;Decide&nbsp;which&nbsp;format&nbsp;it&nbsp;is&nbsp;(one&nbsp;of&nbsp;three&nbsp;formats).&nbsp;It's&nbsp;based&nbsp;on&nbsp;the&nbsp;idx&nbsp;of&nbsp;the&nbsp;phone&nbsp;number.<br>
+&nbsp;<br>
+3.&nbsp;Reorder&nbsp;elements&nbsp;based&nbsp;on&nbsp;the&nbsp;corresponding&nbsp;pattern.<br>
+&nbsp;<br>
+4.&nbsp;Normalize&nbsp;all&nbsp;elements&nbsp;of&nbsp;the&nbsp;orderd&nbsp;&amp;&nbsp;valid&nbsp;entry.<br>
+&nbsp;<br>
+5.&nbsp;Check&nbsp;if&nbsp;the&nbsp;entry&nbsp;is&nbsp;valid.<br>
+&nbsp;<br>
+6.&nbsp;Contruct&nbsp;the&nbsp;mapping.&nbsp;The&nbsp;mapping&nbsp;is&nbsp;an&nbsp;ordered&nbsp;dict&nbsp;with&nbsp;the&nbsp;ordered&nbsp;keys&nbsp;['color',&nbsp;'firstname',&nbsp;'lastname',&nbsp;'phonenumber',&nbsp;'zipcode'],&nbsp;and&nbsp;their&nbsp;corresponding&nbsp;elements&nbsp;from&nbsp;the&nbsp;entry<br>
+&nbsp;<br>
+:param&nbsp;line:&nbsp;a&nbsp;row/&nbsp;line/&nbsp;entry&nbsp;of&nbsp;the&nbsp;input&nbsp;file<br>
+&nbsp;<br>
+:return:&nbsp;None&nbsp;if&nbsp;the&nbsp;line&nbsp;is&nbsp;invalid.&nbsp;Otherwise,&nbsp;the&nbsp;mapping.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Factory">class <strong>Factory</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Factory">Factory</a>&nbsp;is&nbsp;the&nbsp;class&nbsp;as&nbsp;the&nbsp;set&nbsp;of&nbsp;3&nbsp;classes&nbsp;for&nbsp;this&nbsp;task:&nbsp;<a href="#Normalizer">Normalizer</a>,&nbsp;<a href="#Validation">Validation</a>,&nbsp;<a href="#Converter">Converter</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Factory-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Construct&nbsp;a&nbsp;new&nbsp;'<a href="#Factory">Factory</a>'&nbsp;object<br>
+&nbsp;<br>
+:attr&nbsp;vld:&nbsp;Instance&nbsp;of&nbsp;<a href="#Validation">Validation</a>&nbsp;Object<br>
+:attr&nbsp;nlz:&nbsp;Instance&nbsp;of&nbsp;<a href="#Normalizer">Normalizer</a>&nbsp;Object<br>
+:attr&nbsp;cvt:&nbsp;Instance&nbsp;of&nbsp;<a href="#Converter">Converter</a>&nbsp;Object<br>
+&nbsp;<br>
+:return:&nbsp;nothing</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Normalizer">class <strong>Normalizer</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Normalizer-__init__"><strong>__init__</strong></a>(self, validation)</dt><dd><tt>Construct&nbsp;a&nbsp;new&nbsp;'<a href="#Normalizer">Normalizer</a>'&nbsp;object<br>
+&nbsp;<br>
+:param&nbsp;validation:&nbsp;Instance&nbsp;of&nbsp;<a href="#Validation">Validation</a>&nbsp;Object<br>
+&nbsp;<br>
+:attr&nbsp;normfunc:&nbsp;a&nbsp;list&nbsp;of&nbsp;functions&nbsp;of&nbsp;Normalization&nbsp;for&nbsp;different&nbsp;elements&nbsp;of&nbsp;a&nbsp;valid&nbsp;entry<br>
+:attr&nbsp;vld:&nbsp;Instance&nbsp;of&nbsp;<a href="#Validation">Validation</a>&nbsp;Object<br>
+&nbsp;<br>
+:return:&nbsp;nothing</tt></dd></dl>
+
+<dl><dt><a name="Normalizer-normAll"><strong>normAll</strong></a>(self, ord_ent)</dt><dd><tt>Normalize&nbsp;all&nbsp;elements&nbsp;of&nbsp;an&nbsp;entry<br>
+&nbsp;<br>
+:param&nbsp;ord_ents:&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;ordered&nbsp;elements&nbsp;of&nbsp;an&nbsp;entry<br>
+&nbsp;<br>
+:return:&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;normalized&nbsp;&amp;&nbsp;ordered&nbsp;elements&nbsp;of&nbsp;an&nbsp;entry</tt></dd></dl>
+
+<dl><dt><a name="Normalizer-normColor"><strong>normColor</strong></a>(self, color)</dt><dd><tt>Normalize&nbsp;color<br>
+&nbsp;<br>
+:param&nbsp;color:&nbsp;a&nbsp;string&nbsp;for&nbsp;color&nbsp;name<br>
+&nbsp;<br>
+:return:&nbsp;a&nbsp;string&nbsp;without&nbsp;spaces&nbsp;of&nbsp;two&nbsp;ends</tt></dd></dl>
+
+<dl><dt><a name="Normalizer-normName"><strong>normName</strong></a>(self, name)</dt><dd><tt>Normalize&nbsp;name<br>
+&nbsp;<br>
+:param&nbsp;name:&nbsp;a&nbsp;string&nbsp;for&nbsp;person's&nbsp;firstname&nbsp;or&nbsp;lastname<br>
+&nbsp;<br>
+:return:&nbsp;a&nbsp;string&nbsp;without&nbsp;spaces&nbsp;of&nbsp;two&nbsp;ends</tt></dd></dl>
+
+<dl><dt><a name="Normalizer-normPhoneNum"><strong>normPhoneNum</strong></a>(self, num)</dt><dd><tt>Normalize&nbsp;phone&nbsp;number<br>
+&nbsp;<br>
+:param&nbsp;num:&nbsp;a&nbsp;string&nbsp;for&nbsp;phone&nbsp;number<br>
+&nbsp;<br>
+:return:&nbsp;a&nbsp;formatted&nbsp;string&nbsp;like&nbsp;'888-888-8888'&nbsp;if&nbsp;num&nbsp;is&nbsp;valid.&nbsp;Otherwise,&nbsp;''.</tt></dd></dl>
+
+<dl><dt><a name="Normalizer-normZipCode"><strong>normZipCode</strong></a>(self, code)</dt><dd><tt>Normalize&nbsp;zip&nbsp;code<br>
+&nbsp;<br>
+:param&nbsp;code:&nbsp;a&nbsp;string&nbsp;for&nbsp;zip&nbsp;code<br>
+&nbsp;<br>
+:return:&nbsp;a&nbsp;string&nbsp;without&nbsp;spaces</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Validation">class <strong>Validation</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Validation-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Construct&nbsp;a&nbsp;new&nbsp;'<a href="#Validation">Validation</a>'&nbsp;object<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+:attr&nbsp;valfunc:&nbsp;a&nbsp;list&nbsp;of&nbsp;functions&nbsp;of&nbsp;<a href="#Validation">Validation</a>&nbsp;for&nbsp;different&nbsp;elements&nbsp;of&nbsp;an&nbsp;entry<br>
+&nbsp;<br>
+:return:&nbsp;nothing</tt></dd></dl>
+
+<dl><dt><a name="Validation-validAll"><strong>validAll</strong></a>(self, nl_ord_ents)</dt><dd><tt>Validate&nbsp;all&nbsp;elements&nbsp;of&nbsp;an&nbsp;entry<br>
+&nbsp;<br>
+:param&nbsp;nl_ord_ents:&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;normalized&nbsp;&amp;&nbsp;ordered&nbsp;elements&nbsp;of&nbsp;an&nbsp;entry<br>
+&nbsp;<br>
+:return:&nbsp;False&nbsp;if&nbsp;any&nbsp;element&nbsp;is&nbsp;not&nbsp;valid.&nbsp;Otherwise,&nbsp;True</tt></dd></dl>
+
+<dl><dt><a name="Validation-validColor"><strong>validColor</strong></a>(self, color)</dt><dd><tt>Validate&nbsp;color<br>
+&nbsp;<br>
+:param&nbsp;color:&nbsp;a&nbsp;string&nbsp;for&nbsp;color&nbsp;name<br>
+&nbsp;<br>
+:return:&nbsp;True</tt></dd></dl>
+
+<dl><dt><a name="Validation-validName"><strong>validName</strong></a>(self, name)</dt><dd><tt>Validate&nbsp;name<br>
+&nbsp;<br>
+:param&nbsp;name:&nbsp;a&nbsp;string&nbsp;for&nbsp;person's&nbsp;firstname&nbsp;or&nbsp;lastname<br>
+&nbsp;<br>
+:return:&nbsp;False&nbsp;if&nbsp;it&nbsp;contains&nbsp;nothing&nbsp;or&nbsp;any&nbsp;digits.&nbsp;Otherwise,&nbsp;True.</tt></dd></dl>
+
+<dl><dt><a name="Validation-validPhoneNum"><strong>validPhoneNum</strong></a>(self, num)</dt><dd><tt>Validate&nbsp;phone&nbsp;number<br>
+&nbsp;<br>
+:param&nbsp;num:&nbsp;a&nbsp;string&nbsp;for&nbsp;phone&nbsp;number<br>
+&nbsp;<br>
+:return:&nbsp;False&nbsp;if&nbsp;it&nbsp;doesn't&nbsp;contain&nbsp;exactly&nbsp;10&nbsp;digits.&nbsp;Otherwise,&nbsp;True.</tt></dd></dl>
+
+<dl><dt><a name="Validation-validZipCode"><strong>validZipCode</strong></a>(self, code)</dt><dd><tt>Validate&nbsp;zip&nbsp;code<br>
+&nbsp;<br>
+:param&nbsp;code:&nbsp;a&nbsp;string&nbsp;for&nbsp;zip&nbsp;code<br>
+&nbsp;<br>
+:return:&nbsp;False&nbsp;if&nbsp;it&nbsp;is&nbsp;not&nbsp;exactly&nbsp;5&nbsp;consecutive&nbsp;digits.&nbsp;Otherwise,&nbsp;True.</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>ele_names</strong> = ['color', 'firstname', 'lastname', 'phonenumber', 'zipcode']</td></tr></table>
+</body></html>
