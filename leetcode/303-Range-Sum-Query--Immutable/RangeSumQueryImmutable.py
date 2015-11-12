@@ -4,10 +4,10 @@ class NumArray(object):
         initialize your data structure here.
         :type nums: List[int]
         """
-        tmp = nums[:]
-        for i in range(1, len(nums)):
-            tmp[i] += tmp[i - 1]
-        self.ladder = tmp
+        csums = [0] + nums
+        for i in range(len(nums)):
+            csums[i + 1] += csums[i]
+        self.csums = csums
         
 
     def sumRange(self, i, j):
@@ -17,11 +17,10 @@ class NumArray(object):
         :type j: int
         :rtype: int
         """
-        ladder = self.ladder
-        assert -1 < i < len(ladder)
-        assert -1 < j < len(ladder)
-        res = ladder[j] if i == 0 else ladder[j] - ladder[i - 1]
-        return res
+        csums = self.csums
+        assert -1 < i < len(csums)
+        assert -1 < j < len(csums)
+        return csums[j + 1] - csums[i]
         
 # Your NumArray object will be instantiated and called as such:
 # numArray = NumArray(nums)
