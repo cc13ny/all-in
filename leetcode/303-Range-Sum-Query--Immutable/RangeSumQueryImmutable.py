@@ -18,8 +18,7 @@ class NumArray(object):
         :rtype: int
         """
         csums = self.csums
-        assert -1 < i < len(csums)
-        assert -1 < j < len(csums)
+        assert -1 < i < len(csums) and -1 < j < len(csums)
         return csums[j + 1] - csums[i]
         
 # Your NumArray object will be instantiated and called as such:
