@@ -14,15 +14,15 @@ class Solution:
     """ 
     def lowestCommonAncestor(self, root, A, B):
         # write your code here
-        if root is None or root == A or root == B:
+        if not root or root == A or root == B:
             return root
 
         l = self.lowestCommonAncestor(root.left, A, B)
         r = self.lowestCommonAncestor(root.right, A, B)
 
-        if l is not None and r is not None:
+        if l and r:
             return root
-        if l is None:
+        if not l:
             return r
-        if r is None:
+        if not r:
             return l
