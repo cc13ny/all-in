@@ -15,5 +15,5 @@ class Solution:
             if len(a) != 1:
                 break
             else:
-                res+=a.pop()
+                res += a.pop()
         return res
