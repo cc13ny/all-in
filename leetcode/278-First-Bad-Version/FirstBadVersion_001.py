@@ -11,7 +11,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        l, r = 1, n
+        l, r = 1, n # l, r = 0, n - 1 also works
         while l <= r:
             m = (l + r) / 2
             if isBadVersion(m):
