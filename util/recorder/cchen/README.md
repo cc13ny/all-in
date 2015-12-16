@@ -2,7 +2,7 @@
 
 __Redo__ it more than 10 times!!! No more new problems before that!
 
-1. __[279 Perfect Squres]
+1. __[279 Perfect Squres]__
 
    1.1 Finish other methods in http://goo.gl/7Tj28d
    
