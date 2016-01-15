@@ -22,7 +22,7 @@ def bulbSwitch(n):
 002
 ---
 
-It can be short with just one loop.
+It can be short with just one loop. Of course, it doesn't make big changes. Still TLE.
 
 ```py
 def bulbSwitch(n):
