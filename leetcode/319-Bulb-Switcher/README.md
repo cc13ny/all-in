@@ -124,7 +124,12 @@ def bulbSwitch(n):
     return res
 ```
 
-Memory Limit when for example, n = 9999999, then range(9999999) is too big. Then I __found__ from the last codes that 
+Memory Limit when for example, n = 9999999, then range(9999999) is too big. 
+
+005
+---
+
+Then I __found__ from the last codes that 
 
 1. num_of_facs[j - 1] += 2
 2. num_of_facs[i * i - 1] -= 1
@@ -145,4 +150,17 @@ def bulbSwitch(n):
     #    res += num_of_facs[j - 1] % 2
     return int(sqrt(n))
 ```
+
+006
+---
+
+In fact, we can figure out the same conclusion as __005__ by intuition or observations. That is, for _c_, its factors alway come as a pair (_a_, _b_) such that _c = a * b_ except _a = b_. So we can __conclude__ that,
+
+___The number of factors of an integer is odd if and only if this integer is the square of an integr___.
+
+Summary
+---
+
+I can't come up with the last solution by intuition as _006_ did. However, I pretty enjoy my thinking from _001_ to _005_ which show the _dead ends_ or _crcuitous paths_ we oftern go through when we're thinking. But how to jump out of the end? How to change your perspective? All of them are built on your careful _observations_. __Observations__ are the building blocks for analyzing and thinking.
+
 
