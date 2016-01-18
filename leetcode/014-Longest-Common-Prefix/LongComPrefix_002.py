@@ -5,7 +5,7 @@ class Solution:
     # @return {string}
     def longestCommonPrefix(self, strs):
         res = ''
-        if strs == []:
+        if strs:
             return res
             
         lens = [len(s) for s in strs]
