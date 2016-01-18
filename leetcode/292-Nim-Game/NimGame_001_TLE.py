@@ -6,7 +6,7 @@ class Solution(object):
         """
         dp = [False] * 4
         cur = 0
-        for i in range(n):
+        for i in xrange(n):
             dp[-1] = (not dp[0]) or (not dp[1]) or (not dp[2])
             dp[cur] = dp[-1]
             cur = (cur + 1) % 3
