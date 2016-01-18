@@ -2,29 +2,13 @@ class Solution:
     # @param {string[]} strs
     # @return {string}
     def longestCommonPrefix(self, strs):
-        prefix = ''
-        
-        if len(strs) == 0:
-            return prefix
-        if len(strs) == 1:
-            return strs[0]
-        
-        num = len(strs)
-        mi = len(strs[0])
-        
-        for i in xrange(num):
-            if mi > len(strs[i]):
-                mi = len(strs[i])
-        
-        flag = False
+        if not strs:
+            return ""
+
+        mi = len(min(strs, key = lambda s: len(s)))
         for j in xrange(mi):
-            tmp = strs[0][j]
-            for i in xrange(len(strs)):
-                if strs[i][j] != tmp:
-                    flag = True
-                    break
-            if flag:
-                break
-            prefix = prefix + tmp
-        
-        return prefix
+            for i in xrange(1, len(strs)):
+                if strs[i][j] != strs[i - 1][j]:
+                    return strs[i][:j]
+
+        return strs[0][:mi]
