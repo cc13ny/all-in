@@ -7,6 +7,5 @@ class Solution:
         for n in nums:
             if n in tb:
                 return True
-            else:
-                tb.add(n)
+            tb.add(n)
         return False
