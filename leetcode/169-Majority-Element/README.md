@@ -1,5 +1,30 @@
-# Java
+﻿001
+----
 
-+ 001: useless, O(n) by hashtable, and get the one with maximal count
+76ms
 
-+ 002: O(n log n): it may not work if the majority num is bigger than or __equal__ to ⌊ n/2 ⌋. But we have candidates to check at least.
+002
+----
+
+48ms
+
+
+003
+---
+
+52ms
+
+004
+---
+
+92ms
+
+005
+---
+
+96ms
+
+006
+---
+
+60ms
