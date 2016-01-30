@@ -15,7 +15,5 @@ class Solution(object):
             num /= 3
         while not num % 5:
             num /= 5
-        if num == 1:
-            return True
 
-        return False
+        return num == 1

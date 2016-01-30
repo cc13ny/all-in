@@ -1,5 +1,3 @@
-#@author: cchen
-
 class Solution:
     # @param {integer} x
     # @return {boolean}
@@ -7,18 +5,17 @@ class Solution:
         if x < 0:
             return False
         
-        tmp, left, right = x, 1, 1
-        while tmp > 9:
-            tmp /= 10
+        left, right = 10, 1
+        while left <= x:
             left *= 10
+        left /= 10
 
         while right < left:
             l = (x / left) % 10
             r = (x / right) % 10
-            if l == r:
-                left /= 10
-                right *= 10    
-            else:
+            if l != r:
                 return False
-                
+            left /= 10
+            right *= 10    
+        
         return True

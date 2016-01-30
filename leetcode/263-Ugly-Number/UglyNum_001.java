@@ -5,7 +5,7 @@ public class Solution {
         }
         
         while (num % 2 == 0) {
-            num /= 2;
+            num = num >> 1;
         }
         
         while (num % 3 == 0) {
@@ -16,10 +16,6 @@ public class Solution {
             num /= 5;
         }
         
-        if (num == 1) {
-            return true;
-        }
-        
-        return false;
+        return num == 1;
     }
 }
