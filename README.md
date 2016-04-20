@@ -30,3 +30,9 @@
 3. __208__: More Efficient (hints: hashtable replaced by array)
 
 # Distributed
+
+## Question
+
+## Review
+
+1. __343__: [My Answer](https://leetcode.com/discuss/98548/shortest-answer-for-integer-break)
