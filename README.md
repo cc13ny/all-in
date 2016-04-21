@@ -15,6 +15,12 @@
 
 ## Binary Indexed Tree
 
+# Advanced
+
+1. morris-traversal
+2. amp
+3. kmp
+
 # Video Record
 
 ## Leetcode
@@ -31,8 +37,8 @@
 
 # Distributed
 
-## Question
+# Question
 
-## Review
+# Review
 
 1. __343__: [My Answer](https://leetcode.com/discuss/98548/shortest-answer-for-integer-break)
