@@ -1,15 +1,15 @@
-The idea is same as [this one](https://leetcode.com/discuss/98173/o-log-n-time-solution-with-explanation) and [the answer in this one](https://leetcode.com/discuss/98276/why-factor-2-or-3-the-math-behind-this-problem). I just write it with my style in a concise way.
+The idea is same as [this one](https://leetcode.com/discuss/98173/o-log-n-time-solution-with-explanation) and [the answer in this one](https://leetcode.com/discuss/98276/why-factor-2-or-3-the-math-behind-this-problem). I just write it with my style in a concise way. __[Funny thing is that a same [solution](https://leetcode.com/discuss/98300/1-liner-in-ruby-python) has appeared before, the author replied]__
 
-
-    1. class Solution(object):
-    2.   def integerBreak(self, n):
-    3.        if n < 4:
-    4.            return n - 1
-    5.
-    6.        n3 = (n - 2) / 3
-    7.        rem = (n - 2) % 3
-    8.        return (3 ** n3) * (rem + 2)
-
+```python
+1. class Solution(object):
+2.   def integerBreak(self, n):
+3.        if n < 4:
+4.            return n - 1
+5.
+6.        n3 = (n - 2) / 3
+7.        rem = (n - 2) % 3
+8.        return (3 ** n3) * (rem + 2)
+```
 
 The maths behind the solution are __re-described__ here:
 
@@ -27,6 +27,7 @@ For positive integer ___m___, to break it into ___2___ and ___m - 2___ , __won't
 + For 3, to break it into ___3___ and ___m - 3___ , won't decrease the product , if ___3(m - 3) >= m___ , i.e. ___m >= 4.5___
 
 ----------------------------
+
 >  __n2 <=2__ .
 
 ##Proof
