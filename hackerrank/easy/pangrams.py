@@ -1,3 +1,5 @@
+# https://www.hackerrank.com/challenges/pangrams
+
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 import sys
 
