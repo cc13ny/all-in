@@ -20,7 +20,6 @@ class SummaryRanges(object):
         """
         intv = self.intervals
         l, r = 0, len(self.intervals) - 1
-        print val
         
         while l <= r:
             m = l + (r - l) / 2
@@ -32,12 +31,12 @@ class SummaryRanges(object):
                 l = m + 1
         
         if l > r:
-            if 1 <= l < len(intv) and intv[l - 1].end + 1 == val and intv[l].start - 1 == val:
+            if 0 < l < len(intv) and intv[l - 1].end + 1 == val and intv[l].start - 1 == val:
                 intv[l - 1].end = intv[l].end
                 intv.pop(l)
-            elif len(intv) > l and intv[l].start - 1 == val:
+            elif l < len(intv) and intv[l].start - 1 == val:
                 intv[l].start = val
-            elif l > 0 and intv[l - 1].end + 1 == val:
+            elif 0 < l and intv[l - 1].end + 1 == val:
                 intv[l - 1].end = val
             else:
                 intv.insert(l, Interval(val, val))
