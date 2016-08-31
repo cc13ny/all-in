@@ -9,8 +9,7 @@ class Solution(object):
         for w in s:
             diff[ord(w) - 97] += 1
         for w in t:
-            diff[ord(w) - 97] -= 1
-            
-        for i in xrange(26):
+            i = ord(w) - 97
+            diff[i] -= 1
             if diff[i] < 0:
-                return chr(i + 97)
+                return w
