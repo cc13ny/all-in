@@ -14,5 +14,5 @@ class Solution:
             else:
                 j -= 1
             tmp = min(height[i], height[j]) * (j -i)
-            if tmp > res: res = tmp
+            res = max(res, tmp)
         return res
