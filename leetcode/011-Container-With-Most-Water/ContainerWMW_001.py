@@ -6,7 +6,7 @@ class Solution:
     # @return {integer}
     def maxArea(self, height):
         i, j = 0, len(height) - 1
-        res = min(height[i], height[j]) * (j -i)
+        res = 0
         
         while i < j:
             if height[i] < height[j]:
