@@ -4,7 +4,7 @@ class Logger(object):
         """
         Initialize your data structure here.
         """
-        self.log_set = {}
+        self.log_hash = {}
         
 
     def shouldPrintMessage(self, timestamp, message):
@@ -16,11 +16,11 @@ class Logger(object):
         :type message: str
         :rtype: bool
         """
-        st = self.log_set
-        if message in st and timestamp - st[message] < 10:
+        hs = self.log_hash
+        if message in hs and timestamp - hs[message] < 10:
             return False
         else:
-            st[message] = timestamp
+            hs[message] = timestamp
             return True
                 
 
