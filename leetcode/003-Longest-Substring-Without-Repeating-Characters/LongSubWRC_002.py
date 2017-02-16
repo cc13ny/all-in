@@ -10,12 +10,11 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        i = 0
         res = 0
-        dict = {}
-        for j in xrange(len(s)):
-            if s[j] in dict:
-                i = max(i, dict[s[j]])
-            res = max(res, j-i+1)
-            dict[s[j]] = j + 1
+        i = -1
+        map = {}
+        for j in range(len(s)):
+            i = max(i, map.get(s[j], -1))
+            res = max(res, j - i)
+            map[s[j]] = j 
         return res
