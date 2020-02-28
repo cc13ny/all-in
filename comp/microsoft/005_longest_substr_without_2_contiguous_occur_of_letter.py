@@ -15,4 +15,4 @@ class Solution:
                 start = i - 1
                 ac = 2 if l == 'a' else 0
                 bc = 2 if l == 'b' else 0
-        return res
+        return s if res == [] else s[res[0]:res[1]+1]
