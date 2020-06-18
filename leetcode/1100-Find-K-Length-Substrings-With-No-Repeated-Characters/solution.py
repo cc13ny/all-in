@@ -2,20 +2,19 @@ class Solution:
     def numKLenSubstrNoRepeats(self, S: str, K: int) -> int:
         count = 0
         idx_hash = {}
-        first_idx, last_idx = 0, 0
+        start_idx, end_idx = 0, 0
 
         n = len(S)
-        while first_idx <= (n - K) and last_idx < n:
-            char = S[last_idx]
-            if char in idx_hash:
-                if idx_hash[char] != last_idx and idx_hash[char] >= first_idx:
-                    first_idx = idx_hash[char] + 1
+        while start_idx <= (n - K) and end_idx < n:
+            char = S[end_idx]
+            if char in idx_hash and end_idx > idx_hash[char] >= start_idx:
+                start_idx = idx_hash[char] + 1
 
-            idx_hash[char] = last_idx
+            idx_hash[char] = end_idx
 
-            if last_idx - first_idx + 1 == K:
+            if end_idx - start_idx + 1 == K:
                 count += 1
-                first_idx += 1
+                start_idx += 1
             else:
-                last_idx += 1
+                end_idx += 1
         return count
