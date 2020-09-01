@@ -8,6 +8,7 @@
 3. Decide data structures and operations
 4. Write Test Cases
 5. Optimize
+6. Time & Space Complexity Analysis
 
 Minor
 1. Comments

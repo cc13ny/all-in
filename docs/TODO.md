@@ -36,3 +36,7 @@ Go
 5. https://yourbasic.org/golang/check-map-contains-key/
 6. https://yourbasic.org/golang/clear-slice/
 7. https://stackoverflow.com/questions/2050391/how-to-check-if-a-map-contains-a-key-in-go/2050570
+
+Swift
+
+1. https://developer.apple.com/documentation/swift/array/1687832-enumerated
