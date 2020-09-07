@@ -7,7 +7,7 @@ func lengthOfLongestSubstring(s string) int {
 	}
 
 	for i, c := range s {
-		leftmost = max(leftmost, chars[int(c)]+1)
+	    leftmost = max(leftmost, chars[int(c)]+1)
 		res = max(res, i - leftmost + 1)
 		chars[int(c)] = i
 	}
@@ -17,7 +17,7 @@ func lengthOfLongestSubstring(s string) int {
 
 func max(x, y int) int {
 	if x > y {
-	return x
+		return x
 	}
 	return y
 }
