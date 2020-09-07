@@ -7,8 +7,8 @@
  */
 object Solution {
   def addTwoNumbers(l1: ListNode, l2: ListNode): ListNode = {
+    val dump = new ListNode
     var sum, c, l1_val, l2_val:Int = 0
-    var dump = new ListNode
     var (p, pl1, pl2) = (dump, l1, l2)
 
     while(pl1 != null || pl2 != null) {
