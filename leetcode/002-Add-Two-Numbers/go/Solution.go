@@ -1,3 +1,5 @@
+package _go
+
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -29,5 +31,16 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		l1_val, l2_val = 0, 0
 	}
 
+	if c == 1 {
+		p.Next = &ListNode{1, nil}
+	}
+
 	return dump.Next
+}
+
+func max(x, y int) int {
+	if x > y {
+		return x
+	}
+	return y
 }
