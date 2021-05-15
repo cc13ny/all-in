@@ -7,7 +7,7 @@ class Solution(object):
         """
         if len(matrix) == 0 or len(matrix[0]) == 0:
             return 0
-            
+
         maxv = 0
         for i in range(len(matrix)):
             for j in range(len(matrix[0])):
@@ -16,25 +16,25 @@ class Solution(object):
                     if area > maxv:
                         maxv = area
         return maxv
-        
+
     def getArea(self, i, j, matrix):
         m, n = len(matrix), len(matrix[0])
         length, flag = 1, False
         for l in range(1, min(m - i, n - j)):
-            #print 'len: ' + str(l)
+            # print 'len: ' + str(l)
             for k in range(j, j + l + 1):
-                #print i + 1, k
+                # print i + 1, k
                 if matrix[i + l][k] == '0':
                     flag = True
                     break
             for k in range(i, i + l + 1):
-                #print k, j + 1
+                # print k, j + 1
                 if matrix[k][j + l] == '0':
                     flag = True
                     break
             if flag:
                 break
             length += 1
-            
-        #print i, j, length * length
+
+        # print i, j, length * length
         return length * length

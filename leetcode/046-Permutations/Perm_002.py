@@ -11,7 +11,7 @@ class Solution:
             tmp = nums[:]
             head = tmp.pop(i)
             tail = self.permute(tmp)
-            
-            [ t.insert(0, head) for t in tail]
+
+            [t.insert(0, head) for t in tail]
             res.extend(tail[:])
         return res

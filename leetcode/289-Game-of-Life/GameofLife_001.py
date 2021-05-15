@@ -22,7 +22,7 @@ class Solution(object):
                         board[i][j] = 3
                 elif cnt == 3:
                     board[i][j] = 2
-                        
+
         for i in xrange(m):
             for j in xrange(n):
                 board[i][j] = board[i][j] >> 1

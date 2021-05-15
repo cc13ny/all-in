@@ -16,7 +16,7 @@ class Solution {
                 longestWords.add(word);
             }
         }
-        
+
         return longestWords;
     }
 };

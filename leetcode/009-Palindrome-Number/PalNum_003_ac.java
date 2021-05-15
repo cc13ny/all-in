@@ -3,7 +3,7 @@ public class Solution {
         if (x < 0) {
             return false;
         }
-        
+
         int left = 1;
         int t = x;
         while (t > 9) { // accepted because of it
@@ -18,9 +18,9 @@ public class Solution {
                 return false;
             }
             x = (x % left) / 10;
-            left  /= 100;
+            left /= 100;
         }
-        
+
         return true;
     }
 }

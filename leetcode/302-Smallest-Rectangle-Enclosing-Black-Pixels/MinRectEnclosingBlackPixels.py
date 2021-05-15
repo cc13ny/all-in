@@ -11,7 +11,7 @@ class Solution(object):
         region = [y, x, y, x]
         [l, u, r, b] = self.bfs(image, x, y, visited, region)
         return (b - u + 1) * (r - l + 1)
-    
+
     def bfs(self, image, i, j, visited, region):
         m, n = len(image), len(image[0])
         if i < 0 or i >= m:
@@ -22,14 +22,15 @@ class Solution(object):
             return region
         if image[i][j] == '0':
             return region
-        print i, j
-        
+        print
+        i, j
+
         [l, u, r, b] = region
         region = [min(l, j), min(u, i), max(r, j), max(b, i)]
         visited[i][j] = True
-        di = [-1, 1,  0, 0]
-        dj = [ 0, 0, -1, 1]
+        di = [-1, 1, 0, 0]
+        dj = [0, 0, -1, 1]
         for idx in range(4):
             region = self.bfs(image, i + di[idx], j + dj[idx], visited, region)
-        
+
         return region

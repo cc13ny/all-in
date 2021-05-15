@@ -13,7 +13,7 @@ class Solution(object):
         """
         stack = [root]
         pre = None
-        
+
         while stack != [] and stack[0]:
             p = stack.pop()
             while p:
@@ -24,5 +24,5 @@ class Solution(object):
                 return False
             pre = p
             stack.append(p.right)
-            
+
         return True

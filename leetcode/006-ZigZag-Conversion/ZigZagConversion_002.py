@@ -13,7 +13,7 @@ class Solution:
             while j < len(s):
                 res += s[j]
                 if j % halfsize == 0:
-                    j += size 
+                    j += size
                 else:
                     j = cnt * size - j
                     cnt += 1

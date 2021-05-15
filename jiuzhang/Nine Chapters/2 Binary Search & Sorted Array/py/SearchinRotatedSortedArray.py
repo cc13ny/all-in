@@ -4,6 +4,7 @@ class Solution:
     @param target : an integer to be searched
     @return : an integer
     """
+
     def search(self, A, target):
         # write your code here
         l, r = 0, len(A) - 1

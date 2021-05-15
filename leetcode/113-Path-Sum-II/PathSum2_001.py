@@ -21,7 +21,7 @@ class Solution:
         s = root.val
         while len(stack) != 0:
             p = stack[len(stack) - 1]
-            
+
             if p.left == None and p.right == None:
                 if s == sum:
                     res.append(stack1)
@@ -41,5 +41,5 @@ class Solution:
                 stack1.pop()
                 s -= p.val
                 marked.add(p)
-                
+
         return res

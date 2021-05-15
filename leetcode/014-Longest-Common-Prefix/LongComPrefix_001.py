@@ -5,7 +5,7 @@ class Solution:
         if not strs:
             return ""
 
-        mi = len(min(strs, key = lambda s: len(s)))
+        mi = len(min(strs, key=lambda s: len(s)))
         for j in xrange(mi):
             for i in xrange(1, len(strs)):
                 if strs[i][j] != strs[i - 1][j]:

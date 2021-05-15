@@ -8,7 +8,7 @@ class Solution(object):
         nletters = [0] * 52
         a = ord('a')
         has_odd = False
-        
+
         for w in s:
             nletters[ord(w) - a] += 1
         for num in nletters:

@@ -4,6 +4,7 @@ class Solution:
     @param B: An integer array.
     @return: Cosine similarity.
     """
+
     def cosineSimilarity(self, A, B):
         # write your code here
         from math import sqrt

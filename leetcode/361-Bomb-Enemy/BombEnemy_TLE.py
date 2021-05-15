@@ -7,7 +7,7 @@ class Solution(object):
         if not grid or not grid[0]:
             return 0
         nkills = [[[0, 0] for _ in grid[0]] for _ in grid]
-        
+
         # for row
         for i in range(len(grid)):
             cnt = 0
@@ -23,7 +23,7 @@ class Solution(object):
             for k in range(idx_afw, len(grid[0])):
                 if grid[i][k] != 'E':
                     nkills[i][k][1] = cnt
-    
+
         # for col
         for j in range(len(grid[0])):
             cnt = 0

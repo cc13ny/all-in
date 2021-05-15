@@ -10,7 +10,7 @@ class Solution:
                         return False
                     else:
                         tmp.add(t)
-                    
+
         for j in range(9):
             tmp = set()
             for i in range(9):
@@ -22,12 +22,12 @@ class Solution:
         for m in range(3):
             for n in range(3):
                 tmp = set()
-                for i in range(0 + 3*m, 3 + 3*m):
-                    for j in range(0 + 3*n, 3 + 3*n):
+                for i in range(0 + 3 * m, 3 + 3 * m):
+                    for j in range(0 + 3 * n, 3 + 3 * n):
                         if board[i][j] != '.':
                             if board[i][j] in tmp:
                                 return False
                             else:
                                 tmp.add(board[i][j])
-        
+
         return True

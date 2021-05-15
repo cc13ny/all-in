@@ -11,7 +11,10 @@ def combine(word, k):
         res.append(t + word[-1])
     return res
 
+
 res = combine('love', 2)
-print res
+print
+res
 for r in res:
-    print r
+    print
+    r

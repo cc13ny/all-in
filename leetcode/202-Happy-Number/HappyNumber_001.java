@@ -10,10 +10,10 @@ public class Solution {
         }
         return true;
     }
-    
+
     public static int next(int n) {
         int res = 0;
-        
+
         while (n != 0) {
             int t = n % 10;
             res += t * t;

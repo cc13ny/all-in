@@ -5,7 +5,7 @@ class Solution:
         # write your code here
         if n == 0:
             return False
-        
+
         a, b = True, True
 
         for i in range(2, n):

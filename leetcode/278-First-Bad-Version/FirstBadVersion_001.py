@@ -11,9 +11,9 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        l, r = 1, n # l, r = 0, n - 1 also works
+        l, r = 1, n  # l, r = 0, n - 1 also works
         while l <= r:
-            m = (l + r) / 2 # be care of => int -> long (avoid overflow)
+            m = (l + r) / 2  # be care of => int -> long (avoid overflow)
             if isBadVersion(m):
                 r = m - 1
             else:

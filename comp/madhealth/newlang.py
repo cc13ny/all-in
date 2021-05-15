@@ -5,11 +5,11 @@ def evaluate(s):
     s = ''.join(s.split())
     res, i = 0, 0
     stack = []
-    
+
     while i < len(s):
         if s[i].isdigit():
             num = ''
-            while i <= len(s): # be careful about the case i == len(s)
+            while i <= len(s):  # be careful about the case i == len(s)
                 if i < len(s) and s[i].isdigit():
                     num += s[i]
                     i += 1

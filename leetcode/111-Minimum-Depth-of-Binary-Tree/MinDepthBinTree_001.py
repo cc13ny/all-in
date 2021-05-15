@@ -11,7 +11,7 @@ class Solution:
     def minDepth(self, root):
         if root == None:
             return 0
-            
+
         num = 0
         stack = []
         stack.append(root)

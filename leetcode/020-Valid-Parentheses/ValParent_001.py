@@ -4,11 +4,11 @@ class Solution:
     def isValid(self, s):
         l = ['(', '{', '[']
         r = [')', '}', ']']
-        tb = {'(': ')', '{': '}', '[':']'}
+        tb = {'(': ')', '{': '}', '[': ']'}
 
         if s == '':
             return True
-    
+
         if s[0] in r:
             return False
 

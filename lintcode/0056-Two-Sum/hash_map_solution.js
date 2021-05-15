@@ -8,7 +8,7 @@ const twoSum = function (numbers, target) {
     const numbersIdx = {};
     for (let i = 0; i < numbers.length; i++) {
         const num = numbers[i]
-        if((target - num) in numbersIdx) {
+        if ((target - num) in numbersIdx) {
             return [numbersIdx[target - num], i]
         }
         numbersIdx[num] = i

@@ -6,7 +6,9 @@ def uniquePaths(n):
             grid[i][j] = grid[i][j - 1] + grid[i - 1][j]
     return grid
 
+
 grid = uniquePaths(10)
 
 for row in grid:
-    print row
+    print
+    row

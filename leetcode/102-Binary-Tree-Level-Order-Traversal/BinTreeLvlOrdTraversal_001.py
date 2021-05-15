@@ -14,7 +14,7 @@ class Solution:
         stack = []
         res = []
         stack.append(root)
-        while len(stack)!= 0:
+        while len(stack) != 0:
             tmp = []
             nnext = []
             for i in range(len(stack)):
@@ -25,5 +25,5 @@ class Solution:
             if len(tmp) != 0:
                 res.append(tmp)
             stack = nnext
-            
+
         return res

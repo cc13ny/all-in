@@ -8,7 +8,6 @@ class MovingAverage(object):
         self.tot = 0
         self.size = size
         self.q = []
-        
 
     def next(self, val):
         """
@@ -19,11 +18,9 @@ class MovingAverage(object):
         q.append(val)
         tot += val
         if len(q) > size:
-             tot -= q.pop(0)
+            tot -= q.pop(0)
         self.tot = tot
-        return float(tot)/len(q)
-        
-
+        return float(tot) / len(q)
 
 # Your MovingAverage object will be instantiated and called as such:
 # obj = MovingAverage(size)

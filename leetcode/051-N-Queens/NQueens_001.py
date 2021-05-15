@@ -42,7 +42,7 @@ class Solution(object):
                 t[i] = start
                 res.append(t)
         return res
-    
+
     def draw(self, res):
         pics = []
         for case in res:

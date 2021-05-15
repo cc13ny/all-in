@@ -14,7 +14,7 @@ class Solution:
         for i in range(len(nums)):
             res += str(counts[i]) + nums[i]
         return res
-            
+
     def countAndSay(self, n):
         s = '1'
         for i in range(1, n):

@@ -15,16 +15,15 @@ def mincoin(coins, target):
             for coin in coins:
                 idx = c + coin
                 if idx < target:
-                    print 2
+                    print
+                    2
                     if minnums[idx] == 0:
                         newcand.add(idx)
                 else:
                     break
         cand = newcand
     return cnt
-print mincoin([1, 2], 3)
-                    
-                
-    
-    
-    
+
+
+print
+mincoin([1, 2], 3)

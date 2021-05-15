@@ -24,9 +24,9 @@ class Solution(object):
             res.extend(tmp)
         for i in range(m):
             res.append(res[i][::-1])
-        
+
         return self.draw(res)
-        
+
     def solve(self, start, cnt):
         n = len(cnt)
         res = []
@@ -52,7 +52,7 @@ class Solution(object):
                 t[i] = start
                 res.append(t)
         return res
-    
+
     def draw(self, res):
         pics = []
         for case in res:

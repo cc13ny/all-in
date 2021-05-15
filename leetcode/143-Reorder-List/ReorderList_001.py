@@ -8,8 +8,7 @@ class Solution:
     # @param {ListNode} head
     # @return {void} Do not return anything, modify head in-place instead.
     def reorderList(self, head):
-        
-            
+
         a = []
         b = []
         p = head
@@ -28,6 +27,6 @@ class Solution:
             b.append(i)
         for k in range(size):
             if k != size - 1:
-                a[b[k]].next = a[b[k+1]]
+                a[b[k]].next = a[b[k + 1]]
             else:
                 a[b[k]].next = None

@@ -1,5 +1,5 @@
-#Node simplification, improvement & optimization
-#How, it's good because it can be done on the original code of "Combination Sum"
+# Node simplification, improvement & optimization
+# How, it's good because it can be done on the original code of "Combination Sum"
 
 class Solution:
     # @param {integer[]} candidates
@@ -8,7 +8,7 @@ class Solution:
     def combinationSum2(self, candidates, target):
         candidates.sort()
         return self.combsum(candidates, target)
-        
+
     def combsum(self, nums, target):
         if target == 0:
             return [[]]

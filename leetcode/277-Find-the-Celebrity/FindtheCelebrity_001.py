@@ -25,6 +25,6 @@ class Solution(object):
                     if k != i and (knows(i, k) or not knows(k, i)):
                         return -1
                 return i
-                    
+
             candidates = tmp
         return -1

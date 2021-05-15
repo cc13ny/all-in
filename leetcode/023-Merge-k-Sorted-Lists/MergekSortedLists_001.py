@@ -5,6 +5,7 @@
 #         self.next = None
 import heapq
 
+
 class Solution:
     # @param {ListNode[]} lists
     # @return {ListNode}
@@ -22,5 +23,5 @@ class Solution:
                 heapq.heappush(hq, (nextnode.val, nextnode))
             p.next = minnode
             p = p.next
-            
+
         return dump.next

@@ -7,10 +7,10 @@ class Solution(object):
         """
         if n < 1:
             return []
-        
+
         if k == 1:
             return [[i] for i in range(1, n + 1)]
-        
+
         res = self.combine(n - 1, k)
         tmp = self.combine(n - 1, k - 1)
         for t in tmp:

@@ -6,6 +6,7 @@ class Solution:
     @param nums: A list of integers.
     @return: The median of numbers
     """
+
     def medianII(self, nums):
         # write your code here
         if len(nums) < 2:

@@ -9,14 +9,14 @@ class Solution:
     # @param root, a tree node
     # @return a list of integers
     def rightSideView(self, root):
-        
-        if root == None: 
+
+        if root == None:
             return []
-        
+
         lv = self.rightSideView(root.left)
         rv = self.rightSideView(root.right)
-        
-        if len(lv) > len(rv): 
-            rv[len(rv):] = lv[len(rv):] 
+
+        if len(lv) > len(rv):
+            rv[len(rv):] = lv[len(rv):]
 
         return [root.val].extend(rv)

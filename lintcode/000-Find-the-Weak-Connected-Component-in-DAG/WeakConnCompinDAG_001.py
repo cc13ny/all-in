@@ -15,7 +15,7 @@ class Solution:
         for node in nodes:
             for n in node.neighbors:
                 fathers = self.union(node.label, n.label, fathers)
-                
+
         res = {}
         for child in fathers:
             f = self.find(child, fathers)
@@ -29,12 +29,12 @@ class Solution:
             tmp.sort()
             ans.append(tmp)
         return ans
-        
+
     def find(self, label, fathers):
         if label != fathers[label]:
             return self.find(fathers[label], fathers)
         return label
-    
+
     def union(self, label1, label2, fathers):
         f1, f2 = self.find(label1, fathers), self.find(label2, fathers)
         if f1 != f2:

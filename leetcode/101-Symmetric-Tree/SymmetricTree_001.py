@@ -18,9 +18,9 @@ class Solution:
         if l.val != r.val:
             return False
         return self.isSym(l.left, r.right) & self.isSym(l.right, r.left)
-        
+
     def isSymmetric(self, root):
         if root == None:
             return True
-            
+
         return self.isSym(root.left, root.right)

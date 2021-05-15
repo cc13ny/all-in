@@ -1,5 +1,5 @@
-#@author: cchen
-#Terrible code, and it will be updated and simplified later.
+# @author: cchen
+# Terrible code, and it will be updated and simplified later.
 
 class Solution:
     # @param {string} str
@@ -12,9 +12,9 @@ class Solution:
             else:
                 num = num + 1
         return ss[:num]
-        
+
     def isoverflow(self, sss, ispos):
-        
+
         if ispos:
             tmp = '2147483647'
             if len(sss) > len(tmp):
@@ -39,7 +39,7 @@ class Solution:
                 elif sss[j] < tmp[j]:
                     return False
             return False
-        
+
     def myAtoi(self, str):
         str = str.strip()
         if len(str) == 0:

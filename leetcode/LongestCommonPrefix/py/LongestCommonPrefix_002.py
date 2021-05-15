@@ -5,7 +5,7 @@ class Solution:
         res = ''
         if strs == []:
             return res
-            
+
         lens = [len(s) for s in strs]
         mi = min(lens)
         for i in range(mi):
@@ -13,5 +13,5 @@ class Solution:
             if len(a) != 1:
                 break
             else:
-                res+=a.pop()
+                res += a.pop()
         return res

@@ -20,8 +20,8 @@ public class Solution {
                 lendict.get(l).add(word);
             } else {
                 HashSet<String> tmp = new HashSet<String>();
-	        	tmp.add(word);
-	        	lendict.put(l, tmp);
+                tmp.add(word);
+                lendict.put(l, tmp);
                 lenlist.add(l);
             }
         }
@@ -50,9 +50,9 @@ public class Solution {
                     }
                 }
             }
-            
+
         }
-        
+
         return ladder;
     }
 

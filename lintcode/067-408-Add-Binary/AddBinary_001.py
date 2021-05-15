@@ -6,12 +6,12 @@ class Solution:
         # Write your code here
         alen, blen = len(a), len(b)
         if alen > blen:
-            b = '0'*(alen - blen) + b
+            b = '0' * (alen - blen) + b
             nlen = alen
         else:
-            a = '0'*(blen - alen) + a
+            a = '0' * (blen - alen) + a
             nlen = blen
-        
+
         res, c = '', 0
         for i in range(nlen - 1, -1, -1):
             at, bt = int(a[i]), int(b[i])

@@ -10,12 +10,12 @@ def longestChain(words):
         if len(word) in lendict:
             lendict[l][word] = -1
         else:
-            lendict[l] = {word : -1}
+            lendict[l] = {word: -1}
             lenlist.append(l)
     lenlist.sort()
     if len(lenlist) < 2:
         return len(lenlist)
-    
+
     maxsize = 1
     maxpossible = len(lenlist)
     for i in range(len(lenlist) - 1, 0, -1):
@@ -26,22 +26,23 @@ def longestChain(words):
             tmpsize = lendict[l][word]
             if tmpsize > maxsize:
                 maxsize = tmpsize
-                #if maxsize == maxpossible:
+                # if maxsize == maxpossible:
                 #    return maxsize
-        #maxpossible -= 1
-        #if maxsize >= maxpossible:
+        # maxpossible -= 1
+        # if maxsize >= maxpossible:
         #    break
-    #print lendict
+    # print lendict
     return maxsize
+
 
 def lc(l, word, lendict):
     if (l not in lendict) and (word not in lendict[l]) and (lendict[l][word] != -1):
         return lendict
-    
+
     if l - 1 not in lendict:
         lendict[l][word] = 1
         return lendict
-    
+
     maxsize = 1
     for i in range(len(word)):
         nextword = word[:i] + word[i + 1:]
@@ -51,12 +52,14 @@ def lc(l, word, lendict):
             if tmpsize > maxsize:
                 maxsize = tmpsize
     lendict[l][word] = maxsize
-    #print lendict
+    # print lendict
     return lendict
-    
+
+
 words = ['a', 'abcd', 'bcd', 'abd', 'cd', 'c']
 words = ['a', 'aa', 'ba', 'aaa', 'aab', 'aac', 'aad', 'kkkk']
-#words = ['bcd', 'abcd', 'a', 'aa', 'aaa', 'bbb']
-#words = ['a', 'b', 'ba', 'bca', 'bda', 'bdca']
+# words = ['bcd', 'abcd', 'a', 'aa', 'aaa', 'bbb']
+# words = ['a', 'b', 'ba', 'bca', 'bda', 'bdca']
 
-print longestChain(words)
+print
+longestChain(words)

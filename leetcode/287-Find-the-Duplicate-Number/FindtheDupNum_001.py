@@ -11,7 +11,8 @@ class Solution(object):
             for num in nums:
                 if num <= m:
                     cnt += 1
-            print l, r, m
+            print
+            l, r, m
             if cnt > m:
                 r = m
             else:

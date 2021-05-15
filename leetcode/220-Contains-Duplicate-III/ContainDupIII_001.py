@@ -6,7 +6,7 @@ class Solution:
     def containsNearbyAlmostDuplicate(self, nums, k, t):
         if k < 1 or t < 0:
             return False
-        
+
         for i in range(max(len(nums) - k, 1)):
             if i == 0:
                 tmp = nums[:k + 1]
@@ -25,7 +25,7 @@ class Solution:
                     else:
                         break
                 tmp.pop(m)
-                
+
                 l, r = 0, k - 1
                 while l <= r:
                     m = (l + r) / 2

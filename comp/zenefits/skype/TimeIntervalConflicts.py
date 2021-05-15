@@ -1,5 +1,5 @@
 def conflicts(intervals):
-    sorted_intervals = sorted(intervals, key = lambda interval : intervals[0])
+    sorted_intervals = sorted(intervals, key=lambda interval: intervals[0])
     pairs = []
     for i in range(len(intervals) - 1):
         fstend = intervals[i][1]
@@ -11,10 +11,11 @@ def conflicts(intervals):
                 break
     return pairs
 
-test = [(1, 8), (2, 6), (3, 5), (9, 10)]
 
+test = [(1, 8), (2, 6), (3, 5), (9, 10)]
 
 pairs = conflicts(test)
 
 for pair in pairs:
-    print pair
+    print
+    pair

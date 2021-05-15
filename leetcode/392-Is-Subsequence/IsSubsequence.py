@@ -7,10 +7,10 @@ class Solution(object):
         """
         if len(s) > len(t):
             return False
-        
+
         if s == '':
             return True
-            
+
         i = 0
         n = len(s)
         for c in t:

@@ -6,11 +6,11 @@ class Solution(object):
         """
         if nums == []:
             return []
-            
+
         res = []
         sorted_nums = []
         rev = nums[::-1]
-        
+
         for num in rev:
             l, r = 0, len(res) - 1
             while l <= r:

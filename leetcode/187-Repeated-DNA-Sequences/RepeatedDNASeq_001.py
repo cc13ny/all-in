@@ -6,10 +6,10 @@ class Solution:
             return []
         a = {}
         for t in range(len(s) - 9):
-            if s[t:t+10] not in a:
-                a[s[t:t+10]] = 1
+            if s[t:t + 10] not in a:
+                a[s[t:t + 10]] = 1
             else:
-                a[s[t:t+10]] += 1
+                a[s[t:t + 10]] += 1
         b = []
         for i in a:
             if a[i] > 1:

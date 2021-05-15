@@ -2,7 +2,7 @@ def ismatched(word, p, k):
     pk = ''
     for c in p:
         pk += c * k
-    
+
     i, j = 0, 0
     while i < len(pk) and j < len(word):
         if pk[i] == word[j]:
@@ -13,7 +13,7 @@ def ismatched(word, p, k):
 
     if i < len(pk):
         return False
-        
+
     return True
 
 
@@ -25,7 +25,7 @@ def maxmatch(word, p):
     maxcnt = {}
     for c in p:
         maxcnt[c] = 0
-        
+
     for c in word:
         if c in maxcnt:
             maxcnt[c] += 1
@@ -46,4 +46,5 @@ tests = []
 tests.append(('xxaxybyxyzxxxzzz', 'xyxz'))
 
 for t in tests:
-    print maxmatch(t[0], t[1])
+    print
+    maxmatch(t[0], t[1])

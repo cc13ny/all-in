@@ -2,7 +2,7 @@
 
 public class Solution {
     /**
-     * @param s: A string s
+     * @param s:    A string s
      * @param dict: A dictionary of words dict
      */
     public boolean wordBreak(String s, Set<String> dict) {
@@ -21,8 +21,8 @@ public class Solution {
                 lendict.get(l).add(word);
             } else {
                 HashSet<String> tmp = new HashSet<String>();
-	        	tmp.add(word);
-	        	lendict.put(l, tmp);
+                tmp.add(word);
+                lendict.put(l, tmp);
                 lenlist.add(l);
             }
         }
@@ -42,12 +42,12 @@ public class Solution {
                 break;
             }
         }
-        
+
         boolean[] isVisited = new boolean[s.length()];
-    
-        while (! cand.isEmpty()) {
+
+        while (!cand.isEmpty()) {
             HashSet<Integer> newcand = new HashSet<Integer>();
-            
+
             for (int c : cand) {
                 for (int l : lenlist) {
                     int idx = c + l;
@@ -55,14 +55,14 @@ public class Solution {
                         break;
                     } else {
                         String word = s.substring(c + 1, idx + 1);
-                        if ((! isVisited[idx]) && (lendict.get(l).contains(word))) {
+                        if ((!isVisited[idx]) && (lendict.get(l).contains(word))) {
                             newcand.add(idx);
                             isVisited[idx] = true;
                             if (idx == s.length() - 1) {
                                 return true;
                             }
                         }
-                        
+
                     }
                 }
             }

@@ -15,13 +15,12 @@ class Solution:
         pre.next = head
         p = head
         while p != None:
-            
+
             if p.val not in dic:
                 dic[p.val] = 1
                 pre = pre.next
             else:
                 pre.next = p.next
-                
-                
+
             p = p.next
         return dumpy.next

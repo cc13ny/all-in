@@ -11,11 +11,12 @@ class Solution(object):
         for i in xrange(len(stones)):
             idx = stones[i]
             if (stones[-1] - idx) in steps[idx]:
-            	return True
+                return True
             for s in steps[idx]:
                 if (idx + s) in steps:
-                  steps[idx + s].add(s + 1)
-            	    steps[idx + s].add(s)
-            	    if s > 1:
-            	      steps[idx + s].add(s - 1)
-        return False
+                    steps[idx + s].add(s + 1)
+                    steps[idx + s].add(s)
+                    if s > 1:
+                        steps[idx + s].add(s - 1)
+
+    return False

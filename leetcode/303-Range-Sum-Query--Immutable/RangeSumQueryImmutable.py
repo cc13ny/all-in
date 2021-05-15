@@ -8,7 +8,6 @@ class NumArray(object):
         for i in range(len(nums)):
             csums[i + 1] += csums[i]
         self.csums = csums
-        
 
     def sumRange(self, i, j):
         """

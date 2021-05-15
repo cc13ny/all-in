@@ -11,6 +11,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
+
         def treeSum(node, freq):
             if not node:
                 return 0, freq
@@ -19,7 +20,7 @@ class Solution(object):
             nsum = node.val + lsum + rsum
             freq[nsum] = freq.get(nsum, 0) + 1
             return nsum, freq
-            
+
         nsum, freq = treeSum(root, {})
         max_val = max([freq[k] for k in freq]) if freq else 0
         res = []

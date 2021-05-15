@@ -7,7 +7,7 @@ def bulbSwitch(n):
         for p in primes:
             cnt = 0
             if p > m:
-               break
+                break
             elif j % p == 0:
                 case = 1
                 while t % p == 0:

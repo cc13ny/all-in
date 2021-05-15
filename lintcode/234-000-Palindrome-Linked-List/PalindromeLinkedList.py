@@ -4,6 +4,7 @@ class ListNode:
         self.val = x
         self.next = None
 
+
 class Solution:
     # @param head, a ListNode
     # @return a boolean
@@ -18,16 +19,16 @@ class Solution:
 
         second = slow.next
         p = second
-        print 'slow ' + str(slow.val)
+        print
+        'slow ' + str(slow.val)
         while p:
-            print p.val
+            print
+            p.val
             p = p.next
-            
+
         dumpy = ListNode(0)
         dumpy.next = head
 
-        
-        
         while head.next:
             if fast.next and head.next == second:
                 head.next = None
@@ -39,16 +40,16 @@ class Solution:
             head.next = tmp.next
             tmp.next = dumpy.next
             dumpy.next = tmp
-        
+
         first = dumpy.next
 
         p = first
         print
         while p:
-            print p.val
+            print
+            p.val
             p = p.next
-        
-        
+
         while first and second:
             if first.val != second.val:
                 return False

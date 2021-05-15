@@ -12,11 +12,11 @@ class Solution(object):
         """
         dummy = ListNode(0)
         dummy.next = head
-        
+
         while head and head.next:
             p = head.next
             head.next = p.next
             p.next = dummy.next
             dummy.next = p
-            
+
         return dummy.next

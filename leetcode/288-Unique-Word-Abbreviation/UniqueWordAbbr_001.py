@@ -22,15 +22,17 @@ class ValidWordAbbr(object):
         :type word: str
         :rtype: bool
         """
+
         def word2abbr(w):
             if len(w) > 2:
-                abbr = w[0] + str(len(w)-2) + w[-1]
+                abbr = w[0] + str(len(w) - 2) + w[-1]
             else:
                 abbr = w
             return abbr
-        cnt  = self.abbr2cnt.get(word2abbr(word), 0)
+
+        cnt = self.abbr2cnt.get(word2abbr(word), 0)
         unique = (cnt == 0) or (word in self.wordset and cnt == 1)
-        
+
         return unique
 
 # Your ValidWordAbbr object will be instantiated and called as such:

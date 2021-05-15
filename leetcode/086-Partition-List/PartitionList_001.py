@@ -1,4 +1,4 @@
-#@author: cchen
+# @author: cchen
 
 # Definition for singly-linked list.
 # class ListNode:
@@ -16,7 +16,7 @@ class Solution:
         dump = ListNode(0)
         dump.next = head
         p = dump
-        
+
         dump1 = ListNode(0)
         q = dump1
         while p.next != None:
@@ -26,7 +26,7 @@ class Solution:
                 q.next = p.next
                 q = q.next
                 p.next = p.next.next
-        
+
         q.next = None
         p.next = dump1.next
         return dump.next

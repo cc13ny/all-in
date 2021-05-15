@@ -16,7 +16,7 @@ class Solution(object):
         while fast and fast.next:
             tmp = fast.next
             fast.next = tmp.next
-            fast = fast.next 
+            fast = fast.next
             tmp.next = slow.next
             slow.next = tmp
             slow = tmp

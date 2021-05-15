@@ -4,6 +4,7 @@
     - https://leetcode.com/articles/longest-substring-without-repeating-characters/
 '''
 
+
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         """
@@ -16,5 +17,5 @@ class Solution(object):
         for j in range(len(s)):
             i = max(i, map.get(s[j], -1))
             res = max(res, j - i)
-            map[s[j]] = j 
+            map[s[j]] = j
         return res

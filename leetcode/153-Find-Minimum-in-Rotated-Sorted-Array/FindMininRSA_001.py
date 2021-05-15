@@ -4,10 +4,9 @@ class Solution:
     def findMin(self, num):
         L = 0
         R = len(num) - 1
-        
-        
+
         while L < R and num[L] > num[R]:
-            M = (L + R)/2
+            M = (L + R) / 2
             if num[L] > num[M]:
                 R = M
             else:

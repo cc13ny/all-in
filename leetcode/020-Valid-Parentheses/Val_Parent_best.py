@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: bool
         """
         stack = []
-        pairs = {'(':')', '[':']', '{':'}'}
+        pairs = {'(': ')', '[': ']', '{': '}'}
         for c in s:
             if c == ')' or c == ']' or c == '}':
                 if not stack or pairs[stack.pop()] != c:

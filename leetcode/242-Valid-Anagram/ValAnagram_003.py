@@ -8,7 +8,7 @@ class Solution:
         m = [0] * 128
         for c in s:
             m[ord(c)] += 1
-        
+
         for c in t:
             m[ord(c)] -= 1
             if m[ord(c)] < 0:

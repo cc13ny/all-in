@@ -10,7 +10,7 @@ public class Solution {
             return false;
         }
 
-        int nrows =  matrix.length;
+        int nrows = matrix.length;
         int ncols = matrix[0].length;
         int l = 0;
         int r = nrows * ncols - 1;
@@ -21,7 +21,7 @@ public class Solution {
         while (l <= r) {
             m = (l + r) / 2;
             i = m / ncols;
-            j = m % ncols ;
+            j = m % ncols;
             if (matrix[i][j] == target) {
                 return true;
             } else if (matrix[i][j] < target) {

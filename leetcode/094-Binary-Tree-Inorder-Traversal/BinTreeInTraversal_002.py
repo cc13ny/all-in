@@ -12,13 +12,13 @@ class Solution:
                 list.append(root.val)
                 root = root.right
         return list
-                
+
     def recursive_inorder(self, root, list):
         if root:
             self.inorder(root.left, list)
             list.append(root.val)
             self.inorder(root.right, list)
-        
+
     def inorderTraversal(self, root):
         list = []
         self.iterative_inorder(root, list)

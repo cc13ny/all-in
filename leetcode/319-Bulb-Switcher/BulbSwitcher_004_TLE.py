@@ -13,5 +13,5 @@ class Solution(object):
             res += num_of_facs[j - 1] % 2
         for j in range(int(math.sqrt(n)) + 1, n + 1):
             res += num_of_facs[j - 1] % 2
-            
+
         return res

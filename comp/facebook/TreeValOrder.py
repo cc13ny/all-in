@@ -4,6 +4,7 @@ class TreeNode:
         self.right = None
         self.val = val
 
+
 def valOrder(root):
     val, h = 0, 0
     stack = [(root, val, h)]
@@ -33,7 +34,7 @@ def valOrder(root):
             else:
                 arr[idx][idx_in_h].append(node.val)
             ###############################
-            
+
             val -= 1
             h += 1
             node = node.left
@@ -43,7 +44,10 @@ def valOrder(root):
     for ls in arr:
         for group in ls:
             for e in group:
-                print e
+                print
+                e
+
+
 a = TreeNode(1)
 b = TreeNode(2)
 c = TreeNode(3)

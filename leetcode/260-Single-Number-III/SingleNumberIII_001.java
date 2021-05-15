@@ -1,8 +1,8 @@
 public class Solution {
     public int[] singleNumber(int[] nums) {
         int diff = 0;
-        for (int num : nums) 
-             diff ^= num;
+        for (int num : nums)
+            diff ^= num;
 
         diff &= -diff;
 
@@ -10,8 +10,7 @@ public class Solution {
         for (int num : nums) {
             if ((num & diff) == 0) {
                 rets[0] ^= num;
-            }
-            else {
+            } else {
                 rets[1] ^= num;
             }
         }

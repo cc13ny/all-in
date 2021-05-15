@@ -2,6 +2,7 @@
   Inspired by https://leetcode.com/articles/add-two-numbers/
 '''
 
+
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -16,7 +17,8 @@ class Solution(object):
         :rtype: ListNode
         """
         carry = 0
-        dummy = ListNode(0); p = dummy
+        dummy = ListNode(0);
+        p = dummy
         while l1 or l2:
             x = l1.val if l1 else 0
             y = l2.val if l2 else 0

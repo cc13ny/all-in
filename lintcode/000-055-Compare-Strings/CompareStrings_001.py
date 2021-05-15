@@ -4,6 +4,7 @@ class Solution:
     @param B : A string includes Upper Case letters
     @return :  if string A contains all of the characters in B return True else return False
     """
+
     def compareStrings(self, A, B):
         # write your code here
         tb = {}

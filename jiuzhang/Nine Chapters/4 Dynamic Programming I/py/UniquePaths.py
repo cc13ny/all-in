@@ -2,7 +2,8 @@ class Solution:
     """
     @param n and m: positive integer(1 <= n , m <= 100)
     @return an integer
-    """ 
+    """
+
     def uniquePaths(self, m, n):
         # write your code here
         grid = [[1 for j in range(n)] for i in range(m)]

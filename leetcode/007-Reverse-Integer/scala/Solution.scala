@@ -1,14 +1,14 @@
 import scala.math.pow
 
 object Solution {
-  val (lowerbound, upperbound) = (-pow(2, 31), pow(2, 31)-1)
-  val (lowerbound_divide_10, upperbound_divide_10) = (lowerbound/10, upperbound/10)
+  val (lowerbound, upperbound) = (-pow(2, 31), pow(2, 31) - 1)
+  val (lowerbound_divide_10, upperbound_divide_10) = (lowerbound / 10, upperbound / 10)
 
   def reverse(x: Int): Int = {
     var y: Int = x
     var res: Int = 0
 
-    while(y != 0) {
+    while (y != 0) {
       getNewRes(res, y) match {
         case Some(v) => res = v
         case None => return 0

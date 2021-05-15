@@ -14,7 +14,7 @@ public class Solution {
         flags[n - 1] = true;
 
         int nearestrue = n - 1;
-        for (int i = n - 2; i > - 1; i--) {
+        for (int i = n - 2; i > -1; i--) {
             if (nearestrue <= Math.min(i + A[i], n - 1)) {
                 flags[i] = true;
                 nearestrue = i;

@@ -5,7 +5,7 @@ class Solution:
         p = 0
         num = len(s)
         q = num - 1
-        
+
         while p < q:
             if s[p].isalnum() and s[q].isalnum():
                 if s[p].lower() != s[q].lower():
@@ -16,8 +16,8 @@ class Solution:
             else:
                 while p <= q and s[p].isalnum() == False:
                     p = p + 1
-                
+
                 while p <= q and s[q].isalnum() == False:
                     q = q - 1
-                
+
         return True

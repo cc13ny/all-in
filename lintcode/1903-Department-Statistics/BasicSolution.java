@@ -1,6 +1,6 @@
 public class BasicSolution {
     /**
-     * @param employees: information of the employees
+     * @param employees:   information of the employees
      * @param friendships: the friendships of employees
      * @return: return the statistics
      */
@@ -8,15 +8,15 @@ public class BasicSolution {
         // write your code here.
         //Step 1: loop over employees, get 1: (Engineer, noFriendFromOtherDepartment)
         String[] items;
-        Map<String, String[]> employeeMap = new HashMap<String, String[]>() ;
-        for (String line: employees) {
+        Map<String, String[]> employeeMap = new HashMap<String, String[]>();
+        for (String line : employees) {
             items = line.split(",\\s+");
             employeeMap.put(items[0], new String[]{items[2], "false"});
         }
 
         //Step 2: loop over friends, fill noFriendFromOtherDepartment if 1 and 2 are from different department
         String[] departmentWithOtherDepartmentFriend1, departmentWithOtherDepartmentFriend2;
-        for (String line: friendships) {
+        for (String line : friendships) {
             items = line.split(",\\s+");
             departmentWithOtherDepartmentFriend1 = employeeMap.get(items[0]);
             departmentWithOtherDepartmentFriend2 = employeeMap.get(items[1]);
@@ -30,7 +30,7 @@ public class BasicSolution {
         int[] countWithTotal;
 
         for (Map.Entry<String, String[]> set : employeeMap.entrySet()) {
-            String[] v =  set.getValue();
+            String[] v = set.getValue();
 
             System.out.println(set.getKey());
             System.out.println(Arrays.toString(set.getValue()));
@@ -46,13 +46,15 @@ public class BasicSolution {
                 countWithTotal[0]++;
             }
             resList.put(v[0], countWithTotal);
-        };
+        }
+        ;
 
         //Step 4: output result;
         ArrayList<String> res = new ArrayList<String>();
         for (Map.Entry<String, int[]> set : resList.entrySet()) {
             res.add(set.getKey() + ": " + set.getValue()[0] + " of " + set.getValue()[1]);
-        };
+        }
+        ;
 
         return res;
     }

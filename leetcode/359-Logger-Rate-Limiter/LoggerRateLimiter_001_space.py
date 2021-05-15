@@ -5,7 +5,6 @@ class Logger(object):
         Initialize your data structure here.
         """
         self.log_hash = {}
-        
 
     def shouldPrintMessage(self, timestamp, message):
         """
@@ -22,8 +21,6 @@ class Logger(object):
         else:
             hs[message] = timestamp
             return True
-                
-
 
 # Your Logger object will be instantiated and called as such:
 # obj = Logger()

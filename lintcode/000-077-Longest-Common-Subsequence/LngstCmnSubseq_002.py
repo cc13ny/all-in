@@ -3,6 +3,7 @@ class Solution:
     @param A, B: Two strings.
     @return: The length of longest common subsequence of A and B.
     """
+
     def longestCommonSubsequence(self, A, B):
         n, m = len(A), len(B)
         f = [[0] * (n + 1) for i in range(m + 1)]

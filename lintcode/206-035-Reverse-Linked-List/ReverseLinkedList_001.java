@@ -1,14 +1,14 @@
 /**
  * Definition for ListNode.
  * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int val) {
- *         this.val = val;
- *         this.next = null;
- *     }
+ * int val;
+ * ListNode next;
+ * ListNode(int val) {
+ * this.val = val;
+ * this.next = null;
  * }
- */ 
+ * }
+ */
 public class Solution {
     /**
      * @param head: The head of linked list.
@@ -23,14 +23,14 @@ public class Solution {
         dumpy.next = head;
         ListNode p = head;
         ListNode tmp;
-        
+
         while (p.next != null) {
             tmp = p.next;
             p.next = tmp.next;
             tmp.next = dumpy.next;
             dumpy.next = tmp;
         }
-        
+
         return dumpy.next;
     }
 }

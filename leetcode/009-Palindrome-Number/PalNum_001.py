@@ -4,7 +4,7 @@ class Solution:
     def isPalindrome(self, x):
         if x < 0:
             return False
-        
+
         left, right = 10, 1
         while left <= x:
             left *= 10
@@ -16,6 +16,6 @@ class Solution:
             if l != r:
                 return False
             left /= 10
-            right *= 10    
-        
+            right *= 10
+
         return True

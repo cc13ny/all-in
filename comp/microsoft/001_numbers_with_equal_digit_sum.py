@@ -7,6 +7,7 @@ class Solution:
             tot += num % 10
             num //= 10
         return tot
+
     def num_with_equal_digit_sum(self, A):
         res = -1
         ds_to_top = {}

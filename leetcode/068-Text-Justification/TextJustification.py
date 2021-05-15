@@ -5,18 +5,19 @@ class Solution(object):
         :type maxWidth: int
         :rtype: List[str]
         """
+
         def format(wds, L):
-            wdslen =  len(''.join(wds))
+            wdslen = len(''.join(wds))
             l = len(wds) - 1
             res = ''
             step = (L - wdslen) / l if l else L - len(wds[0]) - 1
-            diff = (L - wdslen) %  l if l else 1 
-            blanks = [' ' * (step+1)] * diff + [' ' * step] * (l - diff)
+            diff = (L - wdslen) % l if l else 1
+            blanks = [' ' * (step + 1)] * diff + [' ' * step] * (l - diff)
             for i in range(len(blanks)):
                 res += wds[i] + blanks[i]
             res += wds[-1] if l else ''
             return res
-            
+
         lines = []
         res = []
         tmp = 0

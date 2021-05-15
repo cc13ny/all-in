@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: int
         """
         return self.dfs(root, False)
-    
+
     def dfs(self, node, isleft):
         if not node:
             return 0

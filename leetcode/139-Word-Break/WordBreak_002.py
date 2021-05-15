@@ -1,8 +1,9 @@
 # Faster than 001
-# {Leetcode : AC, Lintcode : Runtime Error}
-
-
-class Solution(object):
+
+# {Leetcode : AC, Lintcode : Runtime Error}
+
+
+class Solution(object):
     def wordBreak(self, s, wordDict):
         """
         :type s: str

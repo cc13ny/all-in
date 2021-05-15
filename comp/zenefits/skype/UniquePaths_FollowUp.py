@@ -11,14 +11,14 @@ def findPath(grid, money):
                 grid[i][j] = grid[i - 1][j] - grid[i][j]
             else:
                 grid[i][j] = max(grid[i][j - 1], grid[i - 1][j]) - grid[i][j]
-    #if grid[m - 1][n - 1] < 0:
+    # if grid[m - 1][n - 1] < 0:
     #    return -1
     return grid
+
 
 grid = [[0, 1, 0], [3, 2, 8], [1, 0, 4]]
 res = findPath(grid, 5)
 
 for row in res:
-    print row
-            
-                
+    print
+    row

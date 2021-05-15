@@ -9,7 +9,7 @@ public class Solution {
         int cnt = 0;
         for (int num : nums) {
             if (cnt == 0) {
-                cnt ++;
+                cnt++;
                 res = num;
             } else {
                 cnt += num == res ? 1 : -1;

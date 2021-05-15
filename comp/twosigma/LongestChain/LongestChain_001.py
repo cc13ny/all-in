@@ -12,10 +12,10 @@ def longestChain(words):
         if len(word) in lendict:
             lendict[l][word] = 1
         else:
-            lendict[l] = {word : 1}
+            lendict[l] = {word: 1}
             lenlist.append(l)
     lenlist.sort()
-    
+
     maxsize = 1
     for i in range(1, len(lenlist)):
         l = lenlist[i]
@@ -30,9 +30,11 @@ def longestChain(words):
                             lendict[l][word] = tmpsize
                             if tmpsize > maxsize:
                                 maxsize = tmpsize
-            
+
     return maxsize
-    
+
+
 words = ['a', 'abcd', 'bcd', 'abd', 'cd', 'c']
 words = ['a', 'ab', 'abc', 'abcd', 'eeeeeeee', 'e']
-print longestChain(words)
+print
+longestChain(words)

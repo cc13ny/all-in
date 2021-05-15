@@ -6,7 +6,7 @@ class Solution(object):
         """
         seed = 1
         res = [0]
-        
+
         while num > 0:
             res += [res[i] + 1 for i in xrange(min(num, seed))]
             num -= seed

@@ -20,13 +20,13 @@ class Solution(object):
                 ltree_rmost = l
                 while ltree_rmost.next is not None:
                     ltree_rmost = ltree_rmost.next
-               
+
                 while (l.left is None) and (l.right is None) and (l.next is not None):
                     l = l.next
                 l = l.left if l.left is not None else l.right
-                
+
                 ltree_rmost.next = r
-                
+
                 while (r.left is None) and (r.right is None) and (r.next is not None):
                     r = r.next
                 r = r.left if r.left is not None else r.right

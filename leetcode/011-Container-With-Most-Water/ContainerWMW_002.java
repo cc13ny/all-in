@@ -3,7 +3,7 @@ public class Solution {
         int size = height.length;
         int i = 0, j = size - 1;
         int res = 0, tmp = 0, h = 0;
-        
+
         while (i < j) {
             tmp = Math.min(height[i], height[j]) * (j - i);
             if (tmp > res) {
@@ -21,7 +21,7 @@ public class Solution {
                 }
             }
         }
-        
+
         return res;
     }
 }

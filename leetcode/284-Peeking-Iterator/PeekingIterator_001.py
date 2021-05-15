@@ -38,7 +38,7 @@ class PeekingIterator(object):
         if self.iterator.hasNext():
             self.peeknum = self.iterator.next()
         return self.peeknum
-        
+
     def next(self):
         """
         :rtype: int
@@ -50,7 +50,7 @@ class PeekingIterator(object):
         if self.iterator.hasNext():
             return self.iterator.next()
         return None
-        
+
     def hasNext(self):
         """
         :rtype: bool
@@ -58,7 +58,6 @@ class PeekingIterator(object):
         if self.peeknum:
             return True
         return self.iterator.hasNext()
-        
 
 # Your PeekingIterator object will be instantiated and called as such:
 # iter = PeekingIterator(Iterator(nums))

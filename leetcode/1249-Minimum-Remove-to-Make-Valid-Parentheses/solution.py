@@ -1,7 +1,7 @@
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
         stack = []
-        
+
         res = ''
         for c in s:
             if c == ')':
@@ -11,10 +11,10 @@ class Solution:
             else:
                 res += c
                 if c == '(':
-                    stack.append(len(res)-1)
-           
+                    stack.append(len(res) - 1)
+
         res = list(res)
         for idx in stack:
             res[idx] = ''
-            
+
         return ''.join(res)

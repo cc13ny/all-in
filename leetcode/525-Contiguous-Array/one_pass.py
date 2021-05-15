@@ -14,6 +14,7 @@ class Solution(object):
                 first_idx[tot] = i
         return res
 
+
 # 4/13/19
 class Solution:
     def findMaxLength(self, nums: List[int]) -> int:
@@ -30,6 +31,7 @@ class Solution:
 
         return res
 
+
 ## TLE
 class Solution:
     def findMaxLength(self, nums: List[int]) -> int:
@@ -38,9 +40,9 @@ class Solution:
             zos.append(zos[-1][:])
             zos[-1][num] += 1
 
-        for l in range(int(len(nums)/2), -1, -1):
-            ln = 2*l
+        for l in range(int(len(nums) / 2), -1, -1):
+            ln = 2 * l
             for i in range(0, len(zos) - ln):
-                if zos[i+ln][0] - zos[i][0] == zos[i+ln][1] - zos[i][1]:
+                if zos[i + ln][0] - zos[i][0] == zos[i + ln][1] - zos[i][1]:
                     return ln
         return 0

@@ -25,7 +25,6 @@ class Solution:
         # write your code here
         return len(self.stack) != 0 or self.curt
 
-
     # @return: return next node
     def next(self):
         # write your code here

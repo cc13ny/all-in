@@ -4,7 +4,7 @@ public class Solution {
     public String convertToTitle(int n) {
         ArrayList<String> ls = new ArrayList<String>();
         String s = "";
-        
+
         ls.add("Z");
         ls.add("A");
         ls.add("B");
@@ -31,17 +31,17 @@ public class Solution {
         ls.add("W");
         ls.add("X");
         ls.add("Y");
-        
-        while(n > 0){
+
+        while (n > 0) {
             int reminder = n % 26;
             s = ls.get(reminder) + s;
-            if(reminder == 0){
+            if (reminder == 0) {
                 reminder = 26;
             }
-            n = (n - reminder)/26;
+            n = (n - reminder) / 26;
         }
-        
+
         return s;
-        
+
     }
 }

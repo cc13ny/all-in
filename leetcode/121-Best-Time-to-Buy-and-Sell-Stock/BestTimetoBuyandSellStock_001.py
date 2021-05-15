@@ -14,8 +14,8 @@ class Solution:
                 minn[i] = mi
             else:
                 mi = minn[i]
-            
-        ma = maxn[-1] # the last element
+
+        ma = maxn[-1]  # the last element
         for i in range(len(maxn) - 1, 0, -1):
             if maxn[i] > ma:
                 ma = maxn[i]

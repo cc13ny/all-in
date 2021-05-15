@@ -10,7 +10,7 @@ class Solution(object):
                 cnt += 1
             else:
                 cnt -= 1
-            
+
             if cnt == 0:
                 num = nums[i]
                 cnt = 1

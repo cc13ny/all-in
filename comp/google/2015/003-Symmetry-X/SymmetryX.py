@@ -7,9 +7,11 @@ def sym_x_exist(points):
             return False
     return True
 
+
 tests = []
 tests.append([(1, 2), (-1, 2), (3, 4), (-3, 4)])
 tests.append([(1, 2), (-1, 2), (3, 4), (3, 5)])
 
 for test in tests:
-    print sym_x_exist(test)
+    print
+    sym_x_exist(test)

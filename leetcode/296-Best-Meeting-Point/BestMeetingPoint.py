@@ -29,7 +29,7 @@ class Solution(object):
             if colOne[j] > 0:
                 cOneNum += colOne[j]
                 cdist += j * colOne[j]
-        rRiOneNum = rOneNum - rowOne[0] 
+        rRiOneNum = rOneNum - rowOne[0]
         cRiOneNum = cOneNum - colOne[0]
 
         for i in range(1, m):
@@ -37,11 +37,11 @@ class Solution(object):
                 break
             rdist += (rOneNum - rRiOneNum) - rRiOneNum
             rRiOneNum -= rowOne[i]
-            
+
         for j in range(1, n):
             if cOneNum - cRiOneNum >= cRiOneNum:
                 break
             cdist += (cOneNum - cRiOneNum) - cRiOneNum
             cRiOneNum -= colOne[j]
-                
+
         return rdist + cdist

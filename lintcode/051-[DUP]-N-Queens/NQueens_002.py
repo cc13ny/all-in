@@ -6,12 +6,14 @@
 
 import copy
 
+
 class Solution:
     """
     Get all distinct N-Queen solutions
     @param n: The number of queens
     @return: All distinct solutions
     """
+
     def solveNQueens(self, n):
         if n < 1:
             return []
@@ -27,9 +29,9 @@ class Solution:
             res.extend(tmp)
         for i in range(m):
             res.append(res[i][::-1])
-        
+
         return self.draw(res)
-        
+
     def solve(self, start, cnt):
         n = len(cnt)
         res = []
@@ -55,7 +57,7 @@ class Solution:
                 t[i] = start
                 res.append(t)
         return res
-    
+
     def draw(self, res):
         pics = []
         for case in res:

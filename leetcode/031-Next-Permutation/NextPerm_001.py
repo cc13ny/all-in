@@ -1,4 +1,4 @@
-#@author: cchen
+# @author: cchen
 
 class Solution:
     # @param {integer[]} nums
@@ -8,10 +8,10 @@ class Solution:
             flag = True
             for i in range(1, len(nums)):
                 j = len(nums) - 1 - i
-                if nums[j] < nums[j+1]:
+                if nums[j] < nums[j + 1]:
                     flag = False
                     tmp = nums[j]
-                    for k in range(len(nums) -1 , j, -1):
+                    for k in range(len(nums) - 1, j, -1):
                         if nums[k] > tmp:
                             break
                     nums[j] = nums[k]

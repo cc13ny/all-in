@@ -11,11 +11,11 @@ class Solution:
     def maxDepth(self, root):
         if root == None:
             return 0
-        
+
         stack = []
         stack.append(root)
         num = 0
-        
+
         while len(stack) != 0:
             nnext = []
             for t in stack:

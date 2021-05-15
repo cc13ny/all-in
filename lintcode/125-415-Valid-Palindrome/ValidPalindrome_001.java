@@ -23,7 +23,7 @@ public class Solution {
             if (p < q) {
                 left = Character.toLowerCase(s.charAt(p));
                 right = Character.toLowerCase(s.charAt(q));
-                if (left != right){
+                if (left != right) {
                     return false;
                 }
                 p++;

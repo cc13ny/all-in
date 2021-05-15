@@ -5,12 +5,15 @@ class TreeNode:
         self.val = val
         self.left, self.right = None, None
 """
+
+
 class Solution:
     """
     @param root: The root of the binary search tree.
     @param A and B: two nodes in a Binary.
     @return: Return the least common ancestor(LCA) of the two nodes.
-    """ 
+    """
+
     def lowestCommonAncestor(self, root, A, B):
         # write your code here
         stack = [root]
@@ -33,7 +36,7 @@ class Solution:
                     ancestor_id = len(stack)
                 else:
                     return ancestor
-        
+
             stack.append(node.right)
         if candicate:
             return candicate

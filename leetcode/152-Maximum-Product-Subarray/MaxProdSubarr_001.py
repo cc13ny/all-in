@@ -11,7 +11,7 @@ class Solution:
             a = A[i] * min_tmp
             b = A[i] * max_tmp
             c = A[i]
-            max_tmp = max(max(a,b),c)
-            min_tmp = min(min(a,b),c)
+            max_tmp = max(max(a, b), c)
+            min_tmp = min(min(a, b), c)
             result = max_tmp if max_tmp > result else result
         return result

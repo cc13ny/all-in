@@ -6,11 +6,13 @@ import entry2json as ej
 import unittest
 from collections import OrderedDict
 
+
 # report/ result can be written into log, but not implemented here
 class MyTest(unittest.TestCase):
     '''
     MyTest is a class inherited from unittest.TestCase for testing all methods of entry2json.py .
     '''
+
     def test_validColor(self):
         '''
         Test validColor function (in Validation class) which always returns True now.
@@ -19,8 +21,9 @@ class MyTest(unittest.TestCase):
         for testcase in testcases:
             test, truth = testcase
             self.assertEqual(vld.validColor(test), truth)
-        print 'Passed: method \'validColor\' in class \'Validation\''
-        
+        print
+        'Passed: method \'validColor\' in class \'Validation\''
+
     def test_validName(self):
         '''
         Test validName function (in Validation class) on 3 different cases: ('', False), ('He2e', False), ('Jack', True).
@@ -32,8 +35,9 @@ class MyTest(unittest.TestCase):
         for testcase in testcases:
             test, truth = testcase
             self.assertEqual(vld.validName(test), truth)
-        print 'Passed: method \'validName\' in class \'Validation\''
-        
+        print
+        'Passed: method \'validName\' in class \'Validation\''
+
     def test_validPhoneNum(self):
         testcases = [('888-888-8888', True), ('5432', False), ('555555-1111111', False)]
         '''
@@ -45,8 +49,9 @@ class MyTest(unittest.TestCase):
         for testcase in testcases:
             test, truth = testcase
             self.assertEqual(vld.validPhoneNum(test), truth)
-        print 'Passed: method \'validPhoneNum\' in class \'Validation\''
-        
+        print
+        'Passed: method \'validPhoneNum\' in class \'Validation\''
+
     def test_validZipCode(self):
         '''
         Test validZipCode function (in Validation class) on 4 different cases: ('12345', True), ('5432667', False), ('12a34', False).
@@ -59,28 +64,31 @@ class MyTest(unittest.TestCase):
         for testcase in testcases:
             test, truth = testcase
             self.assertEqual(vld.validZipCode(test), truth)
-        print 'Passed: method \'validZipCode\' in class \'Validation\''
+        print
+        'Passed: method \'validZipCode\' in class \'Validation\''
 
     def test_normColor(self):
         '''
         Test normColor function (in Normalizer class) where it should the string without spaces at the two ends.
         '''
-        
-        testcases = [('Red', 'Red'), (' Black ',  'Black'), ('Blue        ', 'Blue')]
+
+        testcases = [('Red', 'Red'), (' Black ', 'Black'), ('Blue        ', 'Blue')]
         for testcase in testcases:
             test, truth = testcase
             self.assertEqual(nlz.normColor(test), truth)
-        print 'Passed: method \'normColor\' in class \'Normalizer\''
+        print
+        'Passed: method \'normColor\' in class \'Normalizer\''
 
     def test_normName(self):
         '''
         Test normName function (in Normalizer class) where it should the string without spaces at the two ends.
         '''
-        testcases = [('  Jack ', 'Jack'), (' Sam ',  'Sam')]
+        testcases = [('  Jack ', 'Jack'), (' Sam ', 'Sam')]
         for testcase in testcases:
             test, truth = testcase
             self.assertEqual(nlz.normName(test), truth)
-        print 'Passed: method \'normName\' in class \'Normalizer\''
+        print
+        'Passed: method \'normName\' in class \'Normalizer\''
 
     def test_normPhoneNum(self):
         '''
@@ -89,22 +97,24 @@ class MyTest(unittest.TestCase):
         2. (' 542 ',  '') represents the case where the string contains less than 10 digits.
         3. ('888-888-8888', True) represents the normal case where the string contains exactly 10 digits.
         '''
-        testcases = [('  111-1151-1111111 ', ''), (' 542 ',  ''), ('(888)-888-8888', '888-888-8888')]
+        testcases = [('  111-1151-1111111 ', ''), (' 542 ', ''), ('(888)-888-8888', '888-888-8888')]
         for testcase in testcases:
             test, truth = testcase
             self.assertEqual(nlz.normPhoneNum(test), truth)
-        print 'Passed: method \'normPhoneNum\' in class \'Normalizer\''
-        
+        print
+        'Passed: method \'normPhoneNum\' in class \'Normalizer\''
+
     def test_normZipCode(self):
         '''
         Test normZipCode function (in Normalizer class) where it should the string without spaces at the two ends.
         '''
-        testcases = [('  15 12 3 ', '15123'), ('',  ''), (' 15213 ', '15213')]
+        testcases = [('  15 12 3 ', '15123'), ('', ''), (' 15213 ', '15213')]
         for testcase in testcases:
             test, truth = testcase
             self.assertEqual(nlz.normZipCode(test), truth)
-        print 'Passed: method \'normZipCode\' in class \'Normalizer\''
-        
+        print
+        'Passed: method \'normZipCode\' in class \'Normalizer\''
+
     def test_process(self):
         '''
         Test process function (in Converter class) on 7 different cases from 2 groups: valid & invalid.
@@ -141,18 +151,18 @@ class MyTest(unittest.TestCase):
             mp[ele_names[i]] = nl_ord_ent[i]
         testcases.append(('Booker T., Washington, 87360, 373 781 7380, yellow', mp))
 
-        
         mp = OrderedDict()
         nl_ord_ent = ['yellow', 'James', 'Murphy', '018-154-6474', '83880']
         for i in range(len(nl_ord_ent)):
             mp[ele_names[i]] = nl_ord_ent[i]
         testcases.append(('James Murphy, yellow, 83880, 018 154 6474', mp))
-        
+
         for testcase in testcases:
             test, truth = testcase
             self.assertEqual(cvt.process(test), truth)
-        print 'Passed: method \'process\' in class \'Converter\''
-        
+        print
+        'Passed: method \'process\' in class \'Converter\''
+
     def test_ent2json(self):
         '''
         Test process function (in Converter class) on 5 different cases.
@@ -172,13 +182,15 @@ class MyTest(unittest.TestCase):
             inputfile, truthfile = testcase
 
             cvt.ent2json(inputfile)
-            with open (inputfile[:-2] + 'out', 'r') as f:
+            with open(inputfile[:-2] + 'out', 'r') as f:
                 output = f.read()
-            
-            with open (truthfile, 'r') as f:
+
+            with open(truthfile, 'r') as f:
                 truth = f.read().strip()
             self.assertEqual(output, truth)
-        print 'Passed: method \'ent2json\' in class \'Converter\''
+        print
+        'Passed: method \'ent2json\' in class \'Converter\''
+
 
 if __name__ == "__main__":
     ele_names = ej.ele_names

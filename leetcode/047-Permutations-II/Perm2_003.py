@@ -9,7 +9,7 @@ class Solution:
         i = 0
         while i < len(nums):
             sym = nums[i]
-            tmp = nums[:i] + nums[i+1:]
+            tmp = nums[:i] + nums[i + 1:]
             sub = self.permuteUnique(tmp)
             res.extend([[nums[i]] + s for s in sub])
             while i < len(nums):

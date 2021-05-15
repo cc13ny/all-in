@@ -12,14 +12,14 @@ class Solution:
                 root = stack.pop()
                 root = root.right
         return list
-    
+
     def recursive_preorder(self, root, list):
         if root:
             list.append(root.val)
-            self.preorder(root.left,list)
-            self.preorder(root.right,list)
+            self.preorder(root.left, list)
+            self.preorder(root.right, list)
 
-    def preorderTraversal(self,root):
+    def preorderTraversal(self, root):
         list = []
-        self.iterative_preorder(root,list)
+        self.iterative_preorder(root, list)
         return list

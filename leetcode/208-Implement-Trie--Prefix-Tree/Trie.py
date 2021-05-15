@@ -4,9 +4,9 @@ class TrieNode(object):
         Initialize your data structure here.
         """
         self.c = ''
-        self.isWord = False # same to a random number for a complete word
-        self.children = {} # {c : TrieNode}
-        
+        self.isWord = False  # same to a random number for a complete word
+        self.children = {}  # {c : TrieNode}
+
 
 class Trie(object):
 
@@ -42,7 +42,6 @@ class Trie(object):
             treenode = children[c]
             children = treenode.children
         return treenode.isWord
-        
 
     def startsWith(self, prefix):
         """
@@ -58,7 +57,6 @@ class Trie(object):
             treenode = children[c]
             children = treenode.children
         return True
-        
 
 # Your Trie object will be instantiated and called as such:
 # trie = Trie()

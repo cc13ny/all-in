@@ -6,14 +6,14 @@ public class Solution extends VersionControl {
         int l = 1, r = n;
         while (l <= r) {
             // key point: avoid overflow which causes strange behavior of m
-            int m = l + (r - l) / 2; 
+            int m = l + (r - l) / 2;
             if (isBadVersion(m)) {
                 r = m - 1;
             } else {
                 l = m + 1;
             }
         }
-        
+
         return l;
     }
 }

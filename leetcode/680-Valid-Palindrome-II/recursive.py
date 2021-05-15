@@ -8,6 +8,7 @@ def is_palindrome(st):
 
     return True
 
+
 class Solution:
     def validPalindrome(self, s: str) -> bool:
         if len(s) < 2:

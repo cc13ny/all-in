@@ -4,10 +4,10 @@ class Solution:
     def rotate(self, matrix):
         num = len(matrix)
         if num % 2 == 1:
-            m = num/2
+            m = num / 2
             n = m + 1
         else:
-            m = num/2
+            m = num / 2
             n = m
 
         for j in range(n):

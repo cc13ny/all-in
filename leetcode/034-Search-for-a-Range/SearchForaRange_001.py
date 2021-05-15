@@ -6,7 +6,7 @@ class Solution:
         res = []
         l, r = 0, len(nums) - 1
         while l <= r:
-            m = (l + r) /2
+            m = (l + r) / 2
             if nums[m] < target:
                 l = m + 1
             else:
@@ -15,7 +15,7 @@ class Solution:
 
         l, r = 0, len(nums) - 1
         while l <= r:
-            m = (l + r) /2
+            m = (l + r) / 2
             if nums[m] <= target:
                 l = m + 1
             else:
@@ -23,5 +23,5 @@ class Solution:
         res.append(r)
 
         res = [-1, -1] if res[0] > res[1] else res
-        
+
         return res

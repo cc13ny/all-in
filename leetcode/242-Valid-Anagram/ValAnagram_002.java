@@ -3,7 +3,7 @@ public class Solution {
         if (s.length() != t.length()) {
             return false;
         }
-        
+
         HashMap<Character, Integer> map = new HashMap<Character, Integer>();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
@@ -13,7 +13,7 @@ public class Solution {
                 map.put(c, 1);
             }
         }
-        
+
         for (int j = 0; j < t.length(); j++) {
             char c = t.charAt(j);
             int idx = Character.getNumericValue(c);
@@ -25,7 +25,7 @@ public class Solution {
                 return false;
             }
         }
-        
+
         return true;
     }
 }

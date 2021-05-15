@@ -5,4 +5,3 @@ class Solution:
         for i, d in enumerate(week):
             mp[d] = i
         return week[(mp[s] + k) % 7]
-

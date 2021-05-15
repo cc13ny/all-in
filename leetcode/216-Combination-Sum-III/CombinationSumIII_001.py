@@ -10,9 +10,9 @@ class Solution(object):
             tmp = self.comb(i, k, n)
             res += tmp
         return res
-    
+
     def comb(self, init, k, n):
-        lbound, ubound = (k - 1) * (init + 1) + init, (k - 1)* 9 + init
+        lbound, ubound = (k - 1) * (init + 1) + init, (k - 1) * 9 + init
         if n < lbound or ubound < n:
             return []
         if k == 1:

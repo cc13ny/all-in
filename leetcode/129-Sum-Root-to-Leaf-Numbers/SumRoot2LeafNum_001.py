@@ -13,17 +13,17 @@ class Solution:
             return 0
         stack = []
         marked = set()
-        
+
         stack.append(root)
         s = str(root.val)
         res = 0
-        
+
         while len(stack) != 0:
             p = stack[len(stack) - 1]
-            
+
             if p.left == None and p.right == None:
                 res += int(s)
-                s = s[:len(s)-1]
+                s = s[:len(s) - 1]
                 marked.add(stack.pop())
             elif p.left != None and p.left not in marked:
                 p = p.left
@@ -35,7 +35,7 @@ class Solution:
                 stack.append(p)
             else:
                 p = stack.pop()
-                s = s[:len(s)-1]
+                s = s[:len(s) - 1]
                 marked.add(p)
-                
+
         return res

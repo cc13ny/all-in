@@ -4,7 +4,7 @@ public class Solution {
         char c;
         int i = -1;
         int res = 0, tmp = 0;
-        
+
         for (int j = 0; j < s.length(); j++) {
             c = s.charAt(j);
             if (mark.containsKey(c) && mark.get(c) > i) {
@@ -13,18 +13,18 @@ public class Solution {
                 }
                 tmp = j - mark.get(c);
                 i = mark.get(c);
-                
+
             } else {
                 tmp++;
             }
-            
+
             mark.put(c, j);
         }
-        
+
         if (tmp > res) {
             res = tmp;
         }
-        
+
         return res;
     }
 }

@@ -12,6 +12,7 @@
        2.2 visited_count is equal to the number of transformed words, and the endWord is not found
 '''
 
+
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         visited = {}

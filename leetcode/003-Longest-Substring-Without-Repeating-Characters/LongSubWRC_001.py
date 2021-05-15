@@ -1,4 +1,4 @@
-#@author: cchen
+# @author: cchen
 
 class Solution:
     # @return an integer

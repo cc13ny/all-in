@@ -2,6 +2,7 @@
     You can run it directly to see results.
 '''
 
+
 def maxProfit(prices):
     # The idea is pretty simple.
     # for example: [1, 3, 2, 1]
@@ -22,8 +23,8 @@ def maxProfit(prices):
             minn[i] = mi
         else:
             mi = minn[i]
-            
-    ma = maxn[-1] # the last element
+
+    ma = maxn[-1]  # the last element
     for i in range(len(maxn) - 1, 0, -1):
         if maxn[i] > ma:
             ma = maxn[i]
@@ -36,6 +37,7 @@ def maxProfit(prices):
             res = maxn[i] - minn[i]
 
     return res
+
 
 def find_path(res, prices):
     # It can be optimized, however,
@@ -51,11 +53,11 @@ def find_path(res, prices):
                     return [i, j]
         elif mi > prices[i]:
             mi = prices[i]
-            for j in range(i+1, len(prices)):
+            for j in range(i + 1, len(prices)):
                 if mi + res == prices[j]:
                     return [i, j]
-    return []        
-        
+    return []
+
 
 def testcase():
     # test case
@@ -68,28 +70,39 @@ def testcase():
 
     return tests
 
+
 def print_info(tests):
     n = 60
-    print '#' * n
     print
-    print 'Problem: Best Time to Buy and Sell Stock I'
+    '#' * n
     print
-    print '=' * n
+    print
+    'Problem: Best Time to Buy and Sell Stock I'
+    print
+    print
+    '=' * n
 
     for j, t in enumerate(tests):
         prices = t
         maxprofit = maxProfit(prices)
 
         print
-        print 'test case #' + str(j) + ':'
-        print '     prices             : ' + str(prices)
-        print '     max_profit         : ' + str(maxprofit)
-        print '     buy and sell days  : ' + str(find_path(maxprofit, prices))
         print
-        print '=' * n
+        'test case #' + str(j) + ':'
+        print
+        '     prices             : ' + str(prices)
+        print
+        '     max_profit         : ' + str(maxprofit)
+        print
+        '     buy and sell days  : ' + str(find_path(maxprofit, prices))
+        print
+        print
+        '=' * n
+
 
 def main():
     print_info(testcase())
+
 
 if __name__ == "__main__":
     main()

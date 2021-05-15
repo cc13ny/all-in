@@ -2,6 +2,7 @@
   same as: http://www.jiuzhang.com/solutions/median-of-two-sorted-arrays/ 
 '''
 
+
 class Solution:
     # @param {integer[]} nums1
     # @param {integer[]} nums2
@@ -24,10 +25,10 @@ class Solution:
             return A[k - 1]
         if k == 1:
             return min(A[0], B[0])
-        
+
         a = A[k / 2 - 1] if len(A) >= k / 2 else None
         b = B[k / 2 - 1] if len(B) >= k / 2 else None
-        
+
         if b is None or (a is not None and a < b):
             return self.findKth(A[k / 2:], B, k - k / 2)
         return self.findKth(A, B[k / 2:], k - k / 2)

@@ -3,10 +3,10 @@ class Solution:
     # @return a list of integers
     def recursive_postorder(self, root, list):
         if root:
-            self.postorder( root.left, list )
-            self.postorder( root.right, list )
+            self.postorder(root.left, list)
+            self.postorder(root.right, list)
             list.append(root.val)
-    
+
     def iterative_postorder(self, root, list):
         stack = []
         pre = None
@@ -25,5 +25,5 @@ class Solution:
 
     def postorderTraversal(self, root):
         list = []
-        self.iterative_postorder(root,list)
+        self.iterative_postorder(root, list)
         return list

@@ -1,13 +1,13 @@
 /**
  * Definition for binary tree
  * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
+ * int val;
+ * TreeNode left;
+ * TreeNode right;
+ * TreeNode(int x) { val = x; }
  * }
  */
- 
+
 import java.util.Stack;
 
 public class BSTIterator {
@@ -26,13 +26,13 @@ public class BSTIterator {
 
     /** @return the next smallest number */
     public int next() {
-        while(curt != null) {
+        while (curt != null) {
             stack.push(curt);
             curt = curt.left;
         }
         TreeNode res = stack.pop();
         curt = res.right;
-        
+
         return res.val;
     }
 }

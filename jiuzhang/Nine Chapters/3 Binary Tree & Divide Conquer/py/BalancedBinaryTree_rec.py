@@ -5,11 +5,14 @@ class TreeNode:
         self.val = val
         self.left, self.right = None, None
 """
+
+
 class Solution:
     """
     @param root: The root of binary tree.
     @return: True if this Binary tree is Balanced, or false.
     """
+
     def isBalanced(self, root):
         # write your code here
         isbalanced, h = self.isBalancedandHeight(root)

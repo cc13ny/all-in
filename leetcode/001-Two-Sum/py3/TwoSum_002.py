@@ -1,13 +1,13 @@
-#@author: cchen
+# @author: cchen
 class Solution:
     # @param {integer[]} nums
     # @param {integer} target
     # @return {integer[]}
     def twoSum(self, nums, target):
-        idx = sorted(range(len(nums)), key = lambda x:nums[x])
+        idx = sorted(range(len(nums)), key=lambda x: nums[x])
         nums.sort()
-        i, j = 0, len(nums)-1
-        
+        i, j = 0, len(nums) - 1
+
         while i < j:
             if nums[i] + nums[j] > target:
                 j -= 1

@@ -3,9 +3,9 @@ import java.util.Hashtable;
 public class Solution {
     public int titleToNumber(String s) {
         int num = 0;
-        
+
         Hashtable<String, Integer> tb = new Hashtable<String, Integer>();
-        
+
         tb.put("A", 1);
         tb.put("B", 2);
         tb.put("C", 3);
@@ -32,18 +32,18 @@ public class Solution {
         tb.put("X", 24);
         tb.put("Y", 25);
         tb.put("Z", 26);
-        
+
         int len = s.length();
         int power = 1;
-        
-        for(int i = 0; i < len; i++){
+
+        for (int i = 0; i < len; i++) {
             String sym = String.valueOf(s.charAt(len - 1 - i));
             int amount = tb.get(sym) * power;
             num += amount;
             power *= 26;
         }
-        
+
         return num;
-        
+
     }
 }

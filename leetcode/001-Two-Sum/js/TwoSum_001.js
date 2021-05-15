@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function(nums, target) {
+var twoSum = function (nums, target) {
     var num, i = 0, map = {};
     for (num of nums) {
         if (target - num in map) {

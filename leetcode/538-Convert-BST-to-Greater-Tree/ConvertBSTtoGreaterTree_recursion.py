@@ -13,5 +13,6 @@ class Solution:
                 node.val += prev_sum
                 prev_sum = traverse(node.left, node.val)
             return prev_sum
+
         traverse(root, 0)
         return root

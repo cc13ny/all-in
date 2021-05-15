@@ -10,7 +10,7 @@ class Solution(object):
         for w in t:
             if w not in chrs:
                 chrs[w] = 1 << (ord(w) - 97)
-            res += chrs[w] # it can be overflow
+            res += chrs[w]  # it can be overflow
         for w in s:
             res -= chrs[w]
         return chr(len(bin(res)) + 94)

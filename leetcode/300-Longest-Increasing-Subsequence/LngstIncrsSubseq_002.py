@@ -5,10 +5,10 @@ class Solution(object):
         :rtype: int
         """
         n = len(nums)
-        
+
         if n == 0:
             return 0
-        
+
         maxlen = [1 for i in range(n)]
         dq = [nums[0]]
         for i in range(1, n):
@@ -25,5 +25,5 @@ class Solution(object):
                     else:
                         l = m + 1
                 dq[l] = nums[i]
-                        
+
         return len(dq)

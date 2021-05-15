@@ -8,10 +8,10 @@ class Solution(object):
         """
         if beginWord == endWord:
             return 1
-        
+
         cnt = 1
         q = [beginWord]
-        
+
         while q:
             nq = []
             for word in q:

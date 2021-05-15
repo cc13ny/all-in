@@ -6,7 +6,7 @@ class Solution:
         n = len(cumnums)
         for i in range(1, n):
             cumnums[i] += cumnums[i - 1]
-        
+
         minnum = 0
         res = cumnums[1]
         for i in range(2, n):

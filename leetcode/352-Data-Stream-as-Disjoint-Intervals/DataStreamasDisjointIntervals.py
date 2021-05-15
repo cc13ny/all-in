@@ -11,7 +11,6 @@ class SummaryRanges(object):
         Initialize your data structure here.
         """
         self.intervals = []
-        
 
     def addNum(self, val):
         """
@@ -20,7 +19,7 @@ class SummaryRanges(object):
         """
         intv = self.intervals
         l, r = 0, len(self.intervals) - 1
-        
+
         while l <= r:
             m = l + (r - l) / 2
             if val < intv[m].start:
@@ -29,7 +28,7 @@ class SummaryRanges(object):
                 break
             else:
                 l = m + 1
-        
+
         if l > r:
             if 0 < l < len(intv) and intv[l - 1].end + 1 == val and intv[l].start - 1 == val:
                 intv[l - 1].end = intv[l].end
@@ -40,15 +39,12 @@ class SummaryRanges(object):
                 intv[l - 1].end = val
             else:
                 intv.insert(l, Interval(val, val))
-            
 
     def getIntervals(self):
         """
         :rtype: List[Interval]
         """
         return self.intervals
-        
-
 
 # Your SummaryRanges object will be instantiated and called as such:
 # obj = SummaryRanges()

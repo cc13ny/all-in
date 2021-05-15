@@ -11,5 +11,7 @@ def mincoin(coins, target):
         else:
             break
     return cnt
-            
-print mincoin([1, 2], 3)
+
+
+print
+mincoin([1, 2], 3)

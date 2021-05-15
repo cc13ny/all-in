@@ -12,6 +12,7 @@ class Solution:
     @param root: The root of binary tree.
     @return: Level order in a list of lists of integers
     """
+
     def levelOrder(self, root):
         # write your code here
         if root is None:

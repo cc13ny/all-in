@@ -1,10 +1,11 @@
-#@author: cchen
+# @author: cchen
 
 class Solution:
     # @param a ListNode
     # @return a ListNode
     def swapPairs(self, head):
-        dummy = ListNode(0); dummy.next = head
+        dummy = ListNode(0);
+        dummy.next = head
         p = dummy
         while p.next and p.next.next:
             tmp = p.next.next

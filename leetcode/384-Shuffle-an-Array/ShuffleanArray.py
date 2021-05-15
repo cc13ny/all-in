@@ -15,7 +15,7 @@ class Solution(object):
         :rtype: List[int]
         """
         return self.origin
-        
+
     def shuffle(self):
         """
         Returns a random shuffling of the array.
@@ -28,7 +28,7 @@ class Solution(object):
             j = randint(i, n - 1)
             nums[i], nums[j] = nums[j], nums[i]
         return nums
-        
+
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(nums)
 # param_1 = obj.reset()

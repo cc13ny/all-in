@@ -10,12 +10,12 @@ class Solution:
             else:
                 p[c] = 1
         return p
-        
+
     def isAnagram(self, s, t):
         if len(s) != len(t):
             return False
         p = self.anaRepresentation(s)
-        
+
         for c in t:
             if c not in p:
                 return False

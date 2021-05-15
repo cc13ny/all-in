@@ -26,5 +26,5 @@ class Solution:
         elif left == right:
             for i in range(top, bottom + 1):
                 res.append(matrix[i][left])
-        
+
         return res

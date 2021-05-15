@@ -17,7 +17,7 @@ class Solution(object):
             else:
                 num1 -= 1
                 num2 -= 1
-                
+
         num1, num2 = 0, 0
         for c in nums:
             if c == c1:
@@ -28,5 +28,5 @@ class Solution(object):
         res = []
         if num1 > len(nums) / 3: res.append(c1)
         if num2 > len(nums) / 3: res.append(c2)
-        
+
         return res

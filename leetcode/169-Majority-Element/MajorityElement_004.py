@@ -10,7 +10,7 @@ class Solution(object):
                 cnt += 1
             else:
                 cnt -= 1
-                
+
             if not cnt:
                 idx = i
                 cnt = 1

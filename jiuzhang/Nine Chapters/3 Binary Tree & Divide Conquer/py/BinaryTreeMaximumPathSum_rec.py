@@ -5,11 +5,14 @@ class TreeNode:
         self.val = val
         self.left, self.right = None, None
 """
+
+
 class Solution:
     """
     @param root: The root of binary tree.
     @return: An integer
     """
+
     def maxPathSum(self, root):
         # write your code here
         totMax, branchMax = self.maxBranchandPathSum(root)
@@ -24,7 +27,7 @@ class Solution:
 
         lTotMax, lBranchMax = self.maxBranchandPathSum(root.left)
         rTotMax, rBranchMax = self.maxBranchandPathSum(root.right)
-        
+
         lRootBranchMax = root.val + max(lBranchMax, 0)
         rRootBranchMax = root.val + max(rBranchMax, 0)
 

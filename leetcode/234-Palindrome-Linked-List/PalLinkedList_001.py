@@ -3,6 +3,7 @@
   O(n) time, O(n) space
 '''
 
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -21,13 +22,13 @@ class Solution:
             slow = slow.next
             fast = fast.next.next
             stack.append(slow.val)
-        
+
         if not fast.next: stack.pop()
-        
+
         while slow.next:
             slow = slow.next
             top = stack.pop()
-            if top != slow.val: # it can't pass if 'top is not slow.val'
+            if top != slow.val:  # it can't pass if 'top is not slow.val'
                 return False
-        
+
         return True

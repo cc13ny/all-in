@@ -26,7 +26,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		sum = l1_val + l2_val + c
 		p.Next = new(ListNode)
 		p = p.Next
-		p.Val, c = sum % 10, sum / 10
+		p.Val, c = sum%10, sum/10
 
 		l1_val, l2_val = 0, 0
 	}

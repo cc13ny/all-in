@@ -8,7 +8,7 @@ class Solution {
         if (n == 1 || n == 2) {
             return n - 1;
         }
-        
+
         // record the last two items each for calculation of the next items
         int a = 0, b = 1, tmp = 0;
         while (n > 2) {
@@ -17,7 +17,7 @@ class Solution {
             b = tmp;
             n -= 1;
         }
-        
+
         return b;
     }
 }

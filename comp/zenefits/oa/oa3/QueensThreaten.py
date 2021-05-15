@@ -15,7 +15,7 @@ def qt(a):
             ldial[i + j].append(i)
         else:
             ldial[i + j] = [i]
-            
+
         if i - j in rdial:
             threat[i] += 1
             pre = rdial[i - j][-1]

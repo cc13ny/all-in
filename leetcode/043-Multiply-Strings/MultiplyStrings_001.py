@@ -12,11 +12,11 @@ class Solution(object):
             for i in xrange(len(num1)):
                 t = int(num1[- i - 1]) * int(num2[- j - 1])
                 res[i + j] += t
-                
+
         for k in xrange(len(res) - 1):
             res[k + 1] += res[k] / 10
             res[k] %= 10
-       
+
         result = ''
         for num in res:
             result = str(num) + result

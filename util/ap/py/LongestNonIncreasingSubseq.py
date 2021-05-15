@@ -2,25 +2,26 @@
     You can run it directly to see results.
 '''
 
+
 def lnis(nums):
-    
-# res is a 0-based array where
+    # res is a 0-based array where
     # res[i] stores the length
-    
-# of lnis ending the number nums[i]
+
+    # of lnis ending the number nums[i]
     #
-    
-# So when we output the length of
+
+    # So when we output the length of
     # lnis of the whole integer array,
     # we will print max(res) instead of
     # the last one of res.
-    
+
     res = [1] * len(nums)
     for i in range(1, len(nums)):
         for j in range(i):
             if nums[i] <= nums[j] and res[j] >= res[i]:
                 res[i] = res[j] + 1
     return res
+
 
 def find_path(res):
     idx = [0]
@@ -40,7 +41,7 @@ def find_path(res):
     # However, we can use the original res. That is,
     # to find the last before any change, and the
     # locations where each change happens.
-    
+
     for i in range(len(res)):
         if res[i] == 1 and flag:
             idx[0] = i
@@ -50,6 +51,7 @@ def find_path(res):
             flag = False
     return idx
 
+
 def testcase():
     # test cases
     # assume that there's one element at least.
@@ -57,29 +59,40 @@ def testcase():
     tests.append([5, 6, 3, 6, 7, 2])
 
     n = 55
-    print '#' * n
     print
-    print 'Problem: Longest Non-Increasing Sub-sequence'
+    '#' * n
     print
-    print '=' * n
+    print
+    'Problem: Longest Non-Increasing Sub-sequence'
+    print
+    print
+    '=' * n
 
     for i, t in enumerate(tests):
-        assert t!=[]
+        assert t != []
         res = lnis(t)
         path = find_path(res)
         subseq = [t[idx] for idx in path]
 
         print
-        print 'test case #' + str(i) + ':'
-        print '     Longest Length: ' + str(max(res))
-        print '     Array of Integers ' + str(t)
-        print '     Indices of the path: ' + str(path)
-        print '     Longest Non-increasing Subsequence: ' + str(subseq)
         print
-        print '=' * n
+        'test case #' + str(i) + ':'
+        print
+        '     Longest Length: ' + str(max(res))
+        print
+        '     Array of Integers ' + str(t)
+        print
+        '     Indices of the path: ' + str(path)
+        print
+        '     Longest Non-increasing Subsequence: ' + str(subseq)
+        print
+        print
+        '=' * n
+
 
 def main():
     testcase()
+
 
 if __name__ == "__main__":
     main()

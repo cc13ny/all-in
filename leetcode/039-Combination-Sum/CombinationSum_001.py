@@ -5,7 +5,7 @@ class Solution:
     def combinationSum(self, candidates, target):
         candidates.sort()
         return self.combsum(candidates, target)
-        
+
     def combsum(self, nums, target):
         if target == 0:
             return [[]]

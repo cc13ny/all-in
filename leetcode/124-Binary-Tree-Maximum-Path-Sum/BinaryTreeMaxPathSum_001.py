@@ -23,7 +23,7 @@ class Solution(object):
 
         lTotMax, lBranchMax = self.maxBranchandPathSum(root.left)
         rTotMax, rBranchMax = self.maxBranchandPathSum(root.right)
-        
+
         lRootBranchMax = root.val + max(lBranchMax, 0)
         rRootBranchMax = root.val + max(rBranchMax, 0)
 

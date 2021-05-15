@@ -4,6 +4,7 @@ class Solution:
     @param B: An integer array.
     @return: a double whose format is *.5 or *.0
     """
+
     def findMedianSortedArrays(self, A, B):
         # write your code here
         m, n = len(A), len(B)

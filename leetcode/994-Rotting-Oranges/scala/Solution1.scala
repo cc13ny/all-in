@@ -7,7 +7,7 @@ import scala.collection.mutable._
 object Solution {
   def orangesRotting(grid: Array[Array[Int]]): Int = {
     val (rowLen, colLen) = (grid.length, grid(0).length)
-    val directions =  Seq((0, 1), (0, -1), (-1, 0), (1, 0))
+    val directions = Seq((0, 1), (0, -1), (-1, 0), (1, 0))
 
     var q = Queue(yieldRottenOrange(grid, rowLen, colLen): _*)
     var oneLayerLen = q.length
@@ -17,11 +17,11 @@ object Solution {
 
     if (!q.isEmpty) res = -1
 
-    while(!q.isEmpty) {
+    while (!q.isEmpty) {
       t = q.dequeue
       oneLayerLen -= 1
 
-      for((di, dj) <- directions) {
+      for ((di, dj) <- directions) {
         x = di + t._1
         y = dj + t._2
 
@@ -33,7 +33,7 @@ object Solution {
         }
       }
 
-      if(oneLayerLen == 0) {
+      if (oneLayerLen == 0) {
         res += 1
         oneLayerLen = q.length
       }
@@ -43,7 +43,7 @@ object Solution {
   }
 
   def yieldRottenOrange(grid: Array[Array[Int]], rowLen: Int, colLen: Int) =
-    // (0 until rowLen).flatMap(i => (0 until colLen).withFilter(j => grid(i)(j) == 2).map(j => (i, j)))
+  // (0 until rowLen).flatMap(i => (0 until colLen).withFilter(j => grid(i)(j) == 2).map(j => (i, j)))
     for {
       i <- 0 until rowLen
       j <- 0 until colLen

@@ -5,7 +5,7 @@ class Solution:
         # write your code here
         l, r = 0, len(num) - 1
         while l <= r:
-            m = (l + r) /2
+            m = (l + r) / 2
             if num[m] < num[r]:
                 r = m
             else:

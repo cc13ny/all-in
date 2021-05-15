@@ -4,7 +4,7 @@ class Solution:
     # @return {boolean}
     def search(self, nums, target):
         l, r = 0, len(nums) - 1
-        
+
         while l <= r:
             m = (l + r) / 2
             if nums[m] == target:
@@ -20,6 +20,6 @@ class Solution:
                 else:
                     l = m + 1
             else:
-                r -= 1 # the only change
-        
+                r -= 1  # the only change
+
         return False

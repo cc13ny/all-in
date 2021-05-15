@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution:
     # @param heights: a matrix of integers
     # @return: an integer
@@ -7,7 +9,7 @@ class Solution:
         n = len(heights)
         if n < 3:
             return 0
-    
+
         m = len(heights[0])
         if m < 3:
             return 0
@@ -28,7 +30,7 @@ class Solution:
                         res += minval - heights[x][y]
                         heights[x][y] = minval
                     heapq.heappush(hp, (heights[x][y], x, y))
-                    
+
         return res
 
     def heapInialize(self, heights):
@@ -39,7 +41,7 @@ class Solution:
             heapq.heappush(h, (heights[n - 1][j], n - 1, j))
         for i in range(1, n - 1):
             heapq.heappush(h, (heights[i][0], i, 0))
-            heapq.heappush(h, (heights[i][m - 1], i, m - 1))    
+            heapq.heappush(h, (heights[i][m - 1], i, m - 1))
         return h
 
     def visitedInialize(self, heights):

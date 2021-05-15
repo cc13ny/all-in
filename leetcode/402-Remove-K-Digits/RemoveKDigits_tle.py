@@ -5,19 +5,19 @@ class Solution(object):
         :type k: int
         :rtype: str
         """
-        l, r= 0, k
+        l, r = 0, k
         idx, kk = l, k
         res = ''
         while len(res) != len(num) - kk:
             idx = l
             tmp = num[l]
             for i in xrange(l, min(r, len(num) - 1) + 1):
-            	if num[i] == 0:
-            		idx = i
-            		break
-            	if num[i] < tmp:
-            		idx = i
-            		tmp = num[i]
+                if num[i] == 0:
+                    idx = i
+                    break
+                if num[i] < tmp:
+                    idx = i
+                    tmp = num[i]
             k -= (idx - l)
             l = idx + 1
             r = l + k

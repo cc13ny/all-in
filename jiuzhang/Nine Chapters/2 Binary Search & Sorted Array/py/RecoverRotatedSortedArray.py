@@ -3,6 +3,7 @@ class Solution:
     @param nums: The rotated sorted array
     @return: nothing
     """
+
     def recoverRotatedSortedArray(self, nums):
         # write your code here
         pivot = -1

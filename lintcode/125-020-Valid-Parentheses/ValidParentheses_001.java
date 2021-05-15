@@ -10,7 +10,7 @@ public class Solution {
         map.put(")", "(");
         map.put("]", "[");
         map.put("}", "{");
-        
+
         for (int i = 0; i < s.length(); i++) {
             String symbol = s.substring(i, i + 1);
             if (!symbol.equals("(") && !symbol.equals("[") && !symbol.equals("{")) {

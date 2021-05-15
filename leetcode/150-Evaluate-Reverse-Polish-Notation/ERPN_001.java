@@ -10,10 +10,10 @@ public class Solution {
         int operandafter = 0;
         String symbol;
 
-        if(wordlist.size()==1) operandafter = Integer.parseInt(wordlist.get(loc));
-        while(wordlist.size()!=1){
+        if (wordlist.size() == 1) operandafter = Integer.parseInt(wordlist.get(loc));
+        while (wordlist.size() != 1) {
             symbol = wordlist.get(loc);
-            switch(symbol){
+            switch (symbol) {
                 case "+":
                     leftoperand = Integer.parseInt(wordlist.get(loc - 2));
                     rightoperand = Integer.parseInt(wordlist.get(loc - 1));

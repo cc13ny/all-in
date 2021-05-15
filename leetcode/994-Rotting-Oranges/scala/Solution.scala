@@ -8,9 +8,9 @@ object Solution {
     var rowLen = grid.length
     var colLen = grid(0).length
     var ngrid = grid
-    var directions =  List((0, 1), (0, -1), (-1, 0), (1, 0))
+    var directions = List((0, 1), (0, -1), (-1, 0), (1, 0))
 
-    for(i<-0 until rowLen; j<-0 until colLen) {
+    for (i <- 0 until rowLen; j <- 0 until colLen) {
       if (grid(i)(j) == 2) {
         q.enqueue((i, j))
       }
@@ -19,11 +19,11 @@ object Solution {
     oneLayerLen = q.length
     if (!q.isEmpty) res = -1
 
-    while(!q.isEmpty) {
+    while (!q.isEmpty) {
       t = q.dequeue
       oneLayerLen -= 1
 
-      for((di, dj) <- directions) {
+      for ((di, dj) <- directions) {
         x = di + t._1
         y = dj + t._2
 
@@ -35,14 +35,14 @@ object Solution {
         }
       }
 
-      if(oneLayerLen == 0) {
+      if (oneLayerLen == 0) {
         res += 1
         oneLayerLen = q.length
       }
     }
 
-    for(i<-0 until rowLen; j<-0 until colLen) {
-      if(ngrid(i)(j) == 1) {
+    for (i <- 0 until rowLen; j <- 0 until colLen) {
+      if (ngrid(i)(j) == 1) {
         return -1
       }
     }

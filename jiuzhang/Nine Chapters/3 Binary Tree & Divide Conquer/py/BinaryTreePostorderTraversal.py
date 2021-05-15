@@ -12,6 +12,7 @@ class Solution:
     @param root: The root of binary tree.
     @return: Postorder in ArrayList which contains node values.
     """
+
     def postorderTraversal(self, root):
         # write your code here
         postorder, stack = [], [root]
@@ -31,6 +32,6 @@ class Solution:
 
             if stack != []:
                 node = stack[-1].right
-                stack.append(node)          
+                stack.append(node)
 
         return postorder

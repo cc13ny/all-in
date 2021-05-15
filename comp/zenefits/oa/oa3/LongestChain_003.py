@@ -1,4 +1,4 @@
-def longest_chain( w):
+def longest_chain(w):
     lendict, lenlist = {}, []
     for word in w:
         l = len(word)
@@ -8,12 +8,12 @@ def longest_chain( w):
             lendict[l] = set([word])
             lenlist.append(l)
     lenlist.sort()
-    
+
     if len(lenlist) < 2:
         return len(lenlist)
-    
+
     maxsize = 1
-    
+
     for i in range(len(lenlist) - 1, 0, -1):
         l = lenlist[i]
         group = lendict[l].copy()
@@ -22,6 +22,7 @@ def longest_chain( w):
             if tmpsize > maxsize:
                 maxsize = tmpsize
     return maxsize
+
 
 def lc(l, word, lendict):
     if (l not in lendict) or (word not in lendict[l]):
@@ -37,10 +38,12 @@ def lc(l, word, lendict):
         if tmpsize > maxsize:
             maxsize = tmpsize
     return maxsize, lendict
-    
+
+
 words = ['a', 'abcd', 'bcd', 'abd', 'cd', 'c']
 words = ['a', 'aa', 'ba', 'aaa', 'aab', 'aac', 'aad', 'kkkk']
 words = ['bcd', 'abcd', 'a', 'aa', 'aaa', 'bbb']
 words = ['a', 'b', 'ba', 'bca', 'bda', 'bdca']
 
-print longest_chain(words)
+print
+longest_chain(words)

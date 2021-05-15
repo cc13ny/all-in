@@ -18,7 +18,7 @@ def city(T):
     lst = []
     while q != []:
         lst.append(q)
-        
+
         nq = []
         for node in q:
             for nbr in adj[node]:

@@ -11,6 +11,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
+
         def func(node, p_val, p_maxlen, res):
             if not node:
                 return res
@@ -19,5 +20,6 @@ class Solution(object):
             res = func(node.left, node.val, n_maxlen, res)
             res = func(node.right, node.val, n_maxlen, res)
             return res
+
         root_val = root.val if root else 0
         return func(root, root_val, 0, 0)

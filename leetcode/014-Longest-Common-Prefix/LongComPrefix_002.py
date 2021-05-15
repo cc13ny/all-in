@@ -5,7 +5,7 @@ class Solution:
         res = ''
         if strs:
             return res
-            
+
         lens = [len(s) for s in strs]
         mi = min(lens)
         for i in range(mi):

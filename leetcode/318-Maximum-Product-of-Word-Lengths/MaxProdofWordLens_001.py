@@ -21,16 +21,16 @@ class Solution(object):
                 visited[idx] = True
             pairs.append((len(word), rep))
         pairs.sort()
-        
+
         res = 0
         n = len(words)
         for i in xrange(n - 2, -1, -1):
             for j in xrange(n - 1, i, -1):
                 if res >= pairs[i][0] * pairs[j][0]:
                     break
-                
+
                 commn = pairs[i][1] & pairs[j][1]
-            
+
                 if not commn:
                     mul = pairs[i][0] * pairs[j][0]
                     if mul > res:

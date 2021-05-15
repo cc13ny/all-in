@@ -22,6 +22,6 @@ class Solution(object):
                 p.next = l2
                 l2 = l2.next
             p = p.next
-            
+
         p.next = l2 if l2 else l1
         return dumpy.next

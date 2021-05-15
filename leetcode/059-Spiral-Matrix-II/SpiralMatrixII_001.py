@@ -31,5 +31,5 @@ class Solution:
         elif left == right:
             for i in range(top, bottom + 1):
                 res[i][left] = num
-        
+
         return res

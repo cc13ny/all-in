@@ -25,6 +25,6 @@ class Solution(object):
                 break
         ncircle = len(circle)
         cnt = nrc * rows
-        cnt += rows/ncircle * circle[-1]
-        cnt += circle[rows%ncircle - 1] if rows%ncircle > 0 else 0
+        cnt += rows / ncircle * circle[-1]
+        cnt += circle[rows % ncircle - 1] if rows % ncircle > 0 else 0
         return cnt

@@ -5,10 +5,10 @@ class Solution(object):
         :rtype: int
         """
         n = len(nums)
-        
+
         if n == 0:
             return 0
-        
+
         maxlen = [1 for i in range(n)]
         for i in range(1, n):
             for j in range(i):

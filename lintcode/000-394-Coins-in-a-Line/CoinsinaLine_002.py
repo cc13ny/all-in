@@ -10,5 +10,5 @@ class Solution:
             dp[-1] = not (dp[0] and dp[1])
             dp[cur] = dp[-1]
             cur = (cur + 1) % 2
-        
+
         return dp[-1]

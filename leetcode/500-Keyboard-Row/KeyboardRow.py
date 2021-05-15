@@ -2,6 +2,7 @@
 https://leetcode.com/contest/leetcode-weekly-contest-18a/problems/keyboard-row/
 '''
 
+
 class Solution(object):
     def findWords(self, words):
         """

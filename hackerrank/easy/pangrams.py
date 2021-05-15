@@ -9,7 +9,7 @@ flags = [False] * 26
 
 for w in string:
     if w.isalpha():
-        i = ord(w.lower()) - ord('a') 
+        i = ord(w.lower()) - ord('a')
         flags[i] = True;
 
 res = 'pangram'
@@ -17,5 +17,6 @@ for flag in flags:
     if not flag:
         res = 'not pangram'
         break
-        
-print res
+
+print
+res

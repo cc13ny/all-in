@@ -13,5 +13,5 @@ class Solution(object):
                 cnt = 1
             else:
                 cnt -= 1
-            
+
         return num

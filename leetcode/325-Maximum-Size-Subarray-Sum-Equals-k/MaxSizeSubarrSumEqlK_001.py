@@ -3,6 +3,7 @@
     https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/?tab=Solutions
 '''
 
+
 class Solution(object):
     def maxSubArrayLen(self, nums, k):
         """
@@ -15,7 +16,7 @@ class Solution(object):
         for i in range(len(nums)):
             sm += nums[i]
             if (sm - k) in map:
-                mx = max(mx, i - map[sm -k])
+                mx = max(mx, i - map[sm - k])
             if sm not in map:
                 map[sm] = i
         return mx

@@ -15,7 +15,7 @@ class Solution(object):
         while p:
             stack.append(p)
             p = p.next
-            
+
         dummy = ListNode(0)
         p = dummy
         while stack:

@@ -17,7 +17,7 @@ class NumMatrix(object):
                 else:
                     matrix[i][j] += matrix[i - 1][j] + matrix[i][j - 1] - matrix[i - 1][j - 1]
         self.cs_mat = matrix
-        
+
     def sumRegion(self, row1, col1, row2, col2):
         """
         sum of elements matrix[(row1,col1)..(row2,col2)], inclusive.
@@ -33,7 +33,7 @@ class NumMatrix(object):
         assert -1 < col1 < n and -1 < col2 < n
         assert row1 <= row2
         assert col1 <= col2
-        
+
         if row1 == 0 and col1 == 0:
             return mat[row2][col2]
         elif row1 == 0:

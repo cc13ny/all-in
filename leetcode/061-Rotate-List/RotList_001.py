@@ -11,7 +11,7 @@ class Solution:
     def rotateRight(self, head, k):
         if head == None or head.next == None or k == 0:
             return head
-        
+
         p = head
         q = None
         cnt = 0
@@ -20,17 +20,17 @@ class Solution:
             if p.next == None:
                 q = p
             p = p.next
-        
+
         k = k % cnt
-        
+
         if k == 0:
             return head
-        
+
         p = head
         for i in range(cnt - k - 1):
             p = p.next
         res = p.next
         p.next = None
         q.next = head
-        
+
         return res

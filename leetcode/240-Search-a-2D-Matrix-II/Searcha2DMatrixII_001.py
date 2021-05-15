@@ -8,13 +8,13 @@ class Solution:
         m, n = len(matrix), len(matrix[0])
         l, t, r, b = 0, 0, n - 1, m - 1
         return self.searchArea(l, t, r, b, matrix, target)
-        
+
     def searchArea(self, l, t, r, b, matrix, target):
         if l > r or t > b:
             return False
         if target < matrix[t][l] or target > matrix[b][r]:
             return False
-        
+
         while l <= r and t <= b:
             row = (t + b) / 2
             col = (l + r) / 2

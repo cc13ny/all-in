@@ -8,10 +8,12 @@ from collections import OrderedDict
 
 ele_names = ['color', 'firstname', 'lastname', 'phonenumber', 'zipcode']
 
+
 class Factory():
     '''
     Factory is the class as the set of 3 classes for this task: Normalizer, Validation, Converter  
     '''
+
     def __init__(self):
         """
         Construct a new 'Factory' object
@@ -25,7 +27,7 @@ class Factory():
         self.vld = Validation()
         self.nlz = Normalizer(self.vld)
         self.cvt = Converter(self.vld, self.nlz)
-        
+
 
 class Normalizer():
     def __init__(self, validation):
@@ -39,11 +41,11 @@ class Normalizer():
         
         :return: nothing
         """
-        
+
         normfunc = [self.normColor, self.normName, self.normName, self.normPhoneNum, self.normZipCode]
         self.normfunc = normfunc
         self.vld = validation
-        
+
     def normColor(self, color):
         """
         Normalize color
@@ -63,7 +65,7 @@ class Normalizer():
         :return: a string without spaces of two ends
         """
         return name.strip()
-    
+
     def normPhoneNum(self, num):
         """
         Normalize phone number
@@ -78,7 +80,7 @@ class Normalizer():
             nl_num = nl_num[:3] + '-' + nl_num[3:6] + '-' + nl_num[6:10]
             return nl_num
         return ''
-        
+
     def normZipCode(self, code):
         """
         Normalize zip code
@@ -88,7 +90,7 @@ class Normalizer():
         :return: a string without spaces
         """
         return ''.join(code.split())
-                         
+
     def normAll(self, ord_ent):
         """
         Normalize all elements of an entry
@@ -98,13 +100,13 @@ class Normalizer():
         :return: a list of all normalized & ordered elements of an entry
         """
         nl_ord_ent = []
-        
+
         nf = self.normfunc
         for i in range(len(ord_ent)):
             nl_ord_ent.append(nf[i](ord_ent[i]))
-        
+
         return nl_ord_ent
-    
+
 
 class Validation():
     def __init__(self):
@@ -117,7 +119,7 @@ class Validation():
         """
         valfunc = [self.validColor, self.validName, self.validName, self.validPhoneNum, self.validZipCode]
         self.valfunc = valfunc
-        
+
     def validColor(self, color):
         # We can create a set of color names.
         # If 'color' is not in the set, return False
@@ -128,7 +130,7 @@ class Validation():
         
         :return: True
         """
-        
+
         return True
 
     def validName(self, name):
@@ -141,14 +143,14 @@ class Validation():
         
         :return: False if it contains nothing or any digits. Otherwise, True.
         """
-        
+
         if name == '':
             return False
         if bool(re.search(r'\d', name)):
             return False
 
         return True
-    
+
     def validPhoneNum(self, num):
         # Assumption
         """
@@ -160,9 +162,9 @@ class Validation():
         """
         if len(''.join(re.findall(r'\d+', num))) == 10:
             return True
-            
+
         return False
-        
+
     def validZipCode(self, code):
         # Don't know any restriction for each number of zipcode.
         # But I can check details via https://en.wikipedia.org/wiki/ZIP_code#Structure_and_allocation
@@ -173,15 +175,15 @@ class Validation():
         
         :return: False if it is not exactly 5 consecutive digits. Otherwise, True.
         """
-        
+
         if len(code) != 5:
             return False
-        
+
         if not code.isdigit():
             return False
-            
+
         return True
-                         
+
     def validAll(self, nl_ord_ents):
         """
         Validate all elements of an entry
@@ -190,15 +192,15 @@ class Validation():
         
         :return: False if any element is not valid. Otherwise, True
         """
-        
+
         vf = self.valfunc
         for i in range(len(nl_ord_ents)):
             if not vf[i](nl_ord_ents[i]):
                 return False
-        
+
         return True
 
-        
+
 class Converter():
     def __init__(self, validation, normalizer):
         """
@@ -212,10 +214,10 @@ class Converter():
 
         :return: nothing
         """
-        
+
         self.vld = validation
         self.nlz = normalizer
-        
+
     def process(self, line):
         """
         Process each row/ line/ entry of the input file. There're 6 steps for processing where some are missed if the line is invalid.
@@ -236,20 +238,20 @@ class Converter():
         
         :return: None if the line is invalid. Otherwise, the mapping.
         """
-        
+
         # Check the number of elements is valid
         ent = line.split(',')
         nelemnts = len(ele_names)
         if len(ent) != nelemnts and len(ent) != nelemnts - 1:
             return None
-        
+
         # Decide which format it is (one of three formats)
         if len(ent) == nelemnts - 1:
             if len(ent[0].rsplit(None, 1)) != 2:
                 return None
             [Firstname, Lastname] = ent[0].rsplit(None, 1)
             ent = [Firstname, Lastname] + ent[1:]
-        
+
         phone_num_candidates = ent[2:5]
         ptype = -1
         for i in range(3):
@@ -274,7 +276,7 @@ class Converter():
         mp = OrderedDict()
         for i in range(len(nl_ord_ent)):
             mp[ele_names[i]] = nl_ord_ent[i]
-    
+
         return mp
 
     def ent2json(self, fname):
@@ -285,8 +287,8 @@ class Converter():
 
         :return: nothing
         """
-        res = OrderedDict([('entries',[]), ('errors', [])])
-        
+        res = OrderedDict([('entries', []), ('errors', [])])
+
         with open(fname) as f:
             lines = f.readlines()
             for i in range(len(lines)):
@@ -295,23 +297,25 @@ class Converter():
                     res['entries'].append(mapping)
                 else:
                     res['errors'].append(i)
-        
+
         if res['entries'] == []:
             del res['entries']
         else:
-            entries = sorted(res['entries'], key = lambda t: (t['lastname'], t['firstname']))
+            entries = sorted(res['entries'], key=lambda t: (t['lastname'], t['firstname']))
             res['entries'] = entries
-            
+
         if res['errors'] == []:
             del res['errors']
 
         with open(fname[:-2] + 'out', 'wb') as outfile:
             if res != OrderedDict():
-                json.dump(res, outfile, indent=2)        
+                json.dump(res, outfile, indent=2)
+
 
 if __name__ == "__main__":
     fac = Factory()
     vld, nlz, cvt = fac.vld, fac.nlz, fac.cvt
-    print 'Please input the absoulte path of the input file'
+    print
+    'Please input the absoulte path of the input file'
     fname = raw_input()
     cvt.ent2json(fname)

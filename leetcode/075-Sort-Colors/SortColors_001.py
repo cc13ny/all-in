@@ -10,7 +10,7 @@ class Solution:
                 a[1] += 1
             else:
                 a[2] += 1
-        
+
         a[1] += a[0]
         a[2] += a[1]
         for i in range(len(nums)):

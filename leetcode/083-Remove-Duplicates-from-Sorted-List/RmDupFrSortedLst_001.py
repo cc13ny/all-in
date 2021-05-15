@@ -12,28 +12,28 @@ class Solution:
         dic = {}
         p = head
         while p != None:
-            
+
             if p.val not in dic:
                 dic[p.val] = 1
             else:
                 dic[p.val] += 1
-                
+
             p = p.next
-                
+
         dumpy = ListNode(0)
         dumpy.next = head
         pre = dumpy
         p = head
-        
+
         while p != None:
-           
+
             if dic[p.val] != 1:
-                
+
                 pre.next = p.next
                 dic[p.val] -= 1
             else:
                 pre = p
-          
+
             p = p.next
-            
+
         return dumpy.next
